@@ -1,0 +1,40 @@
+CRITICAL - 2022-01-10 02:33:06 --> 908723 is not a valid rule.
+#0 C:\xampp\htdocs\hospital\system\Validation\Validation.php(285): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('908723')
+#1 C:\xampp\htdocs\hospital\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('access_code', 'access_code', NULL, Array, Array)
+#2 C:\xampp\htdocs\hospital\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\hospital\app\Controllers\Auth.php(85): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Auth->register_admin()
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-10 02:34:02 --> syntax error, unexpected integer "908723", expecting "]"
+#0 C:\xampp\htdocs\hospital\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('auth/register_a...')
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('auth/register_a...')
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-10 02:45:21 --> Undefined variable $session
+#0 C:\xampp\htdocs\hospital\app\Controllers\Auth.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-10 02:51:28 --> Access level to App\Controllers\HumanResources\Employee::$session must be protected (as in class App\Controllers\BaseController) or weaker
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-10 03:28:40 --> Invalid file: human_resources/add.php
+#0 C:\xampp\htdocs\hospital\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('human_resources...')
+#1 C:\xampp\htdocs\hospital\system\Common.php(1097): CodeIgniter\View\View->render('human_resources...', Array, true)
+#2 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(23): view('human_resources...', Array)
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(801): App\Controllers\HumanResources\Employee->__construct()
+#4 C:\xampp\htdocs\hospital\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}

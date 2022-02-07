@@ -1,0 +1,20 @@
+CRITICAL - 2022-02-06 11:02:46 --> Undefined property: App\Controllers\Patient::$employee_model
+#0 C:\xampp\htdocs\hospital\app\Controllers\Patient.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->add_document('11')
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-06 11:07:42 --> Attempt to read property "firstname" on array
+#0 C:\xampp\htdocs\hospital\app\Views\patient\add_document.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 41)
+#1 C:\xampp\htdocs\hospital\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital\system\Common.php(1097): CodeIgniter\View\View->render('patient/add_doc...', Array, true)
+#4 C:\xampp\htdocs\hospital\app\Controllers\Patient.php(149): view('patient/add_doc...', Array)
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->add_document('11')
+#6 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

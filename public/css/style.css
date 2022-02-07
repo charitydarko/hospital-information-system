@@ -1,0 +1,99 @@
+/*strong border*/
+.text-border{
+	border:1px solid #ccc;line-height:60px;padding:5px 10px;
+}
+.p-2-5{
+	padding:2px 5px;
+}
+.p-0-10-0-0{
+	padding:0 10px 0 0;
+}
+.chief_complain{
+	float:left;width:35%;word-break:all;border-right:1px solid #e4e5e7;padding-right:10px;
+}
+.prescript_medicine{
+	float:left;width:65%;padding-left:10px;
+}
+.pres-w-50{
+	width:50%;
+	text-align:center;
+}
+.pres-signature{
+	border-bottom:2px dashed #e4e5e7;
+}
+.pres-mt-50{
+	margin-top:50px;
+}
+.insc-mb-10{
+	margin-top:10px;
+}
+.table-b-w{
+	border: 1px solid #e4e5e7;
+	width: 50%;
+}
+.sms-cornjobs{
+	margin: 0px 0px 10px 0px; background: #997300;padding: 10px; color: #fff;border: 3px dashed #1c506c;
+}
+.img-hw-200{
+	height: 200px;
+	width: 200px;
+}
+/*dashboard small box*/
+.small-box {
+    border-radius: 2px;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.small-box>.inner {
+    padding: 10px;
+}
+
+.small-box h3, .small-box p {
+    z-index: 5;
+    color: #fff;
+}
+.small-box h3 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    padding: 0;
+}
+.small-box .icon {
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 0;
+    font-size: 80px;
+    color: rgba(0,0,0,0.15);
+}
+
+.small-box .icon:hover {
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 0;
+    font-size: 90px;
+    color: rgba(0,0,0,0.15);
+}
+
+.small-box>.small-box-footer {
+    position: relative;
+    text-align: center;
+    padding: 3px 0;
+    color: #fff;
+    color: rgba(255,255,255,0.8);
+    display: block;
+    z-index: 10;
+    background: rgba(0,0,0,0.1);
+    text-decoration: none;
+};

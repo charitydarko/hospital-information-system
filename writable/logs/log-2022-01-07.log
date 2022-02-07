@@ -1,0 +1,310 @@
+CRITICAL - 2022-01-07 04:12:32 --> Call to undefined function html_escape()
+#0 C:\xampp\htdocs\hospital\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\hospital\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\hospital\system\Common.php(1097): CodeIgniter\View\View->render('human_resources...', Array, true)
+#3 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(32): view('human_resources...', Array)
+#4 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#6 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-07 04:12:47 --> Undefined variable $employee
+#0 C:\xampp\htdocs\hospital\app\Views\human_resources\add.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79)
+#1 C:\xampp\htdocs\hospital\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital\system\Common.php(1097): CodeIgniter\View\View->render('human_resources...', Array, true)
+#4 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(32): view('human_resources...', Array)
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#6 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#7 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-07 04:13:00 --> Undefined variable $employee
+#0 C:\xampp\htdocs\hospital\app\Views\human_resources\add.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\hospital\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital\system\Common.php(1097): CodeIgniter\View\View->render('human_resources...', Array, true)
+#4 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(32): view('human_resources...', Array)
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#6 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#7 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-07 04:38:20 --> Undefined variable $heading
+#0 C:\xampp\htdocs\hospital\app\Views\layout\main_wrapper.php(319): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 319)
+#1 C:\xampp\htdocs\hospital\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital\system\Common.php(1097): CodeIgniter\View\View->render('layout/main_wra...', Array, true)
+#4 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(33): view('layout/main_wra...', Array)
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#6 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#7 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-07 04:45:16 --> Undefined variable $session
+#0 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 04:45:35 --> Call to a member function get() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-07 04:45:45 --> Call to a member function get() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-07 04:47:27 --> Undefined variable $session
+#0 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 04:48:10 --> Undefined property: App\Controllers\HumanResources\Employee::$session
+#0 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 04:48:34 --> Call to a member function get() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-07 04:48:47 --> Undefined variable $session
+#0 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 04:48:57 --> Undefined variable $uri
+#0 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 14)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(801): App\Controllers\HumanResources\Employee->__construct()
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 04:49:05 --> Undefined variable $uri
+#0 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 14)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(801): App\Controllers\HumanResources\Employee->__construct()
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 04:49:12 --> Undefined variable $session
+#0 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 04:49:35 --> Undefined variable $session
+#0 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 04:49:44 --> Undefined variable $session
+#0 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 05:09:34 --> Undefined property: App\Controllers\Auth::$session
+#0 C:\xampp\htdocs\hospital\app\Controllers\Auth.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 115)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Auth->logout()
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 05:10:23 --> Undefined property: App\Controllers\Auth::$session
+#0 C:\xampp\htdocs\hospital\app\Controllers\Auth.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 115)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Auth->logout()
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 05:13:17 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\hospital\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\hospital\system\Common.php(840): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\hospital\app\Controllers\Auth.php(120): redirect('login')
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Auth->logout()
+#4 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-07 05:13:39 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\hospital\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\hospital\system\Common.php(840): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\hospital\app\Controllers\Auth.php(120): redirect('auth/login')
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Auth->logout()
+#4 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-07 05:13:54 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\hospital\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\hospital\system\Common.php(840): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\hospital\app\Controllers\Auth.php(120): redirect('auth')
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Auth->logout()
+#4 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-07 05:13:58 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\hospital\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\hospital\system\Common.php(840): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\hospital\app\Controllers\Auth.php(120): redirect('auth')
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Auth->logout()
+#4 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-07 05:17:26 --> Call to undefined method App\Controllers\HumanResources\Employee::user_roles()
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-07 05:21:00 --> syntax error, unexpected token "return"
+#0 C:\xampp\htdocs\hospital\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('humanresources/...')
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('humanresources/...')
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 05:21:11 --> syntax error, unexpected token "return"
+#0 C:\xampp\htdocs\hospital\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('humanresources/...')
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('humanresources/...')
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 05:21:34 --> syntax error, unexpected token "->"
+#0 C:\xampp\htdocs\hospital\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('humanresources/...')
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('humanresources/...')
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 05:29:29 --> Undefined variable $heading
+#0 C:\xampp\htdocs\hospital\app\Views\layout\main_wrapper.php(319): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 319)
+#1 C:\xampp\htdocs\hospital\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital\system\Common.php(1097): CodeIgniter\View\View->render('layout/main_wra...', Array, true)
+#4 C:\xampp\htdocs\hospital\app\Controllers\Dashboard.php(24): view('layout/main_wra...', Array)
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#6 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-07 05:30:10 --> Undefined variable $heading
+#0 C:\xampp\htdocs\hospital\app\Views\layout\main_wrapper.php(319): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 319)
+#1 C:\xampp\htdocs\hospital\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital\system\Common.php(1097): CodeIgniter\View\View->render('layout/main_wra...', Array, true)
+#4 C:\xampp\htdocs\hospital\app\Controllers\Dashboard.php(24): view('layout/main_wra...', Array)
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#6 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-07 05:30:41 --> Undefined variable $heading
+#0 C:\xampp\htdocs\hospital\app\Views\layout\main_wrapper.php(319): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 319)
+#1 C:\xampp\htdocs\hospital\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital\system\Common.php(1097): CodeIgniter\View\View->render('layout/main_wra...', Array, true)
+#4 C:\xampp\htdocs\hospital\app\Controllers\Dashboard.php(24): view('layout/main_wra...', Array)
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#6 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-07 05:32:33 --> Undefined property: App\Controllers\Dashboard::$heading
+#0 C:\xampp\htdocs\hospital\app\Controllers\Dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 05:33:22 --> Undefined property: App\Controllers\Dashboard::$heading
+#0 C:\xampp\htdocs\hospital\app\Controllers\Dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 05:33:39 --> Undefined property: App\Controllers\Dashboard::$heading
+#0 C:\xampp\htdocs\hospital\app\Controllers\Dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 05:34:58 --> Undefined variable $fullname
+#0 C:\xampp\htdocs\hospital\app\Views\layout\main_wrapper.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 89)
+#1 C:\xampp\htdocs\hospital\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital\system\Common.php(1097): CodeIgniter\View\View->render('layout/main_wra...', Array, true)
+#4 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(29): view('layout/main_wra...', Array)
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#6 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#7 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-07 08:38:06 -->  is not a valid rule.
+#0 C:\xampp\htdocs\hospital\system\Validation\Validation.php(285): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+#1 C:\xampp\htdocs\hospital\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('0', '0', NULL, Array, Array)
+#2 C:\xampp\htdocs\hospital\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\hospital\app\Controllers\HumanResources\Employee.php(45): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#5 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#6 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}

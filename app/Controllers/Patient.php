@@ -11,6 +11,7 @@ class Patient extends BaseController
   public function __construct() {
     $this->model = new \App\Models\PatientModel;
     $this->employee_model = model(UserModel::class);
+    $this->document_model = model(DocumentModel::class);
   }
 
     public function index(){
@@ -145,9 +146,27 @@ class Patient extends BaseController
       $data['fullname'] = $this->session->get('firstname') . ' ' . $this->session->get('lastname');
       $request = service('request');
       $data['uri'] = $request->uri->getSegment(3);
-      $data['doctor_list'] = $this->employee_model->read(2);
+      // $data['doctor_list'] = $this->employee_model->read(2);
+
+      // $doctors = [];
+      // foreach ($data['doctor_list'] as $doctor) {
+      //   $fullname = $doctor['firstname'] . ' ' . $doctor['lastname'];
+      //   array_push($doctors, $fullname);
+      // }
+      // $data['doctor_list'] = $doctors;
       $data['content'] = view('patient/add_document', $data);
       return view('layout/main_wrapper',$data);
+    }
+
+    public function document_upload() {
+      $file = $this->request->getFile('file');
+
+      if(!$file->hasMoved()) {
+       dd($file->getErrorString());
+      } else {
+        dd("Nothing");
+      }
+      dd("dodndd");
     }
 
     public function delete($id) {

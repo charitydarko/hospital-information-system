@@ -45,4 +45,5 @@ class UserModel extends Model
       return $this->where(['user_role' => $user_type])->findAll();
     } 
 
+  
 }

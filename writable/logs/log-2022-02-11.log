@@ -1,0 +1,134 @@
+CRITICAL - 2022-02-11 04:11:53 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\hospital\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('patient/add_doc...')
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('patient/add_doc...')
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-11 06:09:39 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:15:02 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:15:31 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:16:13 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:16:57 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:17:03 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:23:26 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:26:06 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:26:40 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:27:46 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:28:41 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:31:04 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:31:28 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:38:27 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:39:48 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:42:08 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:43:06 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-11 06:43:10 --> Call to a member function hasMoved() on null
+#0 C:\xampp\htdocs\hospital\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

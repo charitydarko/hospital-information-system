@@ -112,39 +112,15 @@
           </li>
           <li class="treeview">
             <a href="#">
-              <i class="fa fa-user-md"></i> <span>Doctor</span>
-              <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li><a href="#">Add Doctor</a></li>
-              <li><a href="#">List Doctors</a></li> 
-            </ul>
-          </li>
-          <li class="treeview">
-            <a href="#">
                 <i class="fa fa-wheelchair"></i> <span>Patient</span>
                 <span class="pull-right-container">
                     <i class="fa fa-angle-left pull-right"></i>
                 </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="#">Add Patient</a></li>
-              <li><a href="<?php $uri = current_url(true); echo base_url("patient") ?>">Patient List</a></li> 
-              <li><a href="#">Add Document</a></li> 
-            </ul>
-          </li>
-          <li class="treeview">
-            <a href="#">
-              <i class="fa fa ti-calendar"></i> <span>Schedule</span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li><a href="#">Add Schedule</a></li>
-              <li><a href="#">Schedule List</a></li> 
+              <li><a href="<?= base_url("patient/new") ?>">Add Patient</a></li>
+              <li><a href="<?= base_url("patient") ?>">Patient List</a></li> 
+              <li><a href="<?= base_url("patient/add_document") ?>">Add Document</a></li> 
             </ul>
           </li>
           <li class="treeview">
@@ -156,40 +132,57 @@
             </a>
             <ul class="treeview-menu">
               <li><a href="#">Add Appointment</a></li>
-              <li><a href="#">List Appointment</a></li> 
+              <li><a href="#">List Appointments</a></li> 
             </ul>
           </li>
           <li class="treeview">
             <a href="#">
-              <i class="fa ti-book"></i> <span>Prescription</span>
+              <i class="fa fa ti-calendar"></i> <span>Vitals</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="#">Add Patient Case Study</a></li>
-              <li><a href="#">Patient Case Study List</a></li>
-              <li><a href="#">Prescription List</a></li>
+              <li><a href="#">Capture Vitals</a></li>
+              <li><a href="#">View Vitals List</a></li> 
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa ti-book"></i> <span>Diagnosis</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="#">Add Patient Diagnosis</a></li>
+              <li><a href="#">Patient Diagnosis List</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-money"></i> <span>Pharmacy</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
               <li><a href="#">Add Prescription</a></li>
+              <li><a href="#">Prescription List</a></li>
+              <li><a href="#">Requests from Diagnosis</a></li>
             </ul>
           </li>
           <li class="treeview">
             <a href="#">
-              <i class="fa fa-money"></i> <span>Account Manager</span>
+              <i class="fa fa-money"></i> <span>Laboratory</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="#">Add Account</a></li>
-              <li><a href="#">Account List</a></li>
-              <li><a href="#">Add Invoice</a></li>
-              <li><a href="#">Invoice List</a></li>
-              <li><a href="#">Add Payment</a></li>
-              <li><a href="#">Payment List</a></li>
-              <li><a href="#">Report</a></li>
-              <li><a href="#">Debit Report</a></li>
-              <li><a href="#">Credit Report</a></li>
+              <li><a href="#">Add Laboratory Test</a></li>
+              <li><a href="#">Laboratory Test List</a></li>
+              <li><a href="#">Requests from Diagnosis</a></li>
             </ul>
           </li>
           <li class="treeview">
@@ -200,15 +193,11 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="#">Add Account</a></li>
-              <li><a href="#">Account List</a></li>
               <li><a href="#">Add Invoice</a></li>
               <li><a href="#">Invoice List</a></li>
               <li><a href="#">Add Payment</a></li>
               <li><a href="#">Payment List</a></li>
               <li><a href="#">Report</a></li>
-              <li><a href="#">Debit Report</a></li>
-              <li><a href="#">Credit Report</a></li>
             </ul>
           </li>
           <li class="treeview <?php $uri = current_url(true); echo ($uri->getSegment(1)  == 'human_resources') ? "active" : null ?>">
@@ -219,34 +208,9 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="<?php $uri = current_url(true); echo base_url("humanresources/employee/form") ?>">Add Employee</a></li>
-              <li><a href="#">Account List</a></li>
-              <li><a href="#">Add Invoice</a></li>
-              <li><a href="#">Invoice List</a></li>
-              <li><a href="#">Add Payment</a></li>
-              <li><a href="#">Payment List</a></li>
+              <li><a href="<?= base_url("humanresources/employee/form") ?>">Add Employee</a></li>
+              <li><a href="#">Employee List</a></li>
               <li><a href="#">Report</a></li>
-              <li><a href="#">Debit Report</a></li>
-              <li><a href="#">Credit Report</a></li>
-            </ul>
-          </li>
-          <li class="treeview">
-            <a href="#">
-              <i class="fa fa-bell"></i> <span>Noticeboard</span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li><a href="#">Add Account</a></li>
-              <li><a href="#">Account List</a></li>
-              <li><a href="#">Add Invoice</a></li>
-              <li><a href="#">Invoice List</a></li>
-              <li><a href="#">Add Payment</a></li>
-              <li><a href="#">Payment List</a></li>
-              <li><a href="#">Report</a></li>
-              <li><a href="#">Debit Report</a></li>
-              <li><a href="#">Credit Report</a></li>
             </ul>
           </li>
           <li class="treeview">
@@ -257,15 +221,20 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="#">Add Account</a></li>
-              <li><a href="#">Account List</a></li>
-              <li><a href="#">Add Invoice</a></li>
-              <li><a href="#">Invoice List</a></li>
-              <li><a href="#">Add Payment</a></li>
-              <li><a href="#">Payment List</a></li>
-              <li><a href="#">Report</a></li>
-              <li><a href="#">Debit Report</a></li>
-              <li><a href="#">Credit Report</a></li>
+              <li><a href="#">Add Operations Report</a></li>
+              <li><a href="#">Operations Report List</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-bell"></i> <span>Noticeboard</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="#">Add Notice</a></li>
+              <li><a href="#">Notice List</a></li>
             </ul>
           </li>
           <li class="treeview">
@@ -276,15 +245,9 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="#">Add Account</a></li>
-              <li><a href="#">Account List</a></li>
-              <li><a href="#">Add Invoice</a></li>
-              <li><a href="#">Invoice List</a></li>
-              <li><a href="#">Add Payment</a></li>
-              <li><a href="#">Payment List</a></li>
-              <li><a href="#">Report</a></li>
-              <li><a href="#">Debit Report</a></li>
-              <li><a href="#">Credit Report</a></li>
+              <li><a href="#">New Message</a></li>
+              <li><a href="#">Inbox</a></li>
+              <li><a href="#">Sent</a></li>
             </ul>
           </li>
           <li class="treeview">

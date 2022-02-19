@@ -37,7 +37,21 @@
                                     <dt>Name</dt><dd><?php echo esc($patient->firstname. ' ' . $patient->lastname) ?></dd> 
                                     <dt>Date of Birth</dt><dd><?php echo date('d M Y',strtotime(esc($patient->date_of_birth))) ?></dd> 
                                     <dt>Age</dt><dd><?php echo date_diff(date_create(esc($patient->date_of_birth)), date_create('now'))->y; ?> Years</dd> 
-                                    <dt>Gender</dt><dd><?php echo esc($patient->gender) ?></dd> 
+                                    <dt>Gender</dt>
+                                    <dd>
+                                    <?php 
+                                        switch($patient->gender) {
+                                            case '1':
+                                            {echo 'Male'; break;}
+                                            case '2':
+                                            {echo 'Female'; break;}
+                                            case '3':
+                                            {echo 'Other'; break;}
+                                            default:
+                                            {echo 'Not provided'; break;}
+                                        }
+                                    ?>
+                                    </dd>
                                     <dt>Phone</dt><dd><?php echo esc($patient->phone) ?></dd>
                                     <dt>Email</dt><dd><?php echo esc($patient->email) ?></dd> 
                                     <dt>Address</dt><dd><?php echo esc($patient->address) ?></dd> 

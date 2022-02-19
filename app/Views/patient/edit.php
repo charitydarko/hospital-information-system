@@ -65,7 +65,7 @@
                   </div>
 
                   <div class="form-group row">
-                      <label class="col-xs-3">Gender</label>
+                      <label class="col-xs-3">Gender<i class="text-danger">*</i></label>
                       <div class="col-xs-9">
                           <div class="form-check">
                               <label class="radio-inline">

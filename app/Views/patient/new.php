@@ -65,17 +65,17 @@
                   </div>
 
                   <div class="form-group row">
-                      <label class="col-xs-3">Gender</label>
+                      <label class="col-xs-3">Gender<i class="text-danger">*</i></label>
                       <div class="col-xs-9">
                           <div class="form-check">
                               <label class="radio-inline">
-                              <input type="radio" name="gender" value="Male" <?= set_radio('sex', '1', TRUE)?> >Male
+                              <input type="radio" name="gender" value="1" >Male
                               </label>
                               <label class="radio-inline">
-                              <input type="radio" name="gender" value="Female" <?= set_radio('sex', '2')?> >Female
+                              <input type="radio" name="gender" value="2">Female
                               </label>
                               <label class="radio-inline">
-                              <input type="radio" name="gender" value="Other" <?= set_radio('sex', '3')?> >Other
+                              <input type="radio" name="gender" value="3" >Other
                               </label>
                           </div>
                       </div>

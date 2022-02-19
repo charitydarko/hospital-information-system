@@ -135,8 +135,8 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="#">Add Appointment</a></li>
-              <li><a href="#">List Appointments</a></li> 
+              <li><a href="<?= base_url("appointment/add") ?>">Add Appointment</a></li>
+              <li><a href="<?= base_url("appointment") ?>">List Appointments</a></li> 
             </ul>
           </li>
           <li class="treeview">

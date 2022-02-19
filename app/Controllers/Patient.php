@@ -45,6 +45,7 @@ class Patient extends BaseController
       $validate = $this->validate([
         'firstname' => 'required',
         'lastname' => 'required',
+        'gender'  => 'required',
         'age'  => 'required',
         'phone' => 'required',
         'address'    => 'required',
@@ -57,7 +58,7 @@ class Patient extends BaseController
         $this->model->save($this->request->getPost());
         return redirect()->back()->withInput()->with('info', 'Patient Registered successfully');
       }
-    } // end create 
+    } 
 
     // Edit Patient info
     public function edit($id) {

@@ -95,6 +95,7 @@ class Patient extends Migration
           'status' => [
             'type' => 'INT',
             'constraint' => 11,
+            'default' => 1,
             'null' => true,
           ],
           'created_by' => [

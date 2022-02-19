@@ -86,7 +86,11 @@
             <img src="<?php echo (!empty($picture) ? $picture : base_url()."/images/no-img.png"); ?>" class="img-circle" alt="User Image">
           </div>
           <div class="info">
-            <p><?php echo $fullname ?></p>
+            <p>
+              <?php 
+                echo session()->get('firstname') . ' ' . session()->get('lastname')
+              ?>
+            </p>
             <a href="#">
               <i class="fa fa-circle text-success"></i>
               <?php   
@@ -289,13 +293,24 @@
       <div class="content"> 
         <div id="demoModeEnable"></div>
         <!-- alert message --> 
-        <?php if (session()->getFlashdata('message') != null) {  ?>
-          <div class="alert alert-info alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            <?php echo session()->getFlashdata('message'); ?>
-          </div> 
-          <?php } ?>
-          
+          <?php if(session()->has('error')): ?>
+            <div class="alert alert-danger alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <?php print_r(session('error')) ?>
+            </div>
+          <?php endif; ?>
+          <?php if(session()->has('info')): ?>
+            <div class="alert alert-info alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <?= session('info') ?>
+            </div>
+          <?php endif; ?>
+          <?php if(session()->has('warning')): ?>
+            <div class="alert alert-warning alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <?= session('warning') ?>
+            </div>
+          <?php endif; ?>
           <?php if (session()->getFlashdata('exception') != null) {  ?>
             <div class="alert alert-danger alert-dismissable">
               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -303,13 +318,6 @@
             </div>
           <?php } ?>
 
-        <?php if(isset($validation)){ ?>
-              <div class="alert alert-danger alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <?= \Config\Services::validation()->listErrors(); ?>
-              </div>
-        <?php } ?>
-        
         <!-- content -->
         <?php echo (!empty($content)?$content:null) ?>
 

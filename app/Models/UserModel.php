@@ -6,8 +6,8 @@ use CodeIgniter\Model;
 
 class UserModel extends Model
 {
-    protected $table = 'users';
-    protected $primaryKey = 'user_id';
+    protected $table = 'user';
+    protected $primaryKey = 'id';
     protected $useSoftDeletes = true;
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
@@ -29,12 +29,14 @@ class UserModel extends Model
       'created_by'
     ];
 
-    public function getUsers($user_id = false) {
-      if ($user_id === false) {
+    protected $returnType = 'App\Entities\UserEntity';
+
+    public function getUsers($id = false) {
+      if ($id === false) {
           return $this->findAll();
       }
 
-      return $this->where(['user_id' => $user_id])->first();
+      return $this->where(['id' => $id])->first();
     }
 
     public function create($data = []) {	 

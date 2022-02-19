@@ -1,0 +1,495 @@
+CRITICAL - 2022-02-17 08:47:54 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\hospital-information-system\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\hospital-information-system\spark(45): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-02-17 02:07:46 --> strtolower(): Passing null to parameter #1 ($string) of type string is deprecated
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtolower(): P...', 'C:\\xampp\\htdocs...', 253)
+#1 C:\xampp\htdocs\hospital-information-system\system\Validation\FormatRules.php(253): strtolower(NULL)
+#2 C:\xampp\htdocs\hospital-information-system\system\HTTP\RequestTrait.php(151): CodeIgniter\Validation\FormatRules->valid_ip('::1')
+#3 C:\xampp\htdocs\hospital-information-system\system\Config\Services.php(570): CodeIgniter\HTTP\Request->getIPAddress()
+#4 C:\xampp\htdocs\hospital-information-system\system\Config\BaseService.php(248): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#5 C:\xampp\htdocs\hospital-information-system\system\Config\BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#6 C:\xampp\htdocs\hospital-information-system\system\Config\Services.php(563): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#7 C:\xampp\htdocs\hospital-information-system\system\Config\BaseService.php(248): CodeIgniter\Config\Services::session()
+#8 C:\xampp\htdocs\hospital-information-system\app\Controllers\BaseController.php(55): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(802): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#10 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#11 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-02-17 02:08:09 --> strtolower(): Passing null to parameter #1 ($string) of type string is deprecated
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtolower(): P...', 'C:\\xampp\\htdocs...', 253)
+#1 C:\xampp\htdocs\hospital-information-system\system\Validation\FormatRules.php(253): strtolower(NULL)
+#2 C:\xampp\htdocs\hospital-information-system\system\HTTP\RequestTrait.php(151): CodeIgniter\Validation\FormatRules->valid_ip('::1')
+#3 C:\xampp\htdocs\hospital-information-system\system\Config\Services.php(570): CodeIgniter\HTTP\Request->getIPAddress()
+#4 C:\xampp\htdocs\hospital-information-system\system\Config\BaseService.php(248): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#5 C:\xampp\htdocs\hospital-information-system\system\Config\BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#6 C:\xampp\htdocs\hospital-information-system\system\Config\Services.php(563): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#7 C:\xampp\htdocs\hospital-information-system\system\Config\BaseService.php(248): CodeIgniter\Config\Services::session()
+#8 C:\xampp\htdocs\hospital-information-system\app\Controllers\BaseController.php(55): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(802): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#10 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#11 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-02-17 02:08:39 --> strtolower(): Passing null to parameter #1 ($string) of type string is deprecated
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtolower(): P...', 'C:\\xampp\\htdocs...', 253)
+#1 C:\xampp\htdocs\hospital-information-system\system\Validation\FormatRules.php(253): strtolower(NULL)
+#2 C:\xampp\htdocs\hospital-information-system\system\HTTP\RequestTrait.php(151): CodeIgniter\Validation\FormatRules->valid_ip('::1')
+#3 C:\xampp\htdocs\hospital-information-system\system\Config\Services.php(570): CodeIgniter\HTTP\Request->getIPAddress()
+#4 C:\xampp\htdocs\hospital-information-system\system\Config\BaseService.php(248): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#5 C:\xampp\htdocs\hospital-information-system\system\Config\BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#6 C:\xampp\htdocs\hospital-information-system\system\Config\Services.php(563): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#7 C:\xampp\htdocs\hospital-information-system\system\Config\BaseService.php(248): CodeIgniter\Config\Services::session()
+#8 C:\xampp\htdocs\hospital-information-system\app\Controllers\BaseController.php(55): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(802): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#10 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#11 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-02-17 09:55:47 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\hospital-information-system\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\hospital-information-system\spark(45): require('C:\\xampp\\htdocs...')
+#4 {main}
+ERROR - 2022-02-17 03:14:41 --> Error connecting to the database: Unknown database 'hospital'
+ERROR - 2022-02-17 03:18:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL,
+	`mobile` VARCHAR(50) NOT NULL,
+	`phone` VARCHAR(32) NULL,
+	`password` ...' at line 5
+ERROR - 2022-02-17 03:21:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL,
+	`mobile` VARCHAR(50) NOT NULL,
+	`phone` VARCHAR(32) NULL,
+	`password` ...' at line 5
+ERROR - 2022-02-17 03:23:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL,
+	`mobile` VARCHAR(50) NOT NULL,
+	`phone` VARCHAR(32) NULL,
+	`password` ...' at line 5
+ERROR - 2022-02-17 03:28:31 --> Error connecting to the database: Unknown database 'hospital'
+ERROR - 2022-02-17 03:29:10 --> Error connecting to the database: Unknown database 'hospital'
+ERROR - 2022-02-17 03:34:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL,
+	`mobile` VARCHAR(50) NOT NULL,
+	`phone` VARCHAR(32) NULL,
+	`password` ...' at line 5
+ERROR - 2022-02-17 04:23:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL,
+	`mobile` VARCHAR(50) NOT NULL,
+	`phone` VARCHAR(32) NULL,
+	`password` ...' at line 5
+ERROR - 2022-02-17 04:26:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL,
+	`mobile` VARCHAR(50) NOT NULL,
+	`phone` VARCHAR(32) NULL,
+	`password` ...' at line 5
+ERROR - 2022-02-17 04:27:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL,
+	`mobile` VARCHAR(50) NOT NULL,
+	`phone` VARCHAR(32) NULL,
+	`password` ...' at line 5
+ERROR - 2022-02-17 04:31:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL,
+	`mobile` VARCHAR(50) NOT NULL,
+	`phone` VARCHAR(32) NULL,
+	`password` ...' at line 5
+ERROR - 2022-02-17 04:38:35 --> Table 'hospital.users' doesn't exist
+CRITICAL - 2022-02-17 04:38:35 --> Table 'hospital.users' doesn't exist
+#0 C:\xampp\htdocs\hospital-information-system\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\hospital-information-system\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\hospital-information-system\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\hospital-information-system\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\hospital-information-system\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\hospital-information-system\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('afyacy@gmail.co...', 'email', Array, NULL)
+#6 C:\xampp\htdocs\hospital-information-system\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('email', 'email', 'afyacy@gmail.co...', Array, Array)
+#7 C:\xampp\htdocs\hospital-information-system\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(87): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->register_admin()
+#10 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-02-17 04:42:10 -->  is not a valid rule.
+#0 C:\xampp\htdocs\hospital-information-system\system\Validation\Validation.php(285): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+#1 C:\xampp\htdocs\hospital-information-system\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('access_code', 'access_code', NULL, Array, Array)
+#2 C:\xampp\htdocs\hospital-information-system\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(87): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->register_admin()
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-02-17 04:42:12 -->  is not a valid rule.
+#0 C:\xampp\htdocs\hospital-information-system\system\Validation\Validation.php(285): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+#1 C:\xampp\htdocs\hospital-information-system\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('access_code', 'access_code', NULL, Array, Array)
+#2 C:\xampp\htdocs\hospital-information-system\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(87): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->register_admin()
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-02-17 04:42:20 -->  is not a valid rule.
+#0 C:\xampp\htdocs\hospital-information-system\system\Validation\Validation.php(285): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+#1 C:\xampp\htdocs\hospital-information-system\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('access_code', 'access_code', NULL, Array, Array)
+#2 C:\xampp\htdocs\hospital-information-system\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(87): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->register_admin()
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-02-17 04:42:21 -->  is not a valid rule.
+#0 C:\xampp\htdocs\hospital-information-system\system\Validation\Validation.php(285): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+#1 C:\xampp\htdocs\hospital-information-system\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('access_code', 'access_code', NULL, Array, Array)
+#2 C:\xampp\htdocs\hospital-information-system\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(87): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->register_admin()
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-02-17 04:46:03 --> Unknown column 'user_id' in 'where clause'
+CRITICAL - 2022-02-17 04:46:03 --> Unknown column 'user_id' in 'where clause'
+#0 C:\xampp\htdocs\hospital-information-system\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\hospital-information-system\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\hospital-information-system\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\hospital-information-system\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\hospital-information-system\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\hospital-information-system\system\Model.php(592): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\hospital-information-system\system\BaseModel.php(655): CodeIgniter\Model->shouldUpdate(Array)
+#7 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(99): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->register_admin()
+#9 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-02-17 04:48:33 --> Table 'hospital.users' doesn't exist
+CRITICAL - 2022-02-17 04:48:33 --> Table 'hospital.users' doesn't exist
+#0 C:\xampp\htdocs\hospital-information-system\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\hospital-information-system\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\hospital-information-system\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\hospital-information-system\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\hospital-information-system\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\hospital-information-system\system\Model.php(592): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\hospital-information-system\system\BaseModel.php(655): CodeIgniter\Model->shouldUpdate(Array)
+#7 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(99): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->register_admin()
+#9 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-02-17 04:49:58 --> Cannot use object of type App\Entities\UserEntity as array
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-17 04:53:44 --> Cannot use object of type App\Entities\UserEntity as array
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-17 04:54:29 --> Attempt to assign property "isPost" on null
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-17 04:55:01 --> Cannot use object of type App\Entities\UserEntity as array
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-17 04:55:20 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php on line 24
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(24): view('login', NULL)
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-17 04:55:44 --> Undefined variable $isPost
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\login.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 34)
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('login', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(24): view('login')
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-17 04:55:45 --> Undefined variable $isPost
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\login.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 34)
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('login', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(24): view('login')
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-17 04:55:46 --> Undefined variable $isPost
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\login.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 34)
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('login', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(24): view('login')
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-17 04:58:30 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('login', Array, true)
+#2 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(24): view('login')
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-17 04:58:31 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('login', Array, true)
+#2 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(24): view('login')
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-17 04:58:32 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('login', Array, true)
+#2 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(24): view('login')
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-17 04:58:37 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('login', Array, true)
+#2 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(24): view('login')
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-17 04:59:41 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('login', Array, true)
+#2 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(24): view('login')
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-17 04:59:42 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('login', Array, true)
+#2 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(24): view('login')
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-17 05:01:14 --> Cannot use object of type App\Entities\UserEntity as array
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-17 05:09:32 --> view(): Argument #2 ($data) must be of type array, App\Entities\UserEntity given, called in C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php on line 31
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(31): view('login', Object(App\Entities\UserEntity))
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-17 05:17:51 --> email is not a valid rule.
+#0 C:\xampp\htdocs\hospital-information-system\system\Validation\Validation.php(285): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('email')
+#1 C:\xampp\htdocs\hospital-information-system\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('email', 'email', '', Array, Array)
+#2 C:\xampp\htdocs\hospital-information-system\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(22): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->confirm_login()
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-02-17 05:22:11 --> Undefined variable $val
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->confirm_login()
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-17 05:22:42 --> Call to undefined function App\Controllers\UserEntity()
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->confirm_login()
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-17 05:40:45 --> CodeIgniter\HTTP\RedirectResponse::with(): Argument #1 ($key) must be of type string, array given, called in C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php on line 28
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(28): CodeIgniter\HTTP\RedirectResponse->with(Array)
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->confirm_login()
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-17 06:08:49 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\hospital-information-system\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\hospital-information-system\system\Common.php(840): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(28): redirect('auth/login', Array)
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->confirm_login()
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-17 06:08:59 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\hospital-information-system\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\hospital-information-system\system\Common.php(840): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(28): redirect('auth/login', Array)
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->confirm_login()
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-17 06:26:23 --> Object of class CodeIgniter\Validation\Validation could not be converted to string
+#0 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('auth/login', Array, true)
+#3 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(17): view('auth/login')
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->login()
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-02-17 07:38:07 --> Invalid file: /dashboard.php
+#0 C:\xampp\htdocs\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard.php')
+#1 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('/dashboard', Array, true)
+#2 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(38): view('/dashboard')
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->confirm_login()
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-17 07:38:46 --> Invalid file: dashboard.php
+#0 C:\xampp\htdocs\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+#1 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#2 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(38): view('dashboard')
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->confirm_login()
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-17 08:14:51 --> Undefined variable $data
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->confirm_login()
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-17 08:32:11 --> Call to undefined function App\Controllers\PatientEntity()
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Patient->create()
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-02-17 08:56:46 --> Unknown column 'mobile' in 'field list'
+CRITICAL - 2022-02-17 08:56:46 --> Unknown column 'mobile' in 'field list'
+#0 C:\xampp\htdocs\hospital-information-system\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\hospital-information-system\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\hospital-information-system\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\hospital-information-system\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\hospital-information-system\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\hospital-information-system\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\hospital-information-system\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\hospital-information-system\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\hospital-information-system\app\Controllers\Patient.php(67): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Patient->create()
+#10 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#11 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2022-02-17 08:58:10 --> Table 'patient' already exists
+ERROR - 2022-02-17 09:00:25 --> Unknown column 'town' in 'field list'
+CRITICAL - 2022-02-17 09:00:25 --> Unknown column 'town' in 'field list'
+#0 C:\xampp\htdocs\hospital-information-system\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\hospital-information-system\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\hospital-information-system\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\hospital-information-system\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\hospital-information-system\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\hospital-information-system\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\hospital-information-system\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\hospital-information-system\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\hospital-information-system\app\Controllers\Patient.php(67): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Patient->create()
+#10 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#11 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2022-02-17 09:14:13 --> Table 'patient' already exists
+ERROR - 2022-02-17 09:36:55 --> Unknown column 'insurance_type' in 'field list'
+CRITICAL - 2022-02-17 09:36:55 --> Unknown column 'insurance_type' in 'field list'
+#0 C:\xampp\htdocs\hospital-information-system\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `patient...', 0)
+#1 C:\xampp\htdocs\hospital-information-system\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `patient...')
+#2 C:\xampp\htdocs\hospital-information-system\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `patient...')
+#3 C:\xampp\htdocs\hospital-information-system\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE `patient...', Array, false)
+#4 C:\xampp\htdocs\hospital-information-system\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\hospital-information-system\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\hospital-information-system\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\hospital-information-system\system\BaseModel.php(656): CodeIgniter\Model->update('1', Object(App\Entities\PatientEntity))
+#8 C:\xampp\htdocs\hospital-information-system\app\Controllers\Patient.php(94): CodeIgniter\BaseModel->save(Object(App\Entities\PatientEntity))
+#9 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Patient->update('1')
+#10 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#11 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-02-17 09:49:43 --> Call to a member function hasMoved() on null
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Patient->document_upload()
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

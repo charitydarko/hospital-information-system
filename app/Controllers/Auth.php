@@ -3,73 +3,55 @@
 namespace App\Controllers;
 
 class Auth extends BaseController {
-  private $access_code = '348987';
 
+  public function __construct() {
+    $this->model = model(UserModel::class);
+  }
+  
   //Default function to load
   public function index() {
     return redirect()->to('auth/login');
   }
 
   public function login() {
-    $data['isPost'] = $this->request->getMethod()=='post'; 
+    return view('auth/login');
+  } // End Login
 
-    $email = $this->request->getVar('email');
-    $password = $this->request->getVar('password');
-    $model = model(UserModel::class);
-    $data = $model->where('email', $email)->first();
+  public function confirm_login() {
+    $validate = $this->validate([
+      'email' => 'required',
+      'password' => 'required'
+    ]);
 
-    if(!$data) {
-      $data['isPost'] = $this->request->getMethod()=='post'; 
-      $this->session->setFlashdata('message', 'Email does not exist.');
-      return view('login', $data);
-    } else {
-      $pass = $data['password'];
-      $authenticatePassword = password_verify($password, $pass);
-     
-      if(!$authenticatePassword) {
-        $data['isPost'] = $this->request->getMethod()=='post'; 
-        $this->session->setFlashdata('message', 'Password is incorrect.');
-        return view('login', $data);
+    if (!$validate) {
+      $data['validation'] = $this->validator->listErrors();
+      return redirect()->back()->withInput()->with('error', $data['validation']);
+    }else {
+      $email = $this->request->getPost('email');
+      $password = $this->request->getPost('password');
+
+      $user = $this->model->where('email', $email)->first();
+
+      if($user === null) {
+        return redirect()->back()->withInput()->with('error', 'User not found');
       } else {
-        $ses_data = [
-          'user_id' => $data['user_id'],
-          'firstname' => $data['firstname'],
-          'lastname' => $data['lastname'],
-          'email' => $data['email'],
-          'user_role' => $data['user_role'],
-          'isLoggedIn' => TRUE
-        ];
-
-        $this->session->set($ses_data);
-
-        switch ($data['user_role']) {
-          case 1:
-            return redirect()->to('/dashboard');
-            break;
-          case 2:
-            return redirect()->to('receptionist_dashboard/Home');
-            break;
-          case 3:
-            return redirect()->to('doctor_dashboard/Home');
-            break;
-          case 4:
-            return redirect()->to('pharmacist_dashboard/Home');
-            break;
-          case 5:
-            return redirect()->to('laboratorist_dashboard/Home');
-            break;
-          case 6:
-            return redirect()->to('cashier_dashboard/Home');
-            break;
-          case 7:
-            return redirect()->to('accountant_dashboard/Home');
-            break;
+        if(password_verify($password, $user->password)){
+          $session_data = [
+            'id' => $user->id,
+            'firstname' => $user->firstname,
+            'lastname' => $user->lastname,
+            'email' => $user->email,
+            'user_role' => $user->user_role,
+            'isLoggedIn' => TRUE
+          ];
+          $this->session->set($session_data);
+          return redirect()->to('/dashboard');
+        } else {
+          return redirect()->back()->withInput()->with('error', 'Incorrect password');
         }
-
       }
     }
-
-  } // End Login
+  }// End confirm login
 
   // Register a new Admin
   public function register_admin() {
@@ -77,7 +59,7 @@ class Auth extends BaseController {
     $rules = [
       'firstname'         => 'required|min_length[2]|max_length[50]',
       'lastname'          => 'required|min_length[2]|max_length[50]',
-      'email'             => 'required|min_length[4]|max_length[100]|valid_email|is_unique[users.email]',
+      'email'             => 'required|min_length[4]|max_length[100]|valid_email|is_unique[user.email]',
       'phone'             => 'required|min_length[10]|max_length[13]',
       'password'          => 'required',
       'confirmpassword'   => 'matches[password]',
@@ -102,7 +84,7 @@ class Auth extends BaseController {
     } else {
       $data['isPost'] = $this->request->getMethod()=='post'; 
       $data['validation'] = $this->validator;
-      return view('register_admin', $data);
+      return view('auth/register_admin', $data);
     }
     
   } // End register admin

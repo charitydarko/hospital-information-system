@@ -13,6 +13,7 @@ class DocumentModel extends \CodeIgniter\Model{
 
   protected $allowedFields = [
     'patient_id',
+    'category',
     'description',
     'hidden_attach_file',
     'date',

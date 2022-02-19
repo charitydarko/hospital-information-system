@@ -18,49 +18,49 @@
                   <div class="form-group row">
                       <label for="firstname" class="col-xs-3 col-form-label">First Name<i class="text-danger">*</i></label>
                       <div class="col-xs-9">
-                          <input name="firstname" type="text" value="" class="form-control" id="firstname" placeholder="First Name">
+                          <input name="firstname" type="text" class="form-control" id="firstname" placeholder="First Name" value="<?= old('firstname') ?>">
                       </div>
                   </div>
 
                   <div class="form-group row">
                       <label for="lastname" class="col-xs-3 col-form-label">Last Name<i class="text-danger">*</i></label>
                       <div class="col-xs-9">
-                          <input name="lastname" type="text" value="" class="form-control" id="lastname" placeholder="Last Name">
+                          <input name="lastname" type="text" class="form-control" id="lastname" placeholder="Last Name" value="<?= old('lastname') ?>">
                       </div>
                   </div>
 
                   <div class="form-group row">
                       <label for="age" class="col-xs-3 col-form-label">Age<i class="text-danger">*</i></label>
                       <div class="col-xs-9">
-                          <input name="age" class="form-control" value="" type="number" placeholder="Age" id="age">
+                          <input name="age" class="form-control" type="number" placeholder="Age" id="age" value="<?= old('age') ?>">
                       </div>
                   </div>
 
                   <div class="form-group row">
                       <label for="date_of_birth" class="col-xs-3 col-form-label">Date of Birth</i></label>
                       <div class="col-xs-9">
-                          <input name="date_of_birth" type="date" value="" class="form-control" id="date_of_birth" placeholder="Date of birth" value="">
+                          <input name="date_of_birth" type="date" class="form-control" id="date_of_birth" placeholder="Date of birth" value="<?= old('date_of_birth') ?>">
                       </div>
                   </div>
 
                   <div class="form-group row">
                       <label for="phone" class="col-xs-3 col-form-label">Phone No.<i class="text-danger">*</i></label>
                       <div class="col-xs-9">
-                          <input name="phone" class="form-control" type="text" value="" placeholder="Phone No." id="phone">
+                          <input name="phone" class="form-control" type="text" placeholder="Phone No." id="phone" value="<?= old('phone') ?>">
                       </div>
                   </div>
 
                   <div class="form-group row">
                       <label for="mobile" class="col-xs-3 col-form-label">Mobile No.</label>
                       <div class="col-xs-9">
-                          <input name="mobile" class="form-control" type="text" value="" placeholder="Mobile No." id="mobile">
+                          <input name="mobile" class="form-control" type="text" placeholder="Mobile No." id="mobile" value="<?= old('mobile') ?>">
                       </div>
                   </div>
 
                   <div class="form-group row">
                       <label for="email" class="col-xs-3 col-form-label">Email Address</label>
                       <div class="col-xs-9">
-                          <input name="email" class="form-control" type="email" value="" placeholder="Email Address" id="email">
+                          <input name="email" class="form-control" type="email" value="" placeholder="Email Address" id="email" value="<?= old('email') ?>">
                       </div>
                   </div>
 
@@ -84,14 +84,14 @@
                   <div class="form-group row">
                       <label for="town" class="col-xs-3 col-form-label">Town</label>
                       <div class="col-xs-9">
-                        <input name="town" class="form-control" type="text" placeholder="Town" id="town">
+                        <input name="town" class="form-control" type="text" placeholder="Town" id="town" value="<?= old('town') ?>">
                       </div>
                   </div>
 
                   <div class="form-group row">
                       <label for="city" class="col-xs-3 col-form-label">City</label>
                       <div class="col-xs-9">
-                        <input name="city" class="form-control" type="text" placeholder="City" id="city">
+                        <input name="city" class="form-control" type="text" placeholder="City" id="city" value="<?= old('city') ?>">
                       </div>
                   </div> 
 
@@ -126,14 +126,14 @@
                   <div class="form-group row">
                       <label for="address" class="col-xs-3 col-form-label">Address<i class="text-danger">*</i></label>
                       <div class="col-xs-9">
-                        <input name="address" class="form-control" type="text" value="" placeholder="Address" id="address">
+                        <input name="address" class="form-control" type="text" placeholder="Address" id="address" value="<?= old('address') ?>">
                       </div>
                   </div>
 
                   <div class="form-group row">
                       <label for="occupation" class="col-xs-3 col-form-label">Occupation</label>
                       <div class="col-xs-9">
-                        <input name="occupation" class="form-control" type="text" value="" placeholder="Occupation" id="occupation">
+                        <input name="occupation" class="form-control" type="text" placeholder="Occupation" id="occupation" value="<?= old('occupation') ?>">
                       </div>
                   </div> 
 
@@ -169,7 +169,7 @@
                     </div>
 
 
-                  <div class="form-group row">
+                  <!-- <div class="form-group row">
                     <label for="insurance_type" class="col-xs-3 col-form-label">Insurance Type</label>
                     <div class="col-xs-9">
                       <input name="insurance_type" class="form-control" type="text" value="" placeholder="Insurance Type" id="insurance_type">
@@ -181,33 +181,33 @@
                     <div class="col-xs-9">
                       <input name="insurance_number" class="form-control" type="text" value=""  placeholder="Insurance Number" id="insurance_number">
                     </div>
-                  </div> 
+                  </div>  -->
 
                   <div class="form-group row">
                     <label for="registration_code" class="col-xs-3 col-form-label">Registration Code<i class="text-danger">*</i></label>
                     <div class="col-xs-9">
-                      <input name="registration_code" class="form-control" type="text" value="" placeholder="Registration Code" id="registration_code">
+                      <input name="registration_code" class="form-control" type="text" placeholder="Registration Code" id="registration_code" value="<?= old('registration_code') ?>">
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <label for="emergency_contact_name" class="col-xs-3 col-form-label">Emergency Contact Name</label>
                     <div class="col-xs-9">
-                      <input name="emergency_contact_name" class="form-control" type="text" value="" placeholder="Emergency Contact Name" id="emergency_contact_name">
+                      <input name="emergency_contact_name" class="form-control" type="text" placeholder="Emergency Contact Name" id="emergency_contact_name" value="<?= old('emergency_contact_name') ?>">
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <label for="emergency_contact_phone" class="col-xs-3 col-form-label">Emergency Contact Phone</label>
                     <div class="col-xs-9">
-                      <input name="emergency_contact_phone" class="form-control" type="text" value="" placeholder="Emergency Contact Phone" id="emergency_contact_phone">
+                      <input name="emergency_contact_phone" class="form-control" type="text" placeholder="Emergency Contact Phone" id="emergency_contact_phone" value="<?= old('emergency_contact_phone') ?>">
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <label for="emergency_contact_address" class="col-xs-3 col-form-label">Emergency Contact Address</label>
                     <div class="col-xs-9">
-                      <input name="emergency_contact_address" class="form-control" type="text" value="" placeholder="Emergency Contact Address" id="emergency_contact_address">
+                      <input name="emergency_contact_address" class="form-control" type="text" placeholder="Emergency Contact Address" id="emergency_contact_address" value="<?= old('emergency_contact_address') ?>">
                     </div>
                   </div>
 

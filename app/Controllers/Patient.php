@@ -5,7 +5,6 @@ use App\Entities\PatientEntity;
 
 class Patient extends BaseController
 {
-  private $model;
   private $heading = "Patient";
 
   public function __construct() {
@@ -15,13 +14,9 @@ class Patient extends BaseController
   }
 
     public function index(){
-      $data['patients'] = $this->model->readAll();
-      
-      $data['isPost'] = $this->request->getMethod()=='post'; 
+      $data['patients'] = $this->model->findAll();
       $data['heading'] = $this->heading;
       $data['title'] = 'List';
-      $data['picture'] = '';
-      $data['fullname'] = $this->session->get('firstname') . ' ' . $this->session->get('lastname');
       $data['content']  = view('patient/index',$data);
       return view('layout/main_wrapper',$data);
     }
@@ -30,11 +25,8 @@ class Patient extends BaseController
     public function profile($id) {
       $patient = $this->getPatientOr404($id);
       $data['patient'] = $patient;
-      $data['isPost'] = $this->request->getMethod()=='post'; 
       $data['heading'] = $this->heading;
       $data['title'] = 'Profile';
-      $data['picture'] = '';
-      $data['fullname'] = $this->session->get('firstname') . ' ' . $this->session->get('lastname');
       $data['content']  = view('patient/profile',$data);
       return view('layout/main_wrapper',$data);
     }
@@ -42,111 +34,77 @@ class Patient extends BaseController
     // Add New Patient
     public function new() {
       $data['patient'] = new PatientEntity;
-      $data['isPost'] = $this->request->getMethod()=='post'; 
       $data['heading'] = $this->heading;
       $data['title'] = 'Add';
-      $data['picture'] = '';
-      $data['fullname'] = $this->session->get('firstname') . ' ' . $this->session->get('lastname');
       $data['content'] = view('patient/new');
       return view('layout/main_wrapper',$data);
     }
 
     // Process New Patient
-    public function create() { 
-      $data['heading'] = $this->heading;
-      $data['title'] = 'New';
-      $data['content'] = view('patient/new');
-      $data['picture'] = '';
-      $data['fullname'] = $this->session->get('firstname') . ' ' . $this->session->get('lastname');
-      $data['isPost'] = $this->request->getMethod()=='post'; 
-
-      $val = $this->validate([
+    public function create() {
+      $validate = $this->validate([
         'firstname' => 'required',
         'lastname' => 'required',
         'age'  => 'required',
         'phone' => 'required',
         'address'    => 'required',
-        'registration_code'    => 'required'
+        'registration_code'    => 'required|is_unique[patient.registration_code]'
       ]);
-
-      if (!$val)
-      {
-        $data['validation'] = $this->validator;
-        return view('layout/main_wrapper', $data);
+      if(!$validate) {
+        $data['validation'] = $this->validator->listErrors();
+        return redirect()->back()->withInput()->with('error', $data['validation']);
+      } else {
+        $this->model->save($this->request->getPost());
+        return redirect()->back()->withInput()->with('info', 'Patient Registered successfully');
       }
-      else
-      {
-        $patientEntity = PatientEntity($this->request->getPost());
-        $this->model->save($patientEntity);
-
-        $this->session->setFlashdata('message', 'Patient Registered successfully');
-        return redirect()->to('/patient/new'); 
-      }
-
     } // end create 
 
     // Edit Patient info
     public function edit($id) {
       $patient = $this->getPatientOr404($id);
       $data['patient'] = $patient;
-      $data['isPost'] = $this->request->getMethod()=='post'; 
       $data['heading'] = $this->heading;
       $data['title'] = 'Edit';
-      $data['picture'] = '';
-      $data['fullname'] = $this->session->get('firstname') . ' ' . $this->session->get('lastname');
       $data['content']  = view('patient/edit',$data);
       return view('layout/main_wrapper',$data);
     }
 
-     // Edit Patient info
+     // Update Patient info
      public function update($id) {
-      $patient = $this->getPatientOr404($id);
-      $data['patient'] = $patient;
-      $data['isPost'] = $this->request->getMethod()=='post'; 
-      $data['heading'] = $this->heading;
-      $data['title'] = 'Edit';
-      $data['picture'] = '';
-      $data['fullname'] = $this->session->get('firstname') . ' ' . $this->session->get('lastname');
-
       $patient = $this->model->find($id);
-
       $patient->fill($this->request->getPost());
 
       if(!$patient->hasChanged()){
-        return redirect()->back()->with('message', 'Nothing to update')->withInput;
+        return redirect()->back()->withInput()->with('warning', 'Nothing to update');
       }
 
       if ($this->model->save($patient)) {
-        return redirect()->to("/patient/profile/$id")->with('message', 'Task updated successfully');
+        return redirect()->to("/patient/profile/$id")->with('info', 'Task updated successfully');
       } else {
-        return redirect()->back()->with('error', $model->errors)->with('warning', 'Invalid data');
+        return redirect()->back()->with('error', $model->errors)->with('error', 'Invalid data');
       }
 
     }
 
+    // Document List
     public function document(){
-      $data['patient'] = new PatientEntity;
-      $data['isPost'] = $this->request->getMethod()=='post'; 
-      $data['heading'] = $this->heading;
-      $data['title'] = 'Add';
-      $data['picture'] = '';
-      $data['fullname'] = $this->session->get('firstname') . ' ' . $this->session->get('lastname');
-      $data['uri'] = new \CodeIgniter\HTTP\URI();
-      $data['content'] = view('patient/document');
+      $data['documents'] = $this->document_model->findAll();
+      $data['staff'] = $this->employee_model;
+      $data['heading'] = 'Patient Document';
+      $data['title'] = 'List';
+      $data['content'] = view('patient/document', $data);
       return view('layout/main_wrapper',$data);
     }
 
+    // Add Document
     public function add_document($id = null){
-      $data['patient'] = new PatientEntity;
       $patient = $this->getPatientOr404($id);
       $data['isPost'] = $this->request->getMethod()=='post'; 
-      $data['heading'] = $this->heading;
+      $data['heading'] = 'Patient Document';
       $data['title'] = 'Add';
-      $data['picture'] = '';
-      $data['fullname'] = $this->session->get('firstname') . ' ' . $this->session->get('lastname');
       $request = service('request');
       $data['uri'] = $request->uri->getSegment(3);
-      // $data['doctor_list'] = $this->employee_model->read(2);
+      // $data['doctor_list'] = $this->employee_model->find(2);
 
       // $doctors = [];
       // foreach ($data['doctor_list'] as $doctor) {
@@ -158,23 +116,68 @@ class Patient extends BaseController
       return view('layout/main_wrapper',$data);
     }
 
+    // Upload Document
     public function document_upload() {
-      $file = $this->request->getFile('file');
+      //validation rules
+      $rules = [
+        'patient_id' => [
+          'rules' => 'required',
+          'label' => 'Patient Id'
+        ],
+        'hidden_attach_file' => [
+          'rules' => 'uploaded[hidden_attach_file]|max_size[hidden_attach_file, 20000]',
+          'label' => 'Attach File'
+        ],
+        'category' => [
+          'rules' => 'required',
+          'label' => 'Category'
+        ]
+      ];
 
-      if(!$file->hasMoved()) {
-       dd($file->getErrorString());
+      if ($this->validate($rules)) {
+        $file = $this->request->getFile('hidden_attach_file');
+        $patient_id = $this->request->getPost('patient_id');
+        $category = $this->request->getPost('category');
+        $description = $this->request->getPost('description');
+
+        if($file->isValid() && !$file->hasMoved()) {
+          $file->move('./uploads/patient/documents', $file->getRandomName());
+
+          $data = [
+            'patient_id' => $patient_id,
+            'category' => $category,
+            'description' => $description,
+            'hidden_attach_file' => $file->getName(),
+            'upload_by' => $this->session->get('id')
+          ];
+
+          if ($this->document_model->save($data)) {
+            return redirect()->back()->with('info', 'Document added successfully');
+          } else {
+            return redirect()->back()->with('error', $model->errors)->with('error', 'Invalid data');
+          }
+
+        }
       } else {
-        dd("Nothing");
+        $data['validation'] = $this->validator->listErrors();
+        return redirect()->back()->withInput()->with('error', $data['validation']);
       }
-      dd("dodndd");
-    }
+    } 
 
+    // Delete Patient by ID
     public function delete($id) {
       $patient = $this->getPatientOr404($id);
       $data['post'] = $this->model->where('id', $id)->delete();
       return redirect()->to( base_url('patient') );
     }
 
+    // Delete document
+    public function document_delete($id=null, $file=null) {
+      $data['document'] = $this->document_model->where('id', $id)->delete();
+      return redirect()->to( base_url('patient/document'))->with('info', 'Deleted successfully');
+    }
+
+    // Get patient by ID
     public function getPatientOr404($id) {
       $patient = $this->model->find($id);
       if($patient === null) {

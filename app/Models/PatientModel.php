@@ -37,11 +37,4 @@ class PatientModel extends \CodeIgniter\Model{
 
   protected $returnType = 'App\Entities\PatientEntity';
 
-  public function readAll() {
-    return $this->findAll();
-  }
-
-  public function readOne($id) {
-    return $this->find($id);
-  }
 }

@@ -153,35 +153,20 @@
                   </div>
 
                   <div class="form-group row">
-                      <label for="religion" class="col-xs-3 col-form-label">Religion</label>
-                      <div class="col-xs-9"> 
-                          <?php
-                              $religionList = array(
-                                  ''   => 'Select Option',
-                                  '1' => 'Christian',
-                                  '2' => 'Muslim',
-                                  '3' => 'Traditional',
-                                  '4' => 'Other'
-                              );
-                              echo form_dropdown('religion', $religionList, $patient->religion, 'class="form-control" id="religion" '); 
-                          ?>
-                      </div>
+                    <label for="religion" class="col-xs-3 col-form-label">Religion</label>
+                    <div class="col-xs-9"> 
+                      <?php
+                          $religionList = array(
+                              ''   => 'Select Option',
+                              '1' => 'Christian',
+                              '2' => 'Muslim',
+                              '3' => 'Traditional',
+                              '4' => 'Other'
+                          );
+                          echo form_dropdown('religion', $religionList, $patient->religion, 'class="form-control" id="religion" '); 
+                      ?>
                     </div>
-
-
-                  <div class="form-group row">
-                    <label for="insurance_type" class="col-xs-3 col-form-label">Insurance Type</label>
-                    <div class="col-xs-9">
-                      <input name="insurance_type" class="form-control" type="text" value="<?= $patient->insurance_type ?>" placeholder="Insurance Type" id="insurance_type">
-                    </div>
-                  </div> 
-
-                  <div class="form-group row">
-                    <label for="insurance_number" class="col-xs-3 col-form-label">Insurance Number</label>
-                    <div class="col-xs-9">
-                      <input name="insurance_number" class="form-control" type="text" value="<?= $patient->insurance_number ?>"  placeholder="Insurance Number" id="insurance_number">
-                    </div>
-                  </div> 
+                  </div>
 
                   <div class="form-group row">
                     <label for="registration_code" class="col-xs-3 col-form-label">Registration Code<i class="text-danger">*</i></label>

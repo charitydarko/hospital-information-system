@@ -1,0 +1,19 @@
+CRITICAL - 2022-02-22 02:57:55 --> Undefined variable $patient
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\appointment\edit.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('appointment/edi...', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(85): view('appointment/edi...', Array)
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->edit('1')
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-22 03:09:55 --> Too few arguments to function App\Controllers\Appointment::update(), 0 passed in C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->update()
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

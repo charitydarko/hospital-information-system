@@ -1,0 +1,191 @@
+CRITICAL - 2022-02-21 09:30:19 --> Undefined variable $patient
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\appointment\view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('appointment/vie...', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(72): view('appointment/vie...', Array)
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-21 09:32:58 --> Undefined variable $patient
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\appointment\view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 37)
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('appointment/vie...', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(72): view('appointment/vie...', Array)
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-21 09:51:51 --> Call to undefined function App\Controllers\getPatientOr404()
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-21 11:10:28 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$firstname
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\appointment\view.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 47)
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('appointment/vie...', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(74): view('appointment/vie...', Array)
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-21 11:10:57 --> Too few arguments to function esc(), 0 passed in C:\xampp\htdocs\hospital-information-system\app\Views\appointment\view.php on line 47 and at least 1 expected
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\appointment\view.php(47): esc()
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('appointment/vie...', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(74): view('appointment/vie...', Array)
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-21 11:16:34 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::find()
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(69): App\Controllers\Appointment->getPatientOr404('2222')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-21 11:19:07 --> Attempt to read property "attributes" on array
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 94)
+#1 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(69): App\Controllers\Appointment->getPatientOr404('2222')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-21 11:19:12 --> Attempt to read property "attributes" on array
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 94)
+#1 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(69): App\Controllers\Appointment->getPatientOr404('2222')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-21 11:19:26 --> Undefined array key "attributes"
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 94)
+#1 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(69): App\Controllers\Appointment->getPatientOr404('2222')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-21 11:19:27 --> Undefined array key "attributes"
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 94)
+#1 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(69): App\Controllers\Appointment->getPatientOr404('2222')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-21 11:22:52 --> Undefined array key "properties"
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 94)
+#1 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(69): App\Controllers\Appointment->getPatientOr404('2222')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-21 11:23:28 --> Cannot use object of type App\Entities\PatientEntity as array
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(69): App\Controllers\Appointment->getPatientOr404('2222')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-21 11:23:35 --> Cannot use object of type App\Entities\PatientEntity as array
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(69): App\Controllers\Appointment->getPatientOr404('2222')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-21 11:26:57 --> Call to a member function setAttributes() on array
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(69): App\Controllers\Appointment->getPatientOr404('2222')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-21 11:29:35 --> Undefined array key "firstname"
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-21 11:29:56 --> Attempt to read property "firstname" on array
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-21 11:37:43 --> syntax error, unexpected token ":"
+#0 C:\xampp\htdocs\hospital-information-system\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('appointment/vie...')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('appointment/vie...')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-21 11:47:48 --> Cannot use object of type App\Entities\PatientEntity as array
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-21 11:48:03 --> Cannot use object of type App\Entities\PatientEntity as array
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-21 11:48:07 --> Cannot use object of type App\Entities\PatientEntity as array
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-21 11:48:10 --> Cannot use object of type App\Entities\PatientEntity as array
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-21 11:48:11 --> Cannot use object of type App\Entities\PatientEntity as array
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('1')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

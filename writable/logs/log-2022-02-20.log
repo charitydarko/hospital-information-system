@@ -1,0 +1,67 @@
+CRITICAL - 2022-02-20 04:32:57 --> Undefined variable $patient
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\appointment\index.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('appointment/ind...', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(19): view('appointment/ind...', Array)
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->index()
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-20 04:40:04 --> Call to undefined function App\Controllers\getPatientOr404()
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->create()
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-20 05:43:06 --> Call to a member function where() on array
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(68): App\Controllers\Appointment->getPatientOr404('2222')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('2222')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-20 06:35:20 --> Call to a member function where() on array
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(68): App\Controllers\Appointment->getPatientOr404('2222')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('2222')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-20 06:35:22 --> Call to a member function where() on array
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(68): App\Controllers\Appointment->getPatientOr404('2222')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('2222')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-20 06:35:38 --> Call to a member function where() on array
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(68): App\Controllers\Appointment->getPatientOr404('2222')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('2222')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-20 06:35:39 --> Call to a member function where() on array
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(68): App\Controllers\Appointment->getPatientOr404('2222')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('2222')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-20 12:29:42 --> Call to a member function where() on array
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Appointment.php(68): App\Controllers\Appointment->getPatientOr404('2222')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('2222')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

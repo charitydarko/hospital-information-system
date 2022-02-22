@@ -10,8 +10,8 @@
   <!-- Bootstrap --> 
   <link href="<?php echo base_url(); ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
-  <!-- Font Awesome 4.7.0 -->
-  <link href="<?php echo base_url('/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css"/>
+  <!-- Font Awesome 6.0.0 -->
+  <link href="<?php echo base_url('/css/all.min.css') ?>" rel="stylesheet" type="text/css"/>
 
   <!-- semantic css -->
   <link href="<?php echo base_url(); ?>/css/semantic.min.css" rel="stylesheet" type="text/css"/> 
@@ -141,14 +141,14 @@
           </li>
           <li class="treeview">
             <a href="#">
-              <i class="fa fa ti-calendar"></i> <span>Vitals</span>
+              <i class="fa fa-heart-pulse"></i> <span>Vitals</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="#">Capture Vitals</a></li>
-              <li><a href="#">View Vitals List</a></li> 
+              <li><a href="<?= base_url("vitals/add") ?>">Capture Vitals</a></li>
+              <li><a href="<?= base_url("vitals") ?>">View Vitals List</a></li> 
             </ul>
           </li>
           <li class="treeview">
@@ -165,7 +165,7 @@
           </li>
           <li class="treeview">
             <a href="#">
-              <i class="fa fa-money"></i> <span>Pharmacy</span>
+              <i class="fa fa-prescription"></i> <span>Pharmacy</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
@@ -178,7 +178,7 @@
           </li>
           <li class="treeview">
             <a href="#">
-              <i class="fa fa-money"></i> <span>Laboratory</span>
+              <i class="fa fa-flask"></i> <span>Laboratory</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
@@ -219,7 +219,7 @@
           </li>
           <li class="treeview">
             <a href="#">
-              <i class="fa fa-hospital-o"></i> <span>Hospital Activities</span>
+              <i class="fa fa-hospital"></i> <span>Hospital Activities</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
@@ -243,7 +243,7 @@
           </li>
           <li class="treeview">
             <a href="#">
-              <i class="fa fa-comments-o"></i> <span>Messages</span>
+              <i class="fa fa-comments"></i> <span>Messages</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>

@@ -8,14 +8,8 @@ class Appointment extends BaseController
 {
     private $heading = "Appointment";
 
-    public function __construct() {
-        $this->model = new \App\Models\AppointmentModel;
-        $this->employee_model = model(UserModel::class);
-        $this->patient_model = new \App\Models\PatientModel;
-    }
-
     public function index() {
-        $data['appointments'] = $this->model->findAll();
+        $data['appointments'] = $this->appointment_model->findAll();
         $data['staff'] = $this->employee_model;
         $data['heading'] = $this->heading;
         $data['title'] = 'List';
@@ -51,10 +45,10 @@ class Appointment extends BaseController
 
             $this->getPatientOr404($patient_id);
 
-            if ($this->model->save($data)) {
+            if ($this->appointment_model->save($data)) {
                 return redirect()->back()->with('info', 'Appointment added successfully');
             } else {
-                return redirect()->back()->with('error', $model->errors)->with('error', 'Invalid data');
+                return redirect()->back()->with('error', $appointment_model->errors)->with('error', 'Invalid data');
             }
     
         } else {
@@ -87,17 +81,17 @@ class Appointment extends BaseController
 
     // Update Appointment info
     public function update($id) {
-        $appointment = $this->model->find($id);
+        $appointment = $this->appointment_model->find($id);
         $appointment->fill($this->request->getPost());
   
         if(!$appointment->hasChanged()){
           return redirect()->back()->withInput()->with('warning', 'Nothing to update');
         }
   
-        if ($this->model->save($appointment)) {
+        if ($this->appointment_model->save($appointment)) {
           return redirect()->to("/appointment/view/$id")->with('info', 'Appointment updated successfully');
         } else {
-          return redirect()->back()->with('error', $model->errors)->with('error', 'Invalid data');
+          return redirect()->back()->with('error', $appointment_model->errors)->with('error', 'Invalid data');
         }
     }
 
@@ -105,13 +99,13 @@ class Appointment extends BaseController
     // Delete Appointment by ID
     public function delete($id) {
         $appointment = $this->getAppointmentOr404($id);
-        $data['post'] = $this->model->where('id', $id)->delete();
+        $data['post'] = $this->appointment_model->where('id', $id)->delete();
         return redirect()->to( base_url('appointment'))->with('info', 'Appointment deleted successfully');
     }
 
      // Get Appointment by ID
      public function getAppointmentOr404($id) {
-        $appointment = $this->model->find($id);
+        $appointment = $this->appointment_model->find($id);
         if($appointment === null) {
           throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $id not found");
         }

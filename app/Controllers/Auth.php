@@ -3,10 +3,6 @@
 namespace App\Controllers;
 
 class Auth extends BaseController {
-
-  public function __construct() {
-    $this->model = model(UserModel::class);
-  }
   
   //Default function to load
   public function index() {
@@ -30,7 +26,7 @@ class Auth extends BaseController {
       $email = $this->request->getPost('email');
       $password = $this->request->getPost('password');
 
-      $user = $this->model->where('email', $email)->first();
+      $user = $this->employee_model->where('email', $email)->first();
 
       if($user === null) {
         return redirect()->back()->withInput()->with('error', 'User not found');
@@ -68,8 +64,6 @@ class Auth extends BaseController {
 
     if ($this->validate($rules)) {
       // If it passes validation
-      $model = model(UserModel::class);
-
       $data = [
         'firstname' => $this->request->getVar('firstname'),
         'lastname'  => $this->request->getVar('lastname'),
@@ -78,7 +72,7 @@ class Auth extends BaseController {
         'password'  => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
       ];
 
-       $model->save($data);
+       $employee_model->save($data);
 
       return redirect()->to('/auth');
     } else {

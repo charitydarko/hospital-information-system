@@ -7,14 +7,8 @@ class Patient extends BaseController
 {
   private $heading = "Patient";
 
-  public function __construct() {
-    $this->model = new \App\Models\PatientModel;
-    $this->employee_model = model(UserModel::class);
-    $this->document_model = model(DocumentModel::class);
-  }
-
     public function index(){
-      $data['patients'] = $this->model->findAll();
+      $data['patients'] = $this->patient_model->findAll();
       $data['heading'] = $this->heading;
       $data['title'] = 'List';
       $data['content']  = view('patient/index',$data);
@@ -55,7 +49,7 @@ class Patient extends BaseController
         $data['validation'] = $this->validator->listErrors();
         return redirect()->back()->withInput()->with('error', $data['validation']);
       } else {
-        $this->model->save($this->request->getPost());
+        $this->patient_model->save($this->request->getPost());
         return redirect()->back()->withInput()->with('info', 'Patient Registered successfully');
       }
     } 
@@ -72,17 +66,17 @@ class Patient extends BaseController
 
      // Update Patient info
      public function update($id) {
-      $patient = $this->model->find($id);
+      $patient = $this->patient_model->find($id);
       $patient->fill($this->request->getPost());
 
       if(!$patient->hasChanged()){
         return redirect()->back()->withInput()->with('warning', 'Nothing to update');
       }
 
-      if ($this->model->save($patient)) {
+      if ($this->patient_model->save($patient)) {
         return redirect()->to("/patient/profile/$id")->with('info', 'Task updated successfully');
       } else {
-        return redirect()->back()->with('error', $model->errors)->with('error', 'Invalid data');
+        return redirect()->back()->with('error', $patient_model->errors)->with('error', 'Invalid data');
       }
 
     }
@@ -103,8 +97,7 @@ class Patient extends BaseController
       $data['isPost'] = $this->request->getMethod()=='post'; 
       $data['heading'] = 'Patient Document';
       $data['title'] = 'Add';
-      $request = service('request');
-      $data['uri'] = $request->uri->getSegment(3);
+      $data['uri'] = $this->request->uri->getSegment(3);
       // $data['doctor_list'] = $this->employee_model->find(2);
 
       // $doctors = [];
@@ -155,7 +148,7 @@ class Patient extends BaseController
           if ($this->document_model->save($data)) {
             return redirect()->back()->with('info', 'Document added successfully');
           } else {
-            return redirect()->back()->with('error', $model->errors)->with('error', 'Invalid data');
+            return redirect()->back()->with('error', $document_model->errors)->with('error', 'Invalid data');
           }
 
         }
@@ -168,7 +161,7 @@ class Patient extends BaseController
     // Delete Patient by ID
     public function delete($id) {
       $patient = $this->getPatientOr404($id);
-      $data['post'] = $this->model->where('id', $id)->delete();
+      $data['post'] = $this->patient_model->where('id', $id)->delete();
       return redirect()->to( base_url('patient') );
     }
 
@@ -180,7 +173,7 @@ class Patient extends BaseController
 
     // Get patient by ID
     public function getPatientOr404($id) {
-      $patient = $this->model->find($id);
+      $patient = $this->patient_model->find($id);
       if($patient === null) {
         throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with id $id not found");
       }

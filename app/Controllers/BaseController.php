@@ -53,5 +53,12 @@ class BaseController extends Controller
         // E.g.: $this->session = \Config\Services::session();
 
         $this->session = \Config\Services::session();
+        $this->request = service('request');
+
+        $this->appointment_model = new \App\Models\AppointmentModel;
+        $this->employee_model = model(UserModel::class);
+        $this->patient_model = new \App\Models\PatientModel;
+        $this->document_model = model(DocumentModel::class);
+        $this->vitals_model = model(VitalsModel::class);
     }
 }

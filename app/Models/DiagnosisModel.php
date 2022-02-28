@@ -4,9 +4,9 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class AppointmentModel extends Model
+class DiagnosisModel extends Model
 {
-    protected $table = 'appointment';
+    protected $table = 'diagnosis';
     protected $primaryKey = 'id';
     protected $useSoftDeletes = true;
     protected $useTimestamps = true;
@@ -16,11 +16,15 @@ class AppointmentModel extends Model
 
     protected $allowedFields = [
         'appointment_id',
-        'patient_id',
+        'complain',
+        'diagnosis',
+        'prescription',
+        'visiting_fees',
+        'visiting_fees_reason',
         'note',
         'created_by',
     ];
 
-    protected $returnType = 'App\Entities\AppointmentEntity';
+    protected $returnType = 'App\Entities\DiagnosisEntity';
 
 }

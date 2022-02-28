@@ -14,7 +14,7 @@
         <div class="row">
           <div id="output" class="hide alert"></div>
           <div class="col-md-9 col-sm-12">
-            <form action="/vitals/create" method="post" >
+            <form action="/vitals/create" method="post">
               <?= csrf_field() ?>
 
               <div class="form-group row">

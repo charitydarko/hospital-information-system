@@ -107,7 +107,7 @@ class Appointment extends BaseController
      public function getAppointmentOr404($id) {
         $appointment = $this->appointment_model->find($id);
         if($appointment === null) {
-          throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $id not found");
+          throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $id not found");
         }
         return $appointment;
     }

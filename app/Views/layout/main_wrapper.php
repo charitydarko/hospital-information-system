@@ -159,8 +159,7 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="#">Add Patient Diagnosis</a></li>
-              <li><a href="#">Patient Diagnosis List</a></li>
+              <li><a href="<?= base_url("diagnosis") ?>">Patient Diagnosis List</a></li>
             </ul>
           </li>
           <li class="treeview">

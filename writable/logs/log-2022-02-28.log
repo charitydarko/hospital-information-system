@@ -1,0 +1,183 @@
+CRITICAL - 2022-02-28 03:50:29 --> Undefined variable $appointment
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\diagnosis\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 31)
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('diagnosis/index', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Diagnosis.php(17): view('diagnosis/index', Array)
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->index()
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-28 04:35:10 --> Undefined variable $vital
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\diagnosis\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 34)
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('diagnosis/index', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Diagnosis.php(19): view('diagnosis/index', Array)
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->index()
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-28 04:51:35 --> syntax error, unexpected token "function", expecting "("
+#0 C:\xampp\htdocs\hospital-information-system\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('diagnosis/view/...')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('diagnosis/view/...')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-28 04:51:39 --> syntax error, unexpected token "function", expecting "("
+#0 C:\xampp\htdocs\hospital-information-system\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('diagnosis')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('diagnosis')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-28 04:55:00 --> Invalid file: diagnosis/view.php
+#0 C:\xampp\htdocs\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('diagnosis/view....')
+#1 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('diagnosis/view', Array, true)
+#2 C:\xampp\htdocs\hospital-information-system\app\Controllers\Diagnosis.php(82): view('diagnosis/view', Array)
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->view('1')
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-28 04:55:36 --> Undefined variable $patient
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\diagnosis\view.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 31)
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('diagnosis/view', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Diagnosis.php(82): view('diagnosis/view', Array)
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->view('1')
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-28 04:58:17 --> Attempt to read property "appointment_id" on null
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Diagnosis.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 79)
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->view('1')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-28 04:58:52 --> Attempt to read property "appointment_id" on null
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Diagnosis.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 79)
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->view('1')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-28 09:55:58 --> Call to undefined method App\Controllers\Diagnosis::vitals()
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->view('1')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-28 09:56:56 --> Unclosed '{' on line 76 does not match ')'
+#0 C:\xampp\htdocs\hospital-information-system\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('diagnosis/view/...')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('diagnosis/view/...')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-28 09:57:55 --> syntax error, unexpected token ";", expecting ")"
+#0 C:\xampp\htdocs\hospital-information-system\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('diagnosis/view/...')
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('diagnosis/view/...')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-28 10:13:31 --> Invalid file: diagnosis/edit.php
+#0 C:\xampp\htdocs\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('diagnosis/edit....')
+#1 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('diagnosis/edit', Array, true)
+#2 C:\xampp\htdocs\hospital-information-system\app\Controllers\Diagnosis.php(91): view('diagnosis/edit', Array)
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->edit('1')
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-28 11:03:44 --> Undefined variable $appointment
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\diagnosis\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16)
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('diagnosis/edit', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Diagnosis.php(91): view('diagnosis/edit', Array)
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->edit('1')
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-28 11:04:48 --> Undefined variable $appointment
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\diagnosis\edit.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16)
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('diagnosis/edit', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Diagnosis.php(91): view('diagnosis/edit', Array)
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->edit('1')
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-28 11:05:34 --> Undefined array key 0
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Diagnosis.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 100)
+#1 C:\xampp\htdocs\hospital-information-system\app\Controllers\Diagnosis.php(91): App\Controllers\Diagnosis->getVitalsOr404('1')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->edit('1')
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#4 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-28 11:06:07 --> Undefined array key "vitals"
+#0 C:\xampp\htdocs\hospital-information-system\app\Controllers\Diagnosis.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 92)
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->edit('1')
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#3 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-28 11:06:23 --> Undefined variable $patient
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\diagnosis\edit.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('diagnosis/edit', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Diagnosis.php(93): view('diagnosis/edit', Array)
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->edit('1')
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-28 11:08:55 --> Undefined variable $vitals
+#0 C:\xampp\htdocs\hospital-information-system\app\Views\diagnosis\edit.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\hospital-information-system\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('diagnosis/edit', Array, true)
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Diagnosis.php(94): view('diagnosis/edit', Array)
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->edit('1')
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-28 11:56:49 --> Too few arguments to function App\Controllers\Diagnosis::update(), 0 passed in C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->update()
+#1 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#2 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

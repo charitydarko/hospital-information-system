@@ -60,5 +60,6 @@ class BaseController extends Controller
         $this->patient_model = new \App\Models\PatientModel;
         $this->document_model = model(DocumentModel::class);
         $this->vitals_model = model(VitalsModel::class);
+        $this->diagnosis_model = model(DiagnosisModel::class);
     }
 }

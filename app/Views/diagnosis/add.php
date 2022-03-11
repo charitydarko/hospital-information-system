@@ -80,7 +80,14 @@
                   <div class="col-sm-12 form-group">
                       <label for="prescription" class="col-sm-2 col-form-label">Prescription:<i class="text-danger">*</i></label>
                       <div class="col-sm-10">
-                          <textarea name="prescription" class="form-control"  placeholder="List all diagnosis and findings here"  rows="5"></textarea>
+                          <textarea name="prescription" class="form-control"  placeholder="List all prescription details here"  rows="5"></textarea>
+                      </div>
+                  </div>
+
+                  <div class="col-sm-12 form-group">
+                      <label for="laboratory" class="col-sm-2 col-form-label">Laboratory:</label>
+                      <div class="col-sm-10">
+                          <textarea name="laboratory" class="form-control"  placeholder="List all laboratory requests"  rows="5"></textarea>
                       </div>
                   </div>
                   
@@ -94,7 +101,7 @@
                   <div class="col-sm-12 form-group">
                       <label for="visiting_fees_reason" class="col-sm-2 col-form-label">Reason for Visiting Fees:</label>
                       <div class="col-sm-10">
-                          <textarea name="visiting_fees_reason" class="form-control"  placeholder="List all diagnosis and findings here"  rows="5"></textarea>
+                          <textarea name="visiting_fees_reason" class="form-control"  placeholder="List reason for charges here"  rows="5"></textarea>
                         </div>
                   </div>
                   

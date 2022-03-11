@@ -112,7 +112,7 @@
 
         <ul class="sidebar-menu">
           <li class="<?php $uri = current_url(true); echo ($uri->getSegment(1) == 'dashboard') ? "active" : null ?>">
-            <a href="<?php echo base_url('dashboard/home') ?>"><i class="fa fa ti-home"></i> Dashboard</a>
+            <a href="#"><i class="fa fa ti-home"></i> Dashboard</a>
           </li>
           <li class="treeview">
             <a href="#">
@@ -172,7 +172,7 @@
             <ul class="treeview-menu">
               <li><a href="#">Add Prescription</a></li>
               <li><a href="#">Prescription List</a></li>
-              <li><a href="#">Requests from Diagnosis</a></li>
+              <li><a href="<?= base_url("pharmacy/prescription/request") ?>">Requests from Diagnosis</a></li>
             </ul>
           </li>
           <li class="treeview">
@@ -185,7 +185,7 @@
             <ul class="treeview-menu">
               <li><a href="#">Add Laboratory Test</a></li>
               <li><a href="#">Laboratory Test List</a></li>
-              <li><a href="#">Requests from Diagnosis</a></li>
+              <li><a href="<?= base_url("laboratory/request") ?>">Requests from Diagnosis</a></li>
             </ul>
           </li>
           <li class="treeview">
@@ -196,11 +196,8 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="#">Add Invoice</a></li>
-              <li><a href="#">Invoice List</a></li>
-              <li><a href="#">Add Payment</a></li>
-              <li><a href="#">Payment List</a></li>
-              <li><a href="#">Report</a></li>
+              <li><a href="<?= base_url("billing/add") ?>">Add Invoice</a></li>
+              <li><a href="<?= base_url("billing") ?>">Invoice List</a></li>
             </ul>
           </li>
           <li class="treeview <?php $uri = current_url(true); echo ($uri->getSegment(1)  == 'human_resources') ? "active" : null ?>">
@@ -291,6 +288,8 @@
       <!-- Main content -->
       <div class="content"> 
         <div id="demoModeEnable"></div>
+
+        <input type ="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" id="CSRF_TOKEN" ?>
         <!-- alert message --> 
           <?php if(session()->has('error')): ?>
             <div class="alert alert-danger alert-dismissable">

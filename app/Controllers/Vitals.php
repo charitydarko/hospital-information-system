@@ -85,7 +85,7 @@ class Vitals extends BaseController
     public function view($id) {
         $data['vital'] = $this->vitals_model->find($id);
         $data['appointment'] = $this->appointment_model->find($data['vital']->appointment_id);
-        $data['patient'] = $this->patient_model->find(['registration_code', $data['appointment']->patient_id]);
+        $data['patient'] = $this->patient_model->where('registration_code', $data['appointment']->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
         $data['heading'] = $this->heading;
         $data['title'] = 'View';
         $data['content']  = view('vitals/view',$data);

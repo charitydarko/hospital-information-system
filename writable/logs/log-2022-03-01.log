@@ -1,0 +1,14 @@
+ERROR - 2022-03-01 11:15:09 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-03-01 11:15:09 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\hospital-information-system\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\hospital-information-system\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\hospital-information-system\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\hospital-information-system\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\hospital-information-system\app\Controllers\Auth.php(29): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->confirm_login()
+#6 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

@@ -1,0 +1,425 @@
+CRITICAL - 2022-03-06 00:48:27 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 00:48:37 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:14:23 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:14:30 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:17:55 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:17:57 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:20:11 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:20:12 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:24:44 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:24:46 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:24:47 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:24:47 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:24:47 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:24:47 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:24:47 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:24:47 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:24:50 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:25:12 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:25:13 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:25:15 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:25:53 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:25:53 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:25:54 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:25:54 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:25:55 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:27:15 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:27:17 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:31:37 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:31:38 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:31:42 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:32:15 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:32:16 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:32:16 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:32:17 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:33:30 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:33:32 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:37:04 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:37:06 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 04:44:33 --> Undefined property: CodeIgniter\View\View::$security
+#0 C:\wamp64\www\hospital-information-system\app\Views\layout\main_wrapper.php(292): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\wamp64\\www\\h...', 292)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('layout/main_wra...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(32): view('layout/main_wra...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->add()
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-03-06 06:06:26 --> Undefined property: CodeIgniter\View\View::$security
+#0 C:\wamp64\www\hospital-information-system\app\Views\layout\main_wrapper.php(292): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\wamp64\\www\\h...', 292)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('layout/main_wra...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(32): view('layout/main_wra...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->add()
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-03-06 06:10:13 --> Undefined property: CodeIgniter\View\View::$security
+#0 C:\wamp64\www\hospital-information-system\app\Views\layout\main_wrapper.php(292): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\wamp64\\www\\h...', 292)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('layout/main_wra...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(32): view('layout/main_wra...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->add()
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-03-06 06:10:33 --> Call to undefined function security()
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('layout/main_wra...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(32): view('layout/main_wra...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->add()
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-03-06 06:12:22 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 06:12:24 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 06:14:41 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-06 06:14:43 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}

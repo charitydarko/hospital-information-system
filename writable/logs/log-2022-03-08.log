@@ -1,0 +1,460 @@
+CRITICAL - 2022-03-08 01:05:02 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+#0 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#5 {main}
+CRITICAL - 2022-03-08 01:54:43 --> dot_array_search(): Argument #2 ($array) must be of type array, null given, called in C:\wamp64\www\hospital-information-system\system\HTTP\IncomingRequest.php on line 538
+#0 C:\wamp64\www\hospital-information-system\system\HTTP\IncomingRequest.php(538): dot_array_search('appointment_cod...', NULL)
+#1 C:\wamp64\www\hospital-information-system\system\HTTP\IncomingRequest.php(498): CodeIgniter\HTTP\IncomingRequest->getJsonVar('appointment_cod...', false, NULL, NULL)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(38): CodeIgniter\HTTP\IncomingRequest->getVar('appointment_cod...')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-03-08 01:54:49 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 01:55:01 --> dot_array_search(): Argument #2 ($array) must be of type array, null given, called in C:\wamp64\www\hospital-information-system\system\HTTP\IncomingRequest.php on line 538
+#0 C:\wamp64\www\hospital-information-system\system\HTTP\IncomingRequest.php(538): dot_array_search('appointment_cod...', NULL)
+#1 C:\wamp64\www\hospital-information-system\system\HTTP\IncomingRequest.php(498): CodeIgniter\HTTP\IncomingRequest->getJsonVar('appointment_cod...', false, NULL, NULL)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(38): CodeIgniter\HTTP\IncomingRequest->getVar('appointment_cod...')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-03-08 01:55:51 --> Unclosed '[' does not match ')'
+#0 C:\wamp64\www\hospital-information-system\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('billing/add')
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('billing/add')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 01:56:07 --> dot_array_search(): Argument #2 ($array) must be of type array, null given, called in C:\wamp64\www\hospital-information-system\system\HTTP\IncomingRequest.php on line 538
+#0 C:\wamp64\www\hospital-information-system\system\HTTP\IncomingRequest.php(538): dot_array_search('appointment_cod...', NULL)
+#1 C:\wamp64\www\hospital-information-system\system\HTTP\IncomingRequest.php(498): CodeIgniter\HTTP\IncomingRequest->getJsonVar('appointment_cod...', false, NULL, NULL)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(38): CodeIgniter\HTTP\IncomingRequest->getVar('appointment_cod...')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-03-08 02:03:12 --> dot_array_search(): Argument #2 ($array) must be of type array, null given, called in C:\wamp64\www\hospital-information-system\system\HTTP\IncomingRequest.php on line 538
+#0 C:\wamp64\www\hospital-information-system\system\HTTP\IncomingRequest.php(538): dot_array_search('appointment_cod...', NULL)
+#1 C:\wamp64\www\hospital-information-system\system\HTTP\IncomingRequest.php(498): CodeIgniter\HTTP\IncomingRequest->getJsonVar('appointment_cod...', false, NULL, NULL)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(38): CodeIgniter\HTTP\IncomingRequest->getVar('appointment_cod...')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-03-08 02:11:47 --> Undefined property: App\Controllers\Billing::$input
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\wamp64\\www\\h...', 38)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 02:30:26 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:30:27 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:30:28 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:30:28 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:30:29 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:30:29 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:30:30 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:30:30 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:30:31 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:30:33 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:30:34 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:30:38 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:37:47 --> Attempt to read property "firstname" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 41)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 02:37:58 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 40)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 02:39:55 --> Attempt to read property "firstname" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 41)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 02:39:57 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 40)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 02:40:34 --> Cannot use object of type App\Entities\AppointmentEntity as array
+#0 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#5 {main}
+CRITICAL - 2022-03-08 02:40:37 --> Undefined array key "patient_id"
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 40)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 02:43:14 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 40)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 02:46:00 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 40)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 02:47:37 --> Attempt to read property "patient_id" on string
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 40)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 02:47:43 --> Attempt to read property "patient_id" on string
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 40)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 02:51:38 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:53:37 --> Attempt to read property "patient_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 40)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 02:53:56 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:56:19 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:56:30 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 02:56:30 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 40)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 02:56:33 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 40)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 02:57:44 --> Undefined variable $appointment
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp64\\www\\h...', 40)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 02:57:47 --> Undefined variable $appointment
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp64\\www\\h...', 40)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 03:03:01 --> Undefined variable $patient
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp64\\www\\h...', 42)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 03:12:40 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 03:12:51 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 03:13:07 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-08 03:26:26 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 41)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 04:05:55 --> Attempt to read property "firstname" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 46)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 04:06:30 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 41)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 04:06:54 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 41)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 04:06:59 --> Attempt to read property "firstname" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 46)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-08 04:38:38 --> Undefined array key "patient_code"
+#0 C:\wamp64\www\hospital-information-system\app\Views\billing\add.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 70)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('billing/add', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(31): view('billing/add', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->add()
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-03-08 04:39:13 --> Call to undefined function request()
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('billing/add', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(31): view('billing/add', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->add()
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-03-08 04:40:04 --> Call to undefined function request()
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('billing/add', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(31): view('billing/add', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->add()
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+ERROR - 2022-03-08 14:30:49 --> Unknown column 'firstname' in 'field list'
+CRITICAL - 2022-03-08 14:30:49 --> Unknown column 'firstname' in 'field list'
+#0 C:\wamp64\www\hospital-information-system\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `firstna...', 0)
+#1 C:\wamp64\www\hospital-information-system\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `firstna...')
+#2 C:\wamp64\www\hospital-information-system\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `firstna...')
+#3 C:\wamp64\www\hospital-information-system\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `firstna...', Array, false)
+#4 C:\wamp64\www\hospital-information-system\system\Model.php(145): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\hospital-information-system\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(70): CodeIgniter\BaseModel->find()
+#7 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(42): App\Controllers\Billing->getDiagnosisOr404('3')
+#8 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#9 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#10 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#13 {main}

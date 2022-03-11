@@ -83,6 +83,13 @@
                           <textarea name="prescription" class="form-control"  placeholder="List all diagnosis and findings here"  rows="5"><?= $diagnosis->prescription ?></textarea>
                       </div>
                   </div>
+
+                  <div class="col-sm-12 form-group">
+                      <label for="laboratory" class="col-sm-2 col-form-label">Laboratory:</label>
+                      <div class="col-sm-10">
+                          <textarea name="laboratory" class="form-control"  placeholder="List all laboratory requests"  rows="5"><?= $diagnosis->laboratory ?></textarea>
+                      </div>
+                  </div>
                   
                   <div class="col-sm-12 form-group">
                       <label for="visiting_fees" class="col-sm-2 col-form-label">Visiting Fees:</label>

@@ -72,7 +72,7 @@ class Auth extends BaseController {
         'password'  => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
       ];
 
-       $employee_model->save($data);
+       $this->employee_model->save($data);
 
       return redirect()->to('/auth');
     } else {

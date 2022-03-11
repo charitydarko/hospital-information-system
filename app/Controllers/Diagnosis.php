@@ -57,12 +57,23 @@ class Diagnosis extends BaseController
                 'complain' => $this->request->getPost('complain'),
                 'diagnosis'  => $this->request->getPost('diagnosis'),
                 'prescription'  => $this->request->getPost('prescription'),
+                'laboratory'  => $this->request->getPost('laboratory'),
                 'visiting_fees'  => $this->request->getPost('visiting_fees'),
                 'visiting_fees_reason'  => $this->request->getPost('visiting_fees_reason'),
                 'created_by' => $this->session->get('id')
             ];
 
             if ($this->diagnosis_model->save($data)) {
+                $insert_id = $this->diagnosis_model->insertID();
+                $data_other = [
+                    'appointment_id' => $this->request->getPost('appointment_id'),
+                    'diagnosis_id' => $insert_id,
+                    'status' => 0
+                ];
+
+                $this->prescription_model->save($data_other);
+                $this->laboratory_model->save($data_other);
+
                 return redirect()->back()->with('info', 'Diagnosis added successfully');
             } else {
                 return redirect()->back()->with('error', $diagnosis_model->errors)->with('error', 'Invalid data');

@@ -37,7 +37,7 @@ class BaseController extends Controller
      *
      * @var array
      */
-    protected $helpers = ["form", "url", "text"];
+    protected $helpers = ["form", "url", "text", 'security'];
     protected $session;
 
     /**
@@ -55,11 +55,13 @@ class BaseController extends Controller
         $this->session = \Config\Services::session();
         $this->request = service('request');
 
-        $this->appointment_model = new \App\Models\AppointmentModel;
+        $this->appointment_model = model(AppointmentModel::class);
         $this->employee_model = model(UserModel::class);
-        $this->patient_model = new \App\Models\PatientModel;
+        $this->patient_model = model(PatientModel::class);
         $this->document_model = model(DocumentModel::class);
         $this->vitals_model = model(VitalsModel::class);
         $this->diagnosis_model = model(DiagnosisModel::class);
+        $this->prescription_model = model(PrescriptionModel::class);
+        $this->laboratory_model = model(LaboratoryModel::class);
     }
 }

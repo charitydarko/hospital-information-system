@@ -1,0 +1,26 @@
+CRITICAL - 2022-03-09 05:38:18 --> Attempt to read property "visiting_fees" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Billing.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 48)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-09 07:03:41 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-03-09 07:03:43 --> The action you requested is not allowed.
+#0 C:\wamp64\www\hospital-information-system\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\wamp64\www\hospital-information-system\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\wamp64\www\hospital-information-system\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('billing/appoint...', 'before')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}

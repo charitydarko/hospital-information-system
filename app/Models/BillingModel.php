@@ -16,14 +16,13 @@ class BillingModel extends Model
 
     protected $allowedFields = [
         'appointment_id',
-        'bill_id',
-        'bill_type',
         'discount',
+        'tax',
         'total',
         'payment_method',
         'note',
+        'status',
         'served_by',
-        'status'
     ];
 
     protected $returnType = 'App\Entities\BillingEntity';

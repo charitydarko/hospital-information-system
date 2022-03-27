@@ -6,60 +6,86 @@ use App\Controllers\BaseController;
 
 class Employee extends BaseController
 {
+
   private $heading = "Human Resources";
-  private $model;
-
-  public function __construct() {
-    helper(['form']);
-    $this->session = session();
-    $this->uri = new \CodeIgniter\HTTP\URI();
-    $this->employee_model = model(UserModel::class);
-
-    if ($this->session->get('isLoggedIn') != null) {
-      $data['heading'] = $this->heading;
-      $data['userRoles'] = $this->user_roles();
-      $data['heading'] = $this->heading;
-      $data['fullname'] = $this->session->get('firstname') . ' ' . $this->session->get('lastname');
-      $data['content']  = view('human_resources/form',$data);
-    }
-  }
 
   public function index($user_role = 'Representative') { 	 
 		$data['title'] = 'List';
-		$role_id     = $this->user_roles($user_role);
-		#-------------------------------#
-    $data['isPost'] = $this->request->getMethod()=='post';
-		$data['employees'] = $this->employee_model->read($role_id);
+    $data['heading'] = $this->heading;
     $data['userRoles'] = $this->user_roles();
-		$data['content'] = view('human_resources/view', $data);
+		$role_id     = $this->user_roles($user_role);
+		$data['employees'] = $this->employee_model->find($role_id);
+    $data['userRoles'] = $this->user_roles();
+		$data['content'] = view('human_resources/index', $data);
 		return view('layout/main_wrapper',$data);
 	}
 
   // Default function
-  public function form() {    
-    if ($this->session->get('isLoggedIn') === null && $this->session->get('user_role') != '1') {
-      return redirect()->to('auth/login');
-    }
-    // Continue if user is authenticated
-    $data['title'] = 'Add Employee';
-    $data['isPost'] = $this->request->getMethod()=='post';
-    $data['content'] = view('human_resources/form');
-    $rules = [
+  public function add() {
+      $data['userRoles'] = $this->user_roles();
+      $data['heading'] = $this->heading;
+      $data['title'] = 'Add Employee';
+      $data['content'] = view('human_resources/add', $data); 
+      return view('layout/main_wrapper',$data);
+  }
+
+  public function create () {
+    $validate =  $this->validate([
       'firstname'         => 'required|min_length[2]|max_length[50]',
       'lastname'          => 'required|min_length[2]|max_length[50]',
-      'email'             => 'required|min_length[4]|max_length[100]|valid_email|is_unique[users.email]',
+      'email'             => 'required|min_length[4]|max_length[100]|valid_email|is_unique[user.email]',
       'mobile'             => 'required|min_length[10]|max_length[13]',
       'password'          => 'required'
-    ];
+    ]);
 
-    if ($this->validate($rules)) {
-      $model = model(UserModel::class);
+    if(!$validate) {
+      $data['validation'] = $this->validator->listErrors();
+      return redirect()->back()->withInput()->with('error', $data['validation']);
     } else {
-      $data['isPost'] = $this->request->getMethod()=='post'; 
-      $data['validation'] = '$this->validator';
-      return view('layout/main_wrapper',$data);
-    }   
-    
+      $this->employee_model->save($this->request->getPost());
+      return redirect()->back()->withInput()->with('info', 'New Employee Added Successfully');
+    }
+  }
+
+  public function view($id=null) {
+    $employee = $this->getEmployeeOr404($id);
+    $data['employee'] = $employee;
+    $data['heading'] = $this->heading;
+    $data['title'] = 'View';
+    $data['content']  = view('human_resources/view',$data);
+    return view('layout/main_wrapper',$data);
+  }
+
+  public function edit($id) {
+    $data['userRoles'] = $this->user_roles();
+    $employee = $this->getEmployeeOr404($id);
+    $data['employee'] = $employee;
+    $data['heading'] = $this->heading;
+    $data['title'] = 'Edit';
+    $data['content']  = view('human_resources/edit',$data);
+    return view('layout/main_wrapper',$data);
+  }
+
+  public function update($id=null) {
+    $employee = $this->employee_model->find($id);
+    $employee->fill($this->request->getPost());
+
+    if(!$employee->hasChanged()){
+      return redirect()->back()->withInput()->with('warning', 'Nothing to update');
+    }
+
+    if ($this->employee_model->save($employee)) {
+      return redirect()->to("/humanresources/employee/view/$id")->with('info', 'Employee Info updated successfully');
+    } else {
+      return redirect()->back()->with('error', $employee_model->errors)->with('error', 'Invalid data');
+    }
+  }
+
+
+  public function delete($id) {
+    $employee = $this->getEmployeeOr404($id);
+    $this->employee_model->where('id', $id)->delete();
+    return redirect()->to( base_url('/humanresources/employee/') );
   }
 
   // User roles
@@ -84,5 +110,13 @@ class Employee extends BaseController
 		} else {
 			return array_flip($user_list);
 		}
-	}	
+	}
+
+  public function getEmployeeOr404($id) {
+    $employee = $this->employee_model->find($id);
+    if($employee === null) {
+      throw new \CodeIgniter\Exceptions\PageNotFoundException("Employee with id $id not found");
+    }
+    return $employee;
+  }
 }

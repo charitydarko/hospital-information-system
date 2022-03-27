@@ -34,7 +34,58 @@ class Billing extends BaseController
 
 
     public function create() {
-        dd($this->request->getPost());
+        $validate = $this->validate([
+            'appointment_code' => 'required'
+        ]);
+
+        if(!$validate) {
+            $data['validation'] = $this->validator->listErrors();
+            return redirect()->back()->withInput()->with('error', $data['validation']);
+          } else {
+                $billing_data = 
+                    [
+                        'appointment_id' => $this->request->getPost('appointment_code'),
+                        'discount' => $this->request->getPost('discount'),
+                        'tax' => $this->request->getPost('tax'),
+                        'total' => $this->request->getPost('total'),
+                        'payment_method' => $this->request->getPost('payment_method'),
+                        'note' => $this->request->getPost('note'),
+                        'status' => $this->request->getPost('status'),
+                        'served_by' => $this->session->get('id')
+                    ];
+                $billing_details_data = 
+                    [
+                        'appointment_id' => $this->request->getPost('appointment_code'),
+                        'item_name' => $this->request->getPost('item_name'),
+                        'description' => $this->request->getPost('description'),
+                        'quantity' => $this->request->getPost('quantity'),
+                        'price' => $this->request->getPost('price'),
+                        'subtotal' => $this->request->getPost('subtotal')
+                    ];
+                
+                $item_name = $this->request->getPost('item_name');
+                $description = $this->request->getPost('description');
+                $quantity = $this->request->getPost('quantity');
+                $price = $this->request->getPost('price');
+                $subtotal = $this->request->getPost('subtotal');
+
+                $this->billing_model->save($billing_data);
+
+                for ($i=0; $i < sizeof($item_name); $i++)
+				{
+					if(!empty($item_name[$i]))  
+                    $this->billing_details_model->save([
+                        'appointment_id' => $this->request->getPost('appointment_code'),
+                        'item_name' => $item_name[$i],
+                        'description' => $description[$i],
+                        'quantity' => $quantity[$i],
+                        'price' => $price[$i],
+                        'subtotal' => $subtotal[$i]
+                    ]);
+				}
+
+            return redirect()->back()->withInput()->with('info', 'Patient Billing Successful');
+          }
     }
 
     

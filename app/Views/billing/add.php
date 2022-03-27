@@ -8,7 +8,7 @@
                     <a class="btn btn-primary" href="<?= base_url("billing") ?>"> <i class="fa fa-list"></i>  Invoice List </a>  
                 </div>
             </div> 
-
+ 
             <div class="panel-body">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 table-responsive">
@@ -67,7 +67,7 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <input type="text" name="item[]" id="item" class="form-control" value="Diagnosis Cost">
+                                            <input type="text" name="item_name[]" id="item" class="form-control" value="Diagnosis Cost">
                                         </td> 
                                         <td>
                                             <textarea name="description[]" class="form-control" placeholder="Description" rows="1" id="diagnosis_cost_reason"></textarea>
@@ -92,7 +92,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <input type="text" name="item[]" id="item" class="form-control">
+                                            <input type="text" name="item_name[]" id="item" class="form-control">
                                         </td> 
                                         <td><textarea name="description[]" class="form-control" placeholder="Description" rows="1"></textarea></td> 
 

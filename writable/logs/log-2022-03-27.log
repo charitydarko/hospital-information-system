@@ -1,0 +1,148 @@
+CRITICAL - 2022-03-27 07:16:17 --> Cannot use object of type App\Entities\UserEntity as array
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('human_resources...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\HumanResources\Employee.php(21): view('human_resources...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-03-27 07:24:42 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Views\human_resources\view.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 49)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('human_resources...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\HumanResources\Employee.php(21): view('human_resources...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-03-27 07:25:04 --> Object of class App\Entities\UserEntity could not be converted to string
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('human_resources...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\HumanResources\Employee.php(21): view('human_resources...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->index()
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-03-27 10:29:40 --> Undefined variable $rules
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\HumanResources\Employee.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp64\\www\\h...', 32)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->add()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+ERROR - 2022-03-27 11:20:59 --> Table 'hospital.users' doesn't exist
+CRITICAL - 2022-03-27 11:20:59 --> Table 'hospital.users' doesn't exist
+#0 C:\wamp64\www\hospital-information-system\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\wamp64\www\hospital-information-system\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\wamp64\www\hospital-information-system\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\wamp64\www\hospital-information-system\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\wamp64\www\hospital-information-system\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\hospital-information-system\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('doctor@demo.com', 'email', Array, NULL)
+#6 C:\wamp64\www\hospital-information-system\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('email', 'email', 'doctor@demo.com', Array, Array)
+#7 C:\wamp64\www\hospital-information-system\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\wamp64\www\hospital-information-system\app\Controllers\HumanResources\Employee.php(34): CodeIgniter\Controller->validate(Array)
+#9 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->create()
+#10 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#11 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#14 {main}
+ERROR - 2022-03-27 11:22:13 --> Table 'hospital.users' doesn't exist
+CRITICAL - 2022-03-27 11:22:13 --> Table 'hospital.users' doesn't exist
+#0 C:\wamp64\www\hospital-information-system\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\wamp64\www\hospital-information-system\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\wamp64\www\hospital-information-system\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\wamp64\www\hospital-information-system\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\wamp64\www\hospital-information-system\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\hospital-information-system\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('doctor@demo.com', 'email', Array, NULL)
+#6 C:\wamp64\www\hospital-information-system\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('email', 'email', 'doctor@demo.com', Array, Array)
+#7 C:\wamp64\www\hospital-information-system\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\wamp64\www\hospital-information-system\app\Controllers\HumanResources\Employee.php(34): CodeIgniter\Controller->validate(Array)
+#9 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->create()
+#10 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#11 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#14 {main}
+ERROR - 2022-03-27 11:24:16 --> Table 'hospital.users' doesn't exist
+CRITICAL - 2022-03-27 11:24:16 --> Table 'hospital.users' doesn't exist
+#0 C:\wamp64\www\hospital-information-system\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\wamp64\www\hospital-information-system\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\wamp64\www\hospital-information-system\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\wamp64\www\hospital-information-system\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\wamp64\www\hospital-information-system\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\hospital-information-system\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('doctor@demo.com', 'email', Array, NULL)
+#6 C:\wamp64\www\hospital-information-system\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('email', 'email', 'doctor@demo.com', Array, Array)
+#7 C:\wamp64\www\hospital-information-system\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\wamp64\www\hospital-information-system\app\Controllers\HumanResources\Employee.php(34): CodeIgniter\Controller->validate(Array)
+#9 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->create()
+#10 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#11 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#14 {main}
+CRITICAL - 2022-03-27 15:37:18 --> Too few arguments to function App\Controllers\HumanResources\Employee::view(), 0 passed in C:\wamp64\www\hospital-information-system\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->view()
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#5 {main}
+CRITICAL - 2022-03-27 15:37:54 --> Too few arguments to function App\Controllers\HumanResources\Employee::view(), 0 passed in C:\wamp64\www\hospital-information-system\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->view()
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#5 {main}
+CRITICAL - 2022-03-27 15:40:18 --> Call to undefined method App\Controllers\HumanResources\Employee::getEmployeeOr404()
+#0 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->view()
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#5 {main}
+CRITICAL - 2022-03-27 15:44:30 --> Undefined variable $employee
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\HumanResources\Employee.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp64\\www\\h...', 52)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->view()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-27 16:45:36 --> Undefined variable $userRoles
+#0 C:\wamp64\www\hospital-information-system\app\Views\human_resources\edit.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp64\\www\\h...', 56)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('human_resources...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\HumanResources\Employee.php(64): view('human_resources...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->edit('1')
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-03-27 17:28:28 --> Call to a member function fill() on array
+#0 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->update()
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#5 {main}
+CRITICAL - 2022-03-27 17:30:00 --> Call to a member function fill() on array
+#0 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\HumanResources\Employee->update()
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HumanResources\Employee))
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#5 {main}

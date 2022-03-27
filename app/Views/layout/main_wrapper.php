@@ -200,7 +200,7 @@
               <li><a href="<?= base_url("billing") ?>">Invoice List</a></li>
             </ul>
           </li>
-          <li class="treeview <?php $uri = current_url(true); echo ($uri->getSegment(1)  == 'human_resources') ? "active" : null ?>">
+          <li class="treeview">
             <a href="#">
               <i class="fa fa-users"></i> <span>Human Resources</span>
               <span class="pull-right-container">
@@ -208,21 +208,9 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="<?= base_url("humanresources/employee/form") ?>">Add Employee</a></li>
-              <li><a href="#">Employee List</a></li>
+              <li><a href="<?= base_url("humanresources/employee/add") ?>">Add Employee</a></li>
+              <li><a href="<?= base_url("humanresources/employee/index")?>">Employee List</a></li>
               <li><a href="#">Report</a></li>
-            </ul>
-          </li>
-          <li class="treeview">
-            <a href="#">
-              <i class="fa fa-hospital"></i> <span>Hospital Activities</span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li><a href="#">Add Operations Report</a></li>
-              <li><a href="#">Operations Report List</a></li>
             </ul>
           </li>
           <li class="treeview">
@@ -248,25 +236,6 @@
               <li><a href="#">New Message</a></li>
               <li><a href="#">Inbox</a></li>
               <li><a href="#">Sent</a></li>
-            </ul>
-          </li>
-          <li class="treeview">
-            <a href="#">
-              <i class="fa fa ti-email"></i> <span>Email</span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li><a href="#">Add Account</a></li>
-              <li><a href="#">Account List</a></li>
-              <li><a href="#">Add Invoice</a></li>
-              <li><a href="#">Invoice List</a></li>
-              <li><a href="#">Add Payment</a></li>
-              <li><a href="#">Payment List</a></li>
-              <li><a href="#">Report</a></li>
-              <li><a href="#">Debit Report</a></li>
-              <li><a href="#">Credit Report</a></li>
             </ul>
           </li>
         </ul>

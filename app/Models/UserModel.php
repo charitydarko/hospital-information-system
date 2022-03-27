@@ -31,21 +31,4 @@ class UserModel extends Model
 
     protected $returnType = 'App\Entities\UserEntity';
 
-    public function getUsers($id = false) {
-      if ($id === false) {
-          return $this->findAll();
-      }
-
-      return $this->where(['id' => $id])->first();
-    }
-
-    public function create($data = []) {	 
-		  return $this->db->insert($this->table,$data);
-	  }
-
-    public function read($user_type) { 
-      return $this->where(['user_role' => $user_type])->findAll();
-    } 
-
-  
 }

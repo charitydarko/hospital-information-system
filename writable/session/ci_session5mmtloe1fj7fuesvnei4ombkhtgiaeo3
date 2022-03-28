@@ -1,0 +1,12 @@
+__ci_last_regenerate|i:1648470260;_ci_previous_url|s:37:"http://localhost:8080/noticeboard/add";id|s:1:"1";firstname|s:7:"Charity";lastname|s:5:"Darko";email|s:16:"afyacy@gmail.com";user_role|s:1:"1";isLoggedIn|b:1;_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:5:{s:5:"title";s:0:"";s:11:"description";s:0:"";s:10:"start_date";s:0:"";s:8:"end_date";s:0:"";s:6:"status";s:1:"1";}}__ci_vars|a:3:{s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";s:5:"error";s:3:"old";}_ci_validation_errors|s:228:"a:4:{s:5:"title";s:28:"The title field is required.";s:11:"description";s:34:"The description field is required.";s:10:"start_date";s:33:"The start_date field is required.";s:8:"end_date";s:31:"The end_date field is required.";}";error|s:388:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>The title field is required.</li>
+					<li>The description field is required.</li>
+					<li>The start_date field is required.</li>
+					<li>The end_date field is required.</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";

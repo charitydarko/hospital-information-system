@@ -222,7 +222,7 @@
             </a>
             <ul class="treeview-menu">
               <li><a href="#">Add Notice</a></li>
-              <li><a href="#">Notice List</a></li>
+              <li><a href="<?= base_url("noticeboard/index") ?>">Notice List</a></li>
             </ul>
           </li>
           <li class="treeview">

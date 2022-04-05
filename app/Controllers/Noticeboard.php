@@ -93,7 +93,7 @@ class Noticeboard extends BaseController
     public function delete($id) {
         $notice = $this->getNoticeOr404($id);
         $this->noticeboard_model->where('id', $id)->delete();
-        return redirect()->to( base_url('noticeboard') );
+        return redirect()->to( base_url('noticeboard'));
     }
 
     public function getNoticeOr404($id) {

@@ -46,10 +46,12 @@
     <header class="main-header">
       <a href="<?php echo base_url('dashboard/home') ?>" class="logo"> <!-- Logo -->
         <span class="logo-mini">
-          <img src="<?php echo base_url(); ?>/images/logo.png" alt="">
+          <div></div>
+          <h2>VH</h2>
         </span>
         <span class="logo-lg">
-          <img src="<?php echo base_url(); ?>/images/logo.png" alt="">
+          <div></div>
+          <h2>VESTIR HOSPITAL</h2>
         </span>
       </a>
 
@@ -65,10 +67,10 @@
             <li class="dropdown dropdown-user">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="pe-7s-settings"></i></a>
               <ul class="dropdown-menu">
-                  <li><a href="<?php echo base_url(); ?>/dashboard/profile"><i class="pe-7s-users"></i>Profile</a></li>
-                  <li><a href="<?php echo base_url(); ?>/dashboard/form"><i class="pe-7s-settings"></i>Edit Profile</a></li>
-                  <li><a href="<?php echo base_url() ?>/dashboard/resetPassword"><i class="pe-7s-key"></i>Update Password</a></li>
-                  <li><a href="<?php echo base_url() ?>/auth/logout"><i class="pe-7s-power"></i>Logout</a></li>
+                  <li><a href="<?= base_url("user/view/".session()->get('id'))?>"><i class="pe-7s-users"></i>Profile</a></li>
+                  <li><a href="<?= base_url("user/edit/".session()->get('id'))?>"><i class="pe-7s-settings"></i>Edit Profile</a></li>
+                  <li><a href="<?= base_url("user/reset_password")?>"><i class="pe-7s-key"></i>Update Password</a></li>
+                  <li><a href="<?= base_url("auth/logout") ?>"><i class="pe-7s-power"></i>Logout</a></li>
               </ul>
             </li>
           </ul>
@@ -83,7 +85,7 @@
         <!-- Sidebar user panel --> 
         <div class="user-panel text-center">
           <div class="image">
-            <img src="<?php echo (!empty($picture) ? $picture : base_url()."/images/no-img.png"); ?>" class="img-circle" alt="User Image">
+            <img src="<?php echo (!empty($picture) ? $picture : base_url()."/images/avatar.png"); ?>" class="img-circle" alt="User Image">
           </div>
           <div class="info">
             <p>
@@ -93,26 +95,33 @@
             </p>
             <a href="#">
               <i class="fa fa-circle text-success"></i>
-              <?php   
-                $userRoles = array( 
-                  '1' => 'Admin',
-                  '2' => 'Doctor',
-                  '3' => 'Accountant',
-                  '4' => 'Laboratorist',
-                  '5' => 'Nurse',
-                  '6' => 'Pharmacist',
-                  '7' => 'Receptionist',
-                  '8' => 'Representative', 
-                  '9' => 'Cashier' 
-                ); 
+              <?php 
+                switch(session()->get('user_role')) {
+                    case '1':
+                        {echo 'Admin'; break;}
+                    case '2':
+                        {echo 'Doctor'; break;}
+                    case '3':
+                        {echo 'Accountant'; break;}
+                    case '4':
+                        {echo 'Cashier'; break;}
+                    case '5':
+                        {echo 'Pharmacist'; break;}
+                    case '6':
+                        {echo 'Laboratorist'; break;}
+                    case '7':
+                        {echo 'Receptionist'; break;}
+                    default:
+                        {echo 'Not provided'; break;}
+                }
               ?>
             </a>
           </div>
         </div>
 
         <ul class="sidebar-menu">
-          <li class="<?php $uri = current_url(true); echo ($uri->getSegment(1) == 'dashboard') ? "active" : null ?>">
-            <a href="#"><i class="fa fa ti-home"></i> Dashboard</a>
+          <li class="">
+            <a href="<?= base_url('dashboard'); ?>"><i class="fa fa ti-home"></i> Dashboard</a>
           </li>
           <li class="treeview">
             <a href="#">
@@ -208,9 +217,8 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="<?= base_url("humanresources/employee/add") ?>">Add Employee</a></li>
-              <li><a href="<?= base_url("humanresources/employee/index")?>">Employee List</a></li>
-              <li><a href="#">Report</a></li>
+              <li><a href="<?= base_url("user/add") ?>">Add User</a></li>
+              <li><a href="<?= base_url("user/index")?>">Users List</a></li>
             </ul>
           </li>
           <li class="treeview">
@@ -233,9 +241,9 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="#">New Message</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">Sent</a></li>
+              <li><a href="<?= base_url("message/add") ?>">New Message</a></li>
+              <li><a href="<?= base_url("message/") ?>">Inbox</a></li>
+              <li><a href="<?= base_url("message/sent") ?>">Sent</a></li>
             </ul>
           </li>
         </ul>

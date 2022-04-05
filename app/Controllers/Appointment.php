@@ -10,7 +10,7 @@ class Appointment extends BaseController
 
     public function index() {
         $data['appointments'] = $this->appointment_model->findAll();
-        $data['staff'] = $this->employee_model;
+        $data['staff'] = $this->user_model;
         $data['heading'] = $this->heading;
         $data['title'] = 'List';
         $data['content']  = view('appointment/index',$data);

@@ -13,7 +13,7 @@ class Billing extends BaseController
         $data['diagnosis'] = $this->diagnosis_model->findAll();
         $data['loadLaboratory'] = $this->laboratory_model->findAll();
         $data['laboratory'] = $this->laboratory_model;
-        $data['staff'] = $this->employee_model;
+        $data['staff'] = $this->user_model;
         $data['appointments'] = $this->appointment_model;
         $data['patients'] = $this->patient_model;
         $data['heading'] = $this->heading;

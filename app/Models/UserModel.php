@@ -22,6 +22,8 @@ class UserModel extends Model
       'phone',
       'password',
       'user_role',
+      'age',
+      'date_of_birth',
       'address',
       'gender',
       'picture',

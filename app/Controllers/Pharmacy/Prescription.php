@@ -18,7 +18,7 @@ class Prescription extends BaseController
         $data['diagnosis'] = $this->diagnosis_model->findAll();
         $data['loadPrescription'] = $this->prescription_model->findAll();
         $data['prescription'] = $this->prescription_model;
-        $data['staff'] = $this->employee_model;
+        $data['staff'] = $this->user_model;
         $data['appointments'] = $this->appointment_model;
         $data['patients'] = $this->patient_model;
         $data['heading'] = $this->heading;
@@ -31,7 +31,7 @@ class Prescription extends BaseController
     {
         $data['diagnosis'] = $this->diagnosis_model->find($id);
         $data['prescription'] = $this->prescription_model->where('diagnosis_id', $id)->select('note, status, served_by')->find();
-        $data['staff'] = $this->employee_model;
+        $data['staff'] = $this->user_model;
         $data['appointment'] = $this->appointment_model->find($data['diagnosis']->appointment_id);
         $data['patient'] = $this->patient_model->where('registration_code', $data['appointment']->patient_id)->select('firstname, lastname, gender, age')->find();
         $data['heading'] = $this->heading;

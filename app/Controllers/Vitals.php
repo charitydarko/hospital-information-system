@@ -12,7 +12,7 @@ class Vitals extends BaseController
     public function index()
     {
         $data['vitals'] = $this->vitals_model->findAll();
-        $data['staff'] = $this->employee_model;
+        $data['staff'] = $this->user_model;
         $data['appointments'] = $this->appointment_model;
         $data['patients'] = $this->patient_model;
         $data['heading'] = $this->heading;

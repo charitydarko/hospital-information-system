@@ -10,12 +10,14 @@ class Dashboard extends BaseController
   }
 
   public function index() {      
-
-    $data['isPost'] = $this->request->getMethod()=='post'; 
     $data['heading'] = $this->heading;
     $data['title'] = 'Home';
-    $data['picture'] = '';
-    $data['fullname'] = $this->session->get('firstname') . ' ' . $this->session->get('lastname');
+    $data['doctors'] = sizeof($this->user_model->find(['user_role',2]));
+    $data['patients'] = sizeof($this->patient_model->findAll());
+    $data['appointments'] = sizeof($this->appointment_model->findAll());
+    $data['prescriptions'] = sizeof($this->prescription_model->findAll());
+    $data['notice'] = $this->noticeboard_model->findAll();
+    $data['messages'] = $this->message_model->find(['receiver_id', session()->get('id')]);
     $data['content']  = view('home',$data);
     return view('layout/main_wrapper',$data);
   }

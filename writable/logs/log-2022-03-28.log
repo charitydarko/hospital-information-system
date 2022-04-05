@@ -100,3 +100,22 @@ CRITICAL - 2022-03-28 11:32:52 --> Undefined property: App\Controllers\Noticeboa
 #4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
 #6 {main}
+CRITICAL - 2022-03-28 17:05:47 --> Undefined property: App\Controllers\Message::$heading
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Message.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\wamp64\\www\\h...', 21)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Message->add()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-03-28 17:08:16 --> Call to undefined function display()
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('message/add', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Message.php(25): view('message/add', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Message->add()
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Message))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}

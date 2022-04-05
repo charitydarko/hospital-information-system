@@ -34,15 +34,16 @@
                                     <td><?= esc($vital->appointment_id); ?></td>
                                     <td>
                                         <?php 
-                                            $appointment = $appointments->find($vital->appointment_id);
-                                            echo esc($appointment->patient_id);
+                                            
+                                            // $appointment = $appointments->find($vital->appointment_id);
+                                            // echo esc($appointment->patient_id);
                                         ?>
                                     </td>
                                     <td>
-                                        <input type="hidden" name="patient_registration_code" value="<?php $appointment->patient_id ?>">
+                                        <input type="hidden" name="patient_registration_code" value="<?php #$appointment->patient_id ?>">
                                         <?php 
-                                            $patient = $patients->where('registration_code', $appointment->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
-                                            echo esc($patient[0]->firstname) . ' ' . esc($patient[0]->lastname);
+                                            // $patient = $patients->where('registration_code', $appointment->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
+                                            // echo esc($patient[0]->firstname) . ' ' . esc($patient[0]->lastname);
                                         ?>
                                     </td>
                                     <td><?= esc($vital->blood_pressure); ?></td>

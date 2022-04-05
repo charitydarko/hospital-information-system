@@ -56,7 +56,7 @@ class BaseController extends Controller
         $this->request = service('request');
 
         $this->appointment_model = model(AppointmentModel::class);
-        $this->employee_model = model(UserModel::class);
+        $this->user_model = model(UserModel::class);
         $this->patient_model = model(PatientModel::class);
         $this->document_model = model(DocumentModel::class);
         $this->vitals_model = model(VitalsModel::class);

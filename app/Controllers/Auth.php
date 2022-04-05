@@ -26,7 +26,7 @@ class Auth extends BaseController {
       $email = $this->request->getPost('email');
       $password = $this->request->getPost('password');
 
-      $user = $this->employee_model->where('email', $email)->first();
+      $user = $this->user_model->where('email', $email)->first();
 
       if($user === null) {
         return redirect()->back()->withInput()->with('error', 'User not found');
@@ -72,7 +72,7 @@ class Auth extends BaseController {
         'password'  => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
       ];
 
-       $this->employee_model->save($data);
+       $this->user_model->save($data);
 
       return redirect()->to('/auth');
     } else {

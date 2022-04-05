@@ -84,7 +84,7 @@ class Patient extends BaseController
     // Document List
     public function document(){
       $data['documents'] = $this->document_model->findAll();
-      $data['staff'] = $this->employee_model;
+      $data['staff'] = $this->user_model;
       $data['heading'] = 'Patient Document';
       $data['title'] = 'List';
       $data['content'] = view('patient/document', $data);
@@ -98,7 +98,7 @@ class Patient extends BaseController
       $data['heading'] = 'Patient Document';
       $data['title'] = 'Add';
       $data['uri'] = $this->request->uri->getSegment(3);
-      // $data['doctor_list'] = $this->employee_model->find(2);
+      // $data['doctor_list'] = $this->user_model->find(2);
 
       // $doctors = [];
       // foreach ($data['doctor_list'] as $doctor) {

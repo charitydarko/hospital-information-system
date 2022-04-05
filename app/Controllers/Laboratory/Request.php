@@ -13,7 +13,7 @@ class Request extends BaseController
         $data['diagnosis'] = $this->diagnosis_model->findAll();
         $data['loadLaboratory'] = $this->laboratory_model->findAll();
         $data['laboratory'] = $this->laboratory_model;
-        $data['staff'] = $this->employee_model;
+        $data['staff'] = $this->user_model;
         $data['appointments'] = $this->appointment_model;
         $data['patients'] = $this->patient_model;
         $data['heading'] = $this->heading;
@@ -26,7 +26,7 @@ class Request extends BaseController
     public function view($id = null) {
         $data['diagnosis'] = $this->diagnosis_model->find($id);
         $data['laboratory'] = $this->laboratory_model->where('diagnosis_id', $id)->select('note, status, served_by')->find();
-        $data['staff'] = $this->employee_model;
+        $data['staff'] = $this->user_model;
         $data['appointment'] = $this->appointment_model->find($data['diagnosis']->appointment_id);
         $data['patient'] = $this->patient_model->where('registration_code', $data['appointment']->patient_id)->select('firstname, lastname, gender, age')->find();
         $data['heading'] = $this->heading;

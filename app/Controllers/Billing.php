@@ -47,7 +47,7 @@ class Billing extends BaseController
                     [
                         'appointment_id' => $this->request->getPost('appointment_code'),
                         'discount' => $this->request->getPost('discount'),
-                        'tax' => $this->request->getPost('tax'),
+                        'tax' => $this->request->getPost('vax'),
                         'total' => $this->request->getPost('total'),
                         'payment_method' => $this->request->getPost('payment_method'),
                         'note' => $this->request->getPost('note'),

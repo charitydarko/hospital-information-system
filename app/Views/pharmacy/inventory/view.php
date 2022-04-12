@@ -108,36 +108,16 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php if (!empty($billings)) { ?>
+                                    <?php if (!empty($prescription_sale_details)) { ?>
                                         <?php $sl = 1; ?>
-                                        <?php foreach ($billings as $billing) { ?>
+                                        <?php foreach ($prescription_sale_details as $prescription_sale_detail) { ?>
                                             <tr class="<?= ($sl & 1)?"odd gradeX":"even gradeC" ?>">
                                                 <td><?= $sl; ?></td>
-                                                <td><?= esc($billing->appointment_id); ?></td>
-                                                <td>
-                                                    <?php 
-                                                        $appointment = $appointments->find($billing->appointment_id);
-                                                        echo esc($appointment->patient_id);
-                                                    ?>
-                                                </td>
-                                                <td><?= esc($billing->total); ?></td>
-                                                <td>
-                                                    <?php echo $staff->find($billing->served_by)->firstname; ?>
-                                                    <?php echo $staff->find($billing->served_by)->lastname; ?>
-                                                </td>
-                                                <td>
-                                                    <?php
-                                                        $date = new DateTime($billing->updated_at);
-                                                        $strip = $date->format('Y-m-d');
-                                                        echo $strip;
-                                                    ?>
-                                                </td>
-                                                <td><?= ((esc($billing->status)==1)?'Paid':'Unpaid'); ?></td>
-                                                <td class="center">
-                                                    <a href="<?=site_url("pharmacy/inventory/view/".$billing->appointment_id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a>
-                                                    <a href="<?=site_url("pharmacy/inventory/edit/".$billing->appointment_id)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a> 
-                                                    <a href="<?=site_url("pharmacy/inventory/delete/".$billing->appointment_id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i></a> 
-                                                </td>
+                                                <td><?= esc($prescription_sale_detail->item_name); ?></td>
+                                                <td><?= esc($prescription_sale_detail->description); ?></td>
+                                                <td><?= esc($prescription_sale_detail->quantity); ?></td>
+                                                <td><?= esc($prescription_sale_detail->price); ?></td>
+                                                <td><?= esc($prescription_sale_detail->subtotal); ?></td>
                                             </tr>
                                             <?php $sl++; ?>
                                         <?php } ?> 

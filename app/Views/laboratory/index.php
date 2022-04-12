@@ -41,7 +41,13 @@
                                         <?= $staff->find($diag->created_by)->firstname; ?>
                                         <?= $staff->find($diag->created_by)->lastname; ?>
                                     </td>
-                                    <td><?= esc($diag->created_at); ?></td>
+                                    <td>
+                                        <?php
+                                            $date = new DateTime($diag->updated_at);
+                                            $strip = $date->format('Y-m-d');
+                                            echo $strip;
+                                        ?>
+                                    </td>
                                     <td>
                                         <?php 
                                             $lab = $laboratory->where('diagnosis_id', $diag->id)->select('status')->find();

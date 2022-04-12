@@ -35,8 +35,7 @@
                                 <dl class="dl-horizontal">
                                     <dt>Patient Id</dt><dd><?php echo esc($patient->id) ?></dd> 
                                     <dt>Name</dt><dd><?php echo esc($patient->firstname. ' ' . $patient->lastname) ?></dd> 
-                                    <dt>Date of Birth</dt><dd><?php echo date('d M Y',strtotime(esc($patient->date_of_birth))) ?></dd> 
-                                    <dt>Age</dt><dd><?php echo date_diff(date_create(esc($patient->date_of_birth)), date_create('now'))->y; ?> Years</dd> 
+                                    <dt>Age</dt><dd><?php echo esc($patient->age); ?> Years</dd> 
                                     <dt>Gender</dt>
                                     <dd>
                                     <?php 
@@ -55,7 +54,13 @@
                                     <dt>Phone</dt><dd><?php echo esc($patient->phone) ?></dd>
                                     <dt>Email</dt><dd><?php echo esc($patient->email) ?></dd> 
                                     <dt>Address</dt><dd><?php echo esc($patient->address) ?></dd> 
-                                    <dt>Created Date</dt><dd><?php echo esc($patient->created_at) ?></dd>
+                                    <dt>Created Date</dt><dd>
+                                        <?php
+                                            $date = new DateTime($patient->updated_at);
+                                            $strip = $date->format('Y-m-d');
+                                            echo $strip;
+                                        ?>
+                                    </dd>
                                 </dl> 
                             </div>
                         </div>

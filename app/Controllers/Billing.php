@@ -16,6 +16,7 @@ class Billing extends BaseController
         $data['staff'] = $this->user_model;
         $data['appointments'] = $this->appointment_model;
         $data['patients'] = $this->patient_model;
+        $data['billings'] = $this->billing_model->findAll();
         $data['heading'] = $this->heading;
         $data['title'] = 'List';
         $data['content']  = view('billing/index',$data);
@@ -88,7 +89,24 @@ class Billing extends BaseController
           }
     }
 
-    
+    public function edit($id=null) {
+        $data['heading'] = $this->heading;
+        $data['title'] = 'Edit';
+        $data['billing'] = $this->getBillingOr404($id);
+        $data['patient'] = $this->getPatientOr404($id);
+        $data['content']  = view('billing/edit',$data);
+        return view('layout/main_wrapper',$data);
+    }
+
+    public function view($id=null) {
+        $data['heading'] = $this->heading;
+        $data['title'] = 'View';
+        $data['billing_details'] = $this->getBillingOr404($id);
+        $data['patient'] = $this->getPatientOr404($id);
+        $data['content']  = view('billing/view',$data);
+        return view('layout/main_wrapper',$data);
+    }
+
     // Appointment for json
     public function appointmentNow() {
         $appointment_code = $this->request->getPost('appointment_code');
@@ -121,7 +139,16 @@ class Billing extends BaseController
         }
     }
 
-    // Get Appointment by ID
+    // Get Billing by ID
+    public function getBillingOr404($appointment_code) {
+        $billing = $this->billing_details_model->where('appointment_id', $appointment_code)->select('appointment_id, item_name, description, quantity, price, subtotal')->find();
+        if($billing === null) {
+          throw new \CodeIgniter\Exceptions\PageNotFoundException("Billing with id $id not found");
+        }
+        return $billing;
+    }
+
+    // Get Diagnosis by ID
     public function getDiagnosisOr404($appointment_code) {
         $diagnosis = $this->diagnosis_model->where('appointment_id', $appointment_code)->select('visiting_fees, visiting_fees_reason')->find();
         if($diagnosis === null) {

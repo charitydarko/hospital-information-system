@@ -6,7 +6,7 @@
  
             <div class="panel-heading no-print">
                 <div class="btn-group"> 
-                    <a class="btn btn-success" href="<?php echo base_url("/vitals") ?>"> <i class="fa fa-plus"></i>  Add Prescriptions Sales </a>  
+                    <a class="btn btn-success" href="<?php echo base_url("pharmacy/inventory/sale") ?>"> <i class="fa fa-plus"></i>  Add Prescription Sales </a>  
                 </div>
             </div> 
             <div class="panel-body">
@@ -41,7 +41,13 @@
                                         <?= $staff->find($diag->created_by)->firstname; ?>
                                         <?= $staff->find($diag->created_by)->lastname; ?>
                                     </td>
-                                    <td><?= esc($diag->created_at); ?></td>
+                                    <td>
+                                        <?php
+                                            $date = new DateTime($diag->updated_at);
+                                            $strip = $date->format('Y-m-d');
+                                            echo $strip;
+                                        ?>
+                                    </td>
                                     <td>
                                         <?php 
                                             $pres = $prescription->where('diagnosis_id', $diag->id)->select('status')->find();

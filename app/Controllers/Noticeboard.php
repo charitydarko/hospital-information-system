@@ -13,6 +13,7 @@ class Noticeboard extends BaseController
         $data['title'] = 'Notice List';
         $data['heading'] = $this->heading;
         $data['notice'] = $this->noticeboard_model->findAll();
+        $data['staff'] = $this->user_model;
         $data['content'] = view('noticeboard/index', $data);
 		return view('layout/main_wrapper',$data);
     }

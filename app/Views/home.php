@@ -85,8 +85,11 @@
                                     <td><?php echo strip_tags($item->description); ?></td>
                                     <td><?php echo esc($item->start_date); ?></td>
                                     <td><?php echo esc($item->end_date); ?></td>
-                                    <td><?php echo esc($item->created_by); ?></td>
-                                    <td><?= ((esc($item->status)==1)?'active':'inactive'); ?></td>
+                                    <td>
+                                        <?= $staff->find($item->created_by)->firstname; ?>
+                                        <?= $staff->find($item->created_by)->lastname; ?>
+                                    </td>
+                                    <td><?= ((esc($item->status)==1)?'Active':'Inactive'); ?></td>
                                     <td class="center" width="80">
                                         <a href="<?= site_url("/noticeboard/view/".$item->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a> 
                                         <a href="<?= site_url("/noticeboard/edit/".$item->id)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a> 

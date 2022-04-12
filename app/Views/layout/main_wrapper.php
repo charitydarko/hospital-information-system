@@ -179,8 +179,8 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="#">Add Prescription</a></li>
-              <li><a href="#">Prescription List</a></li>
+              <li><a href="<?= base_url("pharmacy/inventory/sale") ?>">Add Sale</a></li>
+              <li><a href="<?= base_url("pharmacy/inventory") ?>">Sales List</a></li>
               <li><a href="<?= base_url("pharmacy/prescription/request") ?>">Requests from Diagnosis</a></li>
             </ul>
           </li>

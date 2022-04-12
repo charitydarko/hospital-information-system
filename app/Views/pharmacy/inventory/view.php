@@ -1,0 +1,157 @@
+<div class="row">
+
+    <div class="col-sm-12" id="PrintMe">
+        <div  class="panel panel-default thumbnail">
+ 
+            <div class="panel-heading no-print">
+                <div class="btn-group"> 
+                    <a class="btn btn-success" href="<?php echo base_url("pharmacy/inventory/sale") ?>"> <i class="fa fa-plus"></i> Add Prescription Sale</a>  
+                    <a class="btn btn-primary" href="<?php echo base_url("pharmacy/inventory") ?>"> <i class="fa fa-list"></i> Prescription Sales List</a>  
+                    <button type="button" onclick="printContent('PrintMe')" class="btn btn-danger" ><i class="fa fa-print"></i></button> 
+                </div>
+            </div> 
+
+            <div class="panel-body"> 
+                <!-- Nav tabs --> 
+                <ul class="col-xs-12 nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Patient Information</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#prescription" aria-controls="prescription" role="tab" data-toggle="tab">Prescription Summary</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#prescription_details" aria-controls="prescription_details" role="tab" data-toggle="tab">Prescription Details</a>
+                    </li>
+
+                </ul>  
+
+                <!-- Tab panes --> 
+                <div class="col-xs-12 tab-content">
+                    <br>
+                    <!-- INFORMATION -->
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <div class="row">
+                            <div class="col-sm-9"> 
+                                <dl class="dl-horizontal">
+                                    <dt>Patient Name</dt><dd><?= $patient[0]->firstname . ' ' . $patient[0]->lastname ?></dd>
+                                    <dt>Patient Age</dt><dd><?= $patient[0]->age ?></dd>
+                                    <dt>Patient Gender</dt>
+                                    <dd>
+                                        <?php 
+                                            switch($patient[0]->gender) {
+                                                case '1':
+                                                {echo 'Male'; break;}
+                                                case '2':
+                                                {echo 'Female'; break;}
+                                                case '3':
+                                                {echo 'Other'; break;}
+                                                default:
+                                                {echo 'Not provided'; break;}
+                                            }
+                                        ?>
+                                    </dd>
+                                    <dt>Appointment Code</dt><dd><?= esc($appointment->id) ?></dd>
+                                    <dt>Patient Code</dt><dd><?php echo esc($appointment->patient_id) ?></dd>
+                                    
+                                </dl> 
+                            </div>
+                        </div>
+                    </div> 
+
+                    <!-- Prescription -->
+                    <div role="tabpanel" class="tab-pane" id="prescription">
+                        <div class="row">
+                            <div class="col-sm-12">
+                            <dl class="dl-horizontal">
+                                <dt>Total Cost</dt><dd><?= 'GH¢ ' . $prescription_sale[0]->total ?></dd>
+                                <dt>Tax</dt>
+                                <dd>
+                                    <?php
+                                        if($prescription_sale[0]->tax) {
+                                            echo 'GH¢ ' . $prescription_sale[0]->tax;
+                                        } else {
+                                            echo 'N/A';
+                                        }
+                                    ?>
+                                </dd>
+                                <dt>Discount</dt>
+                                <dd>
+                                    <?php
+                                        if($prescription_sale[0]->discount) {
+                                            echo 'GH¢ ' . $prescription_sale[0]->discount;
+                                        } else {
+                                            echo 'N/A';
+                                        }
+                                    ?>
+                                </dd>
+                                <dt>Status</dt><dd><?= ((esc($prescription_sale[0]->status)==1)?'Paid':'Unpaid'); ?></dd>
+                                
+                            </dl> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Prescription Details -->
+                    <div role="tabpanel" class="tab-pane" id="prescription_details">
+                        <div class="row">
+                            <div class="col-sm-12">
+                            <table width="100%" class="datatable table table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Serial</th>
+                                        <th>Item Name</th>
+                                        <th>Description</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th>Sub Total (GH¢)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php if (!empty($billings)) { ?>
+                                        <?php $sl = 1; ?>
+                                        <?php foreach ($billings as $billing) { ?>
+                                            <tr class="<?= ($sl & 1)?"odd gradeX":"even gradeC" ?>">
+                                                <td><?= $sl; ?></td>
+                                                <td><?= esc($billing->appointment_id); ?></td>
+                                                <td>
+                                                    <?php 
+                                                        $appointment = $appointments->find($billing->appointment_id);
+                                                        echo esc($appointment->patient_id);
+                                                    ?>
+                                                </td>
+                                                <td><?= esc($billing->total); ?></td>
+                                                <td>
+                                                    <?php echo $staff->find($billing->served_by)->firstname; ?>
+                                                    <?php echo $staff->find($billing->served_by)->lastname; ?>
+                                                </td>
+                                                <td>
+                                                    <?php
+                                                        $date = new DateTime($billing->updated_at);
+                                                        $strip = $date->format('Y-m-d');
+                                                        echo $strip;
+                                                    ?>
+                                                </td>
+                                                <td><?= ((esc($billing->status)==1)?'Paid':'Unpaid'); ?></td>
+                                                <td class="center">
+                                                    <a href="<?=site_url("pharmacy/inventory/view/".$billing->appointment_id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a>
+                                                    <a href="<?=site_url("pharmacy/inventory/edit/".$billing->appointment_id)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a> 
+                                                    <a href="<?=site_url("pharmacy/inventory/delete/".$billing->appointment_id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i></a> 
+                                                </td>
+                                            </tr>
+                                            <?php $sl++; ?>
+                                        <?php } ?> 
+                                    <?php } ?> 
+                                </tbody>
+                            </table>  <!-- /.table-responsive -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>  
+
+            </div> 
+        </div>
+    </div>
+  
+</div>

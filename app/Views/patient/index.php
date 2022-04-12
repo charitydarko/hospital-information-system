@@ -59,7 +59,14 @@
 
                                         <a href="<?=site_url("/patient/delete/".$patient->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i></a> 
                                     </td>
-                                    <td><?php echo esc($patient->created_at); ?></td>
+                                    <td>
+                                        <?php
+                                            $date = new DateTime($patient->updated_at);
+                                            $strip = $date->format('Y-m-d');
+                                            echo $strip;
+                                        ?>
+                                    </td>
+                                    
                                     <td><?php echo esc($patient->status==1?'Active':'Inactive'); ?></td>
                                 </tr>
                                 <?php $sl++; ?>

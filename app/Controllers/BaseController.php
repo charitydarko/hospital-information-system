@@ -65,6 +65,8 @@ class BaseController extends Controller
         $this->laboratory_model = model(LaboratoryModel::class);
         $this->billing_model = model(BillingModel::class);
         $this->billing_details_model = model(BillingDetailsModel::class);
+        $this->pharmacy_billing_model = model(PharmacyBillingModel::class);
+        $this->pharmacy_billing_details_model = model(PharmacyBillingDetailsModel::class);
         $this->noticeboard_model = model(NoticeBoardModel::class);
         $this->message_model = model(MessageModel::class);
     }

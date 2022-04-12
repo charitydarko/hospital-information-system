@@ -16,7 +16,7 @@
                             <th>Serial</th>
                             <th>Appointment Code</th>
                             <th>Patient Code</th>
-                            <th>Total Bill</th>
+                            <th>Total Bill(GH¢)</th>
                             <th>Served By</th>
                             <th>Served On</th>
                             <th>Status</th>
@@ -24,34 +24,35 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php if (!empty($diagnosis) && !empty($loadPrescription)) { ?>
+                        <?php if (!empty($billings)) { ?>
                             <?php $sl = 1; ?>
-                            <?php foreach ($diagnosis as $diag) { ?>
+                            <?php foreach ($billings as $billing) { ?>
                                 <tr class="<?= ($sl & 1)?"odd gradeX":"even gradeC" ?>">
                                     <td><?= $sl; ?></td>
-                                    <td><?= esc($diag->appointment_id); ?></td>
+                                    <td><?= esc($billing->appointment_id); ?></td>
                                     <td>
                                         <?php 
-                                            $appointment = $appointments->find($diag->appointment_id);
+                                            $appointment = $appointments->find($billing->appointment_id);
                                             echo esc($appointment->patient_id);
                                         ?>
                                     </td>
-                                    <td><?= esc($diag->prescription); ?></td>
+                                    <td><?= esc($billing->total); ?></td>
                                     <td>
-                                        <?= $staff->find($diag->created_by)->firstname; ?>
-                                        <?= $staff->find($diag->created_by)->lastname; ?>
+                                        <?php echo $staff->find($billing->served_by)->firstname; ?>
+                                        <?php echo $staff->find($billing->served_by)->lastname; ?>
                                     </td>
-                                    <td><?= esc($diag->created_at); ?></td>
                                     <td>
-                                        <?php 
-                                            $pres = $prescription->where('diagnosis_id', $diag->id)->select('status')->find();
-                                            echo esc($pres[0]->status==1?'Served':'Not Served')
+                                        <?php
+                                            $date = new DateTime($billing->updated_at);
+                                            $strip = $date->format('Y-m-d');
+                                            echo $strip;
                                         ?>
                                     </td>
+                                    <td><?= ((esc($billing->status)==1)?'Paid':'Unpaid'); ?></td>
                                     <td class="center">
-                                        <a href="<?=site_url("pharmacy/prescription/view/".$diag->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a>
-                                        <a href="<?=site_url("pharmacy/prescription/edit/".$diag->id)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a> 
-                                        <a href="<?=site_url("pharmacy/prescription/delete/".$diag->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i></a> 
+                                        <a href="<?=site_url("billing/view/".$billing->appointment_id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a>
+                                        <a href="<?=site_url("billing/edit/".$billing->appointment_id)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a> 
+                                        <a href="<?=site_url("billing/delete/".$billing->appointment_id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i></a> 
                                     </td>
                                 </tr>
                                 <?php $sl++; ?>

@@ -73,6 +73,7 @@ class Prescription extends BaseController
         $this->prescription_model->where('diagnosis_id', $id)->delete();
         return redirect()->to( base_url('/pharmacy/prescription/request'))->with('info', 'Prescription deleted successfully');
     }
+    
 
      // Get patient by registration_code
      public function getPatientOr404($registration_code) {

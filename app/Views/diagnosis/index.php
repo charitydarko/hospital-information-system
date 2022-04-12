@@ -41,7 +41,13 @@
                                         <?= $staff->find($diag->created_by)->firstname; ?>
                                         <?= $staff->find($diag->created_by)->lastname; ?>
                                     </td>
-                                    <td><?= esc($diag->created_at); ?></td>
+                                    <td>
+                                        <?php
+                                            $date = new DateTime($diag->updated_at);
+                                            $strip = $date->format('Y-m-d');
+                                            echo $strip;
+                                        ?>
+                                    </td>
                                     <td class="center">
                                         <a href="<?=site_url("/diagnosis/view/".$diag->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a>
                                         <a href="<?=site_url("/diagnosis/edit/".$diag->id)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a> 

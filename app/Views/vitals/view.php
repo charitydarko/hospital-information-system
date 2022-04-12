@@ -89,13 +89,6 @@
                 </div>  
 
             </div> 
-
-            <!-- <div class="panel-footer">
-                <div class="text-center">
-                    <strong><?php #echo esc($this->session->userdata('title')); ?></strong>
-                    <p class="text-center"><?php #echo esc($this->session->userdata('address')); ?></p>
-                </div>
-            </div> -->
         </div>
     </div>
   

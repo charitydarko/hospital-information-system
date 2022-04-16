@@ -85,10 +85,10 @@ class Inventory extends BaseController
     }
 
     public function view($id = null) {
-        $data['prescription_sale'] = $this->pharmacy_billing_model->where('appointment_id', $id)->select('*')->find();
-        $data['prescription_sale_details'] = $this->pharmacy_billing_details_model->where('billing_id', $data['prescription_sale'][0]->id)->select('*')->find();
-        $data['appointment'] = $this->appointment_model->find($id);
-        $data['patient'] = $this->patient_model->where('registration_code', $data['appointment']->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
+        $data['prescription_sale'] = $this->pharmacy_billing_model->find($id);
+        $data['prescription_sale_details'] = $this->pharmacy_billing_details_model->where('billing_id', $id)->select('*')->find();
+        $data['appointment'] = $this->appointment_model->where('id',  $data['prescription_sale']->appointment_id)->find();
+        $data['patient'] = $this->patient_model->where('registration_code', $data['appointment'][0]->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
         $data['heading'] = $this->heading;
         $data['title'] = 'View';
         $data['content']  = view('pharmacy/inventory/view',$data);
@@ -96,13 +96,72 @@ class Inventory extends BaseController
     }
 
     public function edit($id = null) {
-        $data['diagnosis'] = $this->diagnosis_model->find($id);
-        $data['appointment'] = $this->appointment_model->find($data['diagnosis']->appointment_id);
-        $data['prescription'] = $this->prescription_model;
-        $data['patient'] = $this->getPatientOr404($data['appointment']->patient_id);
+        $data['prescription_sale'] = $this->pharmacy_billing_model->find($id);
+        $data['prescription_sale_details'] = $this->pharmacy_billing_details_model->where('billing_id', $id)->select('*')->find();
+        $data['appointment'] = $this->appointment_model->where('id',  $data['prescription_sale']->appointment_id)->find();
+        $data['patient'] = $this->patient_model->where('registration_code', $data['appointment'][0]->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
         $data['heading'] = $this->heading;
-        $data['title'] = 'View';
-        $data['content']  = view('pharmacy/prescription/edit',$data);
+        $data['title'] = 'Edit';
+        $data['content']  = view('pharmacy/inventory/edit',$data);
         return view('layout/main_wrapper',$data);
+    }
+
+
+    public function update($id = null) {
+        $prescription_sale = $this->pharmacy_billing_model->find($id);
+        $prescription_sale->fill([
+            'discount' => $this->request->getPost('discount'),
+            'tax' => $this->request->getPost('tax'),
+            'total' => $this->request->getPost('total'),
+            'status' => $this->request->getPost('status'),
+            'served_by' => $this->session->get('id')
+        ]);
+
+        if(!$prescription_sale->hasChanged()){
+            return redirect()->back()->withInput()->with('warning', 'Nothing to update');
+        }
+
+        if ($this->pharmacy_billing_model->save($prescription_sale)) {
+            $details = $this->pharmacy_billing_details_model->where('billing_id', $id)->select('*');
+
+            if($details) {
+                $this->pharmacy_billing_details_model->where('billing_id', $id)->select('*')->delete();
+            }
+
+            $item_name = $this->request->getPost('item_name');
+            $description = $this->request->getPost('description');
+            $quantity = $this->request->getPost('quantity');
+            $price = $this->request->getPost('price');
+            $subtotal = $this->request->getPost('subtotal');
+
+            for ($i=0; $i < sizeof($item_name); $i++)
+            {
+                if(!empty($item_name[$i]))  
+                $this->pharmacy_billing_details_model->save([
+                    'billing_id' => $id,
+                    'appointment_id' => $this->request->getPost('appointment_code'),
+                    'item_name' => $item_name[$i],
+                    'description' => $description[$i],
+                    'quantity' => $quantity[$i],
+                    'price' => $price[$i],
+                    'subtotal' => $subtotal[$i]
+                ]);
+            }
+            
+            return redirect()->to(base_url("pharmacy/inventory/index"))->with('info', 'Prescription updated successfully');
+        } else {
+            return redirect()->back()->with('error', $pharmacy_billing_model->errors)->with('error', 'Invalid data');
+        }
+    }
+
+
+    public function delete($id = null)  {
+        $this->pharmacy_billing_model->where('id', $id)->delete();
+        $details = $this->pharmacy_billing_details_model->where('billing_id', $id)->select('*');
+
+        if($details) {
+            $this->pharmacy_billing_details_model->where('billing_id', $id)->select('*')->delete();
+        }
+        return redirect()->to(base_url('/pharmacy/inventory/index'))->with('info', 'Prescription Sale Deleted successfully');
     }
 }

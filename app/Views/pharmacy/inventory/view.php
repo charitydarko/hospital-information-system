@@ -51,8 +51,8 @@
                                             }
                                         ?>
                                     </dd>
-                                    <dt>Appointment Code</dt><dd><?= esc($appointment->id) ?></dd>
-                                    <dt>Patient Code</dt><dd><?php echo esc($appointment->patient_id) ?></dd>
+                                    <dt>Appointment Code</dt><dd><?= esc($appointment[0]->id) ?></dd>
+                                    <dt>Patient Code</dt><dd><?php echo esc($appointment[0]->patient_id) ?></dd>
                                     
                                 </dl> 
                             </div>
@@ -64,12 +64,12 @@
                         <div class="row">
                             <div class="col-sm-12">
                             <dl class="dl-horizontal">
-                                <dt>Total Cost</dt><dd><?= 'GH¢ ' . $prescription_sale[0]->total ?></dd>
+                                <dt>Total Cost</dt><dd><?= 'GH¢ ' . $prescription_sale->total ?></dd>
                                 <dt>Tax</dt>
                                 <dd>
                                     <?php
-                                        if($prescription_sale[0]->tax) {
-                                            echo 'GH¢ ' . $prescription_sale[0]->tax;
+                                        if($prescription_sale->tax) {
+                                            echo 'GH¢ ' . $prescription_sale->tax;
                                         } else {
                                             echo 'N/A';
                                         }
@@ -78,14 +78,14 @@
                                 <dt>Discount</dt>
                                 <dd>
                                     <?php
-                                        if($prescription_sale[0]->discount) {
-                                            echo 'GH¢ ' . $prescription_sale[0]->discount;
+                                        if($prescription_sale->discount) {
+                                            echo 'GH¢ ' . $prescription_sale->discount;
                                         } else {
                                             echo 'N/A';
                                         }
                                     ?>
                                 </dd>
-                                <dt>Status</dt><dd><?= ((esc($prescription_sale[0]->status)==1)?'Paid':'Unpaid'); ?></dd>
+                                <dt>Status</dt><dd><?= ((esc($prescription_sale->status)==1)?'Paid':'Unpaid'); ?></dd>
                                 
                             </dl> 
                             </div>

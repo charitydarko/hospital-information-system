@@ -71,7 +71,7 @@ class Prescription extends BaseController
 
     public function delete($id = null)  {
         $this->prescription_model->where('diagnosis_id', $id)->delete();
-        return redirect()->to( base_url('/pharmacy/prescription/request'))->with('info', 'Prescription deleted successfully');
+        return redirect()->to(base_url('/pharmacy/prescription/request'))->with('info', 'Prescription deleted successfully');
     }
     
 

@@ -1,0 +1,427 @@
+CRITICAL - 2022-04-16 11:55:10 --> Attempt to read property "appointment_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Views\pharmacy\inventory\edit.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 25)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): view('pharmacy/invent...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('3')
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-04-16 11:58:30 --> Attempt to read property "registration_code" on array
+#0 C:\wamp64\www\hospital-information-system\app\Views\pharmacy\inventory\edit.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 30)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): view('pharmacy/invent...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('3')
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-04-16 12:08:02 --> Undefined variable $debit_account_list
+#0 C:\wamp64\www\hospital-information-system\app\Views\pharmacy\inventory\edit.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp64\\www\\h...', 76)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): view('pharmacy/invent...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('3')
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-04-16 12:08:25 --> Call to undefined function display()
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): view('pharmacy/invent...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('3')
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-04-16 12:10:02 --> Call to undefined function display()
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): view('pharmacy/invent...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('3')
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-04-16 12:14:55 --> Call to undefined function display()
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): view('pharmacy/invent...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('3')
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-04-16 12:20:41 --> Attempt to read property "total" on array
+#0 C:\wamp64\www\hospital-information-system\app\Views\pharmacy\inventory\edit.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 97)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): view('pharmacy/invent...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('3')
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-04-16 12:44:42 --> Undefined variable $prescription_sale
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp64\\www\\h...', 105)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('3')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 12:58:27 --> Undefined variable $appointment_id
+#0 C:\wamp64\www\hospital-information-system\app\Views\pharmacy\inventory\edit.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp64\\www\\h...', 15)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): view('pharmacy/invent...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('3')
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-04-16 12:59:00 --> Object of class App\Entities\PharmacyBillingEntity could not be converted to string
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): view('pharmacy/invent...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('3')
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-04-16 13:01:56 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 100)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('method="post"')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 13:25:47 --> Undefined variable $prescription
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp64\\www\\h...', 124)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->update('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 13:26:29 --> Undefined variable $prescription
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp64\\www\\h...', 124)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->update('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 13:45:30 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(133): sizeof(NULL)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->update('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+ERROR - 2022-04-16 13:48:33 --> Column 'appointment_id' cannot be null
+CRITICAL - 2022-04-16 13:48:33 --> Column 'appointment_id' cannot be null
+#0 C:\wamp64\www\hospital-information-system\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ph...', 0)
+#1 C:\wamp64\www\hospital-information-system\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ph...')
+#2 C:\wamp64\www\hospital-information-system\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ph...')
+#3 C:\wamp64\www\hospital-information-system\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ph...', Array, false)
+#4 C:\wamp64\www\hospital-information-system\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\hospital-information-system\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\hospital-information-system\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\wamp64\www\hospital-information-system\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(143): CodeIgniter\BaseModel->save(Array)
+#9 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->update('1')
+#10 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#11 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#14 {main}
+ERROR - 2022-04-16 13:48:51 --> Column 'appointment_id' cannot be null
+CRITICAL - 2022-04-16 13:48:51 --> Column 'appointment_id' cannot be null
+#0 C:\wamp64\www\hospital-information-system\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ph...', 0)
+#1 C:\wamp64\www\hospital-information-system\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ph...')
+#2 C:\wamp64\www\hospital-information-system\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ph...')
+#3 C:\wamp64\www\hospital-information-system\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ph...', Array, false)
+#4 C:\wamp64\www\hospital-information-system\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\hospital-information-system\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\hospital-information-system\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\wamp64\www\hospital-information-system\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(143): CodeIgniter\BaseModel->save(Array)
+#9 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->update('1')
+#10 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#11 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#14 {main}
+ERROR - 2022-04-16 13:51:00 --> Column 'appointment_id' cannot be null
+CRITICAL - 2022-04-16 13:51:00 --> Column 'appointment_id' cannot be null
+#0 C:\wamp64\www\hospital-information-system\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ph...', 0)
+#1 C:\wamp64\www\hospital-information-system\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ph...')
+#2 C:\wamp64\www\hospital-information-system\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ph...')
+#3 C:\wamp64\www\hospital-information-system\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ph...', Array, false)
+#4 C:\wamp64\www\hospital-information-system\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\hospital-information-system\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\hospital-information-system\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\wamp64\www\hospital-information-system\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(147): CodeIgniter\BaseModel->save(Array)
+#9 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->update('1')
+#10 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#11 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#14 {main}
+CRITICAL - 2022-04-16 14:14:09 --> Attempt to read property "patient_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 102)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 14:16:35 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 102)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 14:17:34 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 102)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 14:17:35 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 102)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 14:17:35 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 102)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 14:17:35 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 102)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 14:17:36 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 102)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 14:17:37 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 102)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 14:17:37 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 102)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 14:17:37 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 102)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 14:17:38 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 102)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 14:17:38 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 102)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 14:17:38 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 102)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 14:17:38 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 102)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 14:17:56 --> Cannot use object of type App\Entities\PharmacyBillingEntity as array
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): view('pharmacy/invent...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-04-16 14:18:25 --> Cannot use object of type App\Entities\PharmacyBillingEntity as array
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): view('pharmacy/invent...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-04-16 14:18:45 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Views\pharmacy\inventory\edit.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 31)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): view('pharmacy/invent...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-04-16 14:19:10 --> Cannot use object of type App\Entities\PharmacyBillingEntity as array
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): view('pharmacy/invent...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-04-16 14:19:34 --> Cannot use object of type App\Entities\PharmacyBillingEntity as array
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): view('pharmacy/invent...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-04-16 14:19:36 --> Cannot use object of type App\Entities\PharmacyBillingEntity as array
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(105): view('pharmacy/invent...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->edit('1')
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-04-16 14:26:56 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 89)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->view('1')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-04-16 14:28:24 --> Attempt to read property "id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Views\pharmacy\inventory\view.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 54)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(94): view('pharmacy/invent...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->view('1')
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-04-16 14:29:00 --> Cannot use object of type App\Entities\PharmacyBillingEntity as array
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(94): view('pharmacy/invent...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->view('1')
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-04-16 14:30:04 --> Cannot use object of type App\Entities\PharmacyBillingEntity as array
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(94): view('pharmacy/invent...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->view('1')
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-04-16 14:30:05 --> Cannot use object of type App\Entities\PharmacyBillingEntity as array
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacy/invent...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacy\Inventory.php(94): view('pharmacy/invent...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacy\Inventory->view('1')
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Inventory))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}

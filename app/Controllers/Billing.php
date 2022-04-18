@@ -77,6 +77,7 @@ class Billing extends BaseController
 					if(!empty($item_name[$i]))  
                     $this->billing_details_model->save([
                         'appointment_id' => $this->request->getPost('appointment_code'),
+                        'billing_id' => $this->billing_model->insertID,
                         'item_name' => $item_name[$i],
                         'description' => $description[$i],
                         'quantity' => $quantity[$i],
@@ -90,21 +91,82 @@ class Billing extends BaseController
     }
 
     public function edit($id=null) {
+        $data['invoice'] = $this->billing_model->find($id);
+        $data['invoice_details'] = $this->billing_details_model->where('billing_id', $id)->select('*')->find();
+        $data['appointment'] = $this->appointment_model->where('id',  $data['invoice']->appointment_id)->find();
+        $data['patient'] = $this->patient_model->where('registration_code', $data['appointment'][0]->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
         $data['heading'] = $this->heading;
         $data['title'] = 'Edit';
-        $data['billing'] = $this->getBillingOr404($id);
-        $data['patient'] = $this->getPatientOr404($id);
         $data['content']  = view('billing/edit',$data);
         return view('layout/main_wrapper',$data);
     }
 
+    public function update($id = null) {
+        $invoice = $this->billing_model->find($id);
+        $invoice->fill([
+            'discount' => $this->request->getPost('discount'),
+            'tax' => $this->request->getPost('tax'),
+            'total' => $this->request->getPost('total'),
+            'status' => $this->request->getPost('status'),
+            'served_by' => $this->session->get('id')
+        ]);
+
+        if(!$invoice->hasChanged()){
+            return redirect()->back()->withInput()->with('warning', 'Nothing to update');
+        }
+
+        if ($this->billing_model->save($invoice)) {
+            $details = $this->billing_details_model->where('billing_id', $id)->select('*');
+
+            if($details) {
+                $this->billing_details_model->where('billing_id', $id)->select('*')->delete();
+            }
+
+            $item_name = $this->request->getPost('item_name');
+            $description = $this->request->getPost('description');
+            $quantity = $this->request->getPost('quantity');
+            $price = $this->request->getPost('price');
+            $subtotal = $this->request->getPost('subtotal');
+
+            for ($i=0; $i < sizeof($item_name); $i++)
+            {
+                if(!empty($item_name[$i]))  
+                $this->billing_details_model->save([
+                    'billing_id' => $id,
+                    'appointment_id' => $this->request->getPost('appointment_code'),
+                    'item_name' => $item_name[$i],
+                    'description' => $description[$i],
+                    'quantity' => $quantity[$i],
+                    'price' => $price[$i],
+                    'subtotal' => $subtotal[$i]
+                ]);
+            }
+            
+            return redirect()->to(base_url("billing"))->with('info', 'Billing updated successfully');
+        } else {
+            return redirect()->back()->with('error', $pharmacy_billing_model->errors)->with('error', 'Invalid data');
+        }
+    }
+
     public function view($id=null) {
+        $data['invoice'] = $this->billing_model->find($id);
+        $data['invoice_details'] = $this->billing_details_model->where('billing_id', $id)->select('*')->find();
+        $data['appointment'] = $this->appointment_model->where('id',  $data['invoice']->appointment_id)->find();
+        $data['patient'] = $this->patient_model->where('registration_code', $data['appointment'][0]->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
         $data['heading'] = $this->heading;
         $data['title'] = 'View';
-        $data['billing_details'] = $this->getBillingOr404($id);
-        $data['patient'] = $this->getPatientOr404($id);
         $data['content']  = view('billing/view',$data);
         return view('layout/main_wrapper',$data);
+    }
+
+    public function delete($id = null)  {
+        $this->billing_model->where('id', $id)->delete();
+        $details = $this->billing_details_model->where('billing_id', $id)->select('*');
+
+        if($details) {
+            $this->billing_details_model->where('billing_id', $id)->select('*')->delete();
+        }
+        return redirect()->to(base_url('billing'))->with('info', 'Billing Deleted successfully');
     }
 
     // Appointment for json

@@ -11,6 +11,7 @@ class BillingDetailsModel extends Model
 
     protected $allowedFields = [
         'appointment_id',
+        'billing_id',
         'item_name',
         'description',
         'quantity',

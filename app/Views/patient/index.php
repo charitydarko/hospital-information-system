@@ -52,7 +52,7 @@
                                     <td><?php echo esc($patient->phone); ?></td>
                                     <td><?php echo esc($patient->address); ?></td>
                                     <td class="center">
-                                        <a href="<?=site_url("/patient/profile/".$patient->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a> 
+                                        <a href="<?=site_url("/patient/view/".$patient->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a> 
                                         <a href="<?=site_url("/patient/edit/".$patient->id)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a> 
 
                                         <a href="<?=site_url("/patient/add_document/".$patient->id)?>" class="btn btn-xs btn-warning" title="Add Patient Document"><i class="fa fa-plus"></i></a> 

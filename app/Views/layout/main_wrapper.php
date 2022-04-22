@@ -192,8 +192,6 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="#">Add Laboratory Test</a></li>
-              <li><a href="#">Laboratory Test List</a></li>
               <li><a href="<?= base_url("laboratory/request") ?>">Requests from Diagnosis</a></li>
             </ul>
           </li>

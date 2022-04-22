@@ -67,36 +67,6 @@
                             </div>
                         </div>
                     </div> 
-
-                    <!-- Vitals -->
-                    <div role="tabpanel" class="tab-pane" id="vitals">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                Vitals
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Diagnosis -->
-                    <div role="tabpanel" class="tab-pane" id="diagnosis">
-                        Diagnosis
-                    </div>
-
-                    <!-- laboratory -->
-                    <div role="tabpanel" class="tab-pane" id="laboratory">
-                        laboratory
-                    </div>
-
-                    <!-- Laboratory -->
-                    <div role="tabpanel" class="tab-pane" id="laboratory">
-                        Laboratory
-                    </div>
-
-                    <!-- Billing -->
-                    <div role="tabpanel" class="tab-pane" id="billing">
-                        Billing
-                    </div>
-
                 </div>  
 
             </div> 

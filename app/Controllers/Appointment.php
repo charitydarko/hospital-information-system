@@ -62,6 +62,12 @@ class Appointment extends BaseController
         $appointment = $this->getAppointmentOr404($id);
         $patient = $this->getPatientOr404($appointment->patient_id);
         $data['appointment'] = $appointment;
+        $data['vital'] = $this->vitals_model->find($id);
+        $data['diagnosis'] = $this->diagnosis_model->where('appointment_id', $id)->select('*')->find();
+        $data['prescription'] = $this->prescription_model->where('appointment_id', $id)->select('*')->find();
+        $data['laboratory'] = $this->laboratory_model->where('appointment_id', $id)->select('*')->find();
+        $data['billings'] = $this->billing_model->where('appointment_id', $id)->select('*')->find();
+        $data['staff'] = $this->user_model;
         $data['patient'] = $patient;
         $data['heading'] = $this->heading;
         $data['title'] = 'Profile';

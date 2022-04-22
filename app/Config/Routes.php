@@ -31,8 +31,49 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Auth::login');
-$routes->get('/dashboard', 'Dashboard::index',['filter' => 'authGuard']);
+
+$routes->group('', ['filter'=>'authGuard'], function($routes){
+    $routes->get('', 'Auth::login');
+
+    // User
+    $routes->get('user', 'User::index');
+
+    // Dashboard 
+    $routes->get('dashboard', 'Dashboard::index');
+
+    // Patient 
+    $routes->get('patient', 'Patient::index');
+
+    // Appointment 
+    $routes->get('appointment', 'Appointment::index');
+
+    // Vitals 
+    $routes->get('vitals', 'Vitals::index');
+
+    // Diagnosis 
+    $routes->get('diagnosis', 'Diagnosis::index');
+
+     // Laboratory 
+     $routes->get('laboratory', 'Laboratory/Request::index');
+     $routes->get('laboratory/request', 'Laboratory/Request::index');
+     $routes->get('laboratory/home', 'Laboratory/Home::index');
+
+    // Pharmacy Inventory 
+    $routes->get('pharmacy/inventory', 'Pharmacy/Inventory::index');
+
+    // Pharmacy Prescription 
+    $routes->get('pharmacy/prescription', 'Pharmacy/Prescription::index');
+
+    // Billing 
+    $routes->get('billing', 'Billing::index');
+
+    // Message
+    $routes->get('message', 'Message::index');
+
+    // Noticeboard
+    $routes->get('noticeboard', 'Noticeboard::index');
+    
+});
 
 //$routes->get('/', 'Home::index');
 

@@ -15,13 +15,15 @@ class Patient extends BaseController
       return view('layout/main_wrapper',$data);
     }
 
-    // View Profile info
-    public function profile($id) {
-      $patient = $this->getPatientOr404($id);
-      $data['patient'] = $patient;
+    // View info
+    public function view($id) {
+      $data['patient'] = $this->getPatientOr404($id);
+      $data['documents'] = $this->document_model->where('patient_id', $data['patient']->registration_code)->select('*')->find();
+      $data['appointments'] = $this->appointment_model->where('patient_id', $data['patient']->registration_code)->select('*')->find();
+      $data['staff'] = $this->user_model;
       $data['heading'] = $this->heading;
-      $data['title'] = 'Profile';
-      $data['content']  = view('patient/profile',$data);
+      $data['title'] = 'View';
+      $data['content']  = view('patient/view',$data);
       return view('layout/main_wrapper',$data);
     }
 

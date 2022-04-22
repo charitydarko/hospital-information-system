@@ -35,7 +35,13 @@
                                         <?= $staff->find($appointment->created_by)->firstname; ?>
                                         <?= $staff->find($appointment->created_by)->lastname; ?>
                                     </td>
-                                    <td><?= esc($appointment->created_at); ?></td>
+                                    <td>
+                                        <?php
+                                            $date = new DateTime($appointment->created_at);
+                                            $strip = $date->format('Y-m-d');
+                                            echo $strip;
+                                        ?>
+                                    </td>
                                     <td><?php echo esc($appointment->status==1?'Active':'Inactive'); ?></td>
                                     <td class="center">
                                         <a href="<?=site_url("/appointment/view/".$appointment->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a>

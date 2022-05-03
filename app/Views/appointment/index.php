@@ -44,10 +44,10 @@
                                     </td>
                                     <td><?php echo esc($appointment->status==1?'Active':'Inactive'); ?></td>
                                     <td class="center">
-                                        <a href="<?=site_url("/appointment/view/".$appointment->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a>
-                                        <a href="<?=site_url("/vitals/add/".$appointment->id)?>" class="btn btn-xs btn-warning"><i class="fa fa-heart-pulse"></i></a> 
-                                        <a href="<?=site_url("/appointment/edit/".$appointment->id)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a> 
-                                        <a href="<?=site_url("/appointment/delete/".$appointment->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i></a> 
+                                        <a href="<?=site_url("/appointment/view/".$appointment->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye" title="View Appointment"></i></a>
+                                        <a href="<?=site_url("/vitals/add/".$appointment->id)?>" class="btn btn-xs btn-warning" title="Add Vitals"><i class="fa fa-heart-pulse"></i></a> 
+                                        <a href="<?=site_url("/appointment/edit/".$appointment->id)?>" class="btn btn-xs btn-primary" title="Edit Appointment"><i class="fa fa-edit"></i></a> 
+                                        <a href="<?=site_url("/appointment/delete/".$appointment->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Appointment"><i class="fa fa-trash"></i></a> 
                                     </td>
                                 </tr>
                                 <?php $sl++; ?>

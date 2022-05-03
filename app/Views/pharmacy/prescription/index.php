@@ -55,9 +55,9 @@
                                         ?>
                                     </td>
                                     <td class="center">
-                                        <a href="<?=site_url("pharmacy/prescription/view/".$diag->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a>
-                                        <a href="<?=site_url("pharmacy/prescription/edit/".$diag->id)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a> 
-                                        <a href="<?=site_url("pharmacy/prescription/delete/".$diag->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i></a> 
+                                        <a href="<?=site_url("pharmacy/prescription/view/".$diag->id)?>" class="btn btn-xs btn-success" title="View Prescription"><i class="fa fa-eye"></i></a>
+                                        <a href="<?=site_url("pharmacy/prescription/edit/".$diag->id)?>" class="btn btn-xs btn-primary" title="Edit Prescription"><i class="fa fa-edit"></i></a> 
+                                        <a href="<?=site_url("pharmacy/prescription/delete/".$diag->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Prescription"><i class="fa fa-trash"></i></a> 
                                     </td>
                                 </tr>
                                 <?php $sl++; ?>

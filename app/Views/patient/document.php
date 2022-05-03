@@ -38,9 +38,9 @@
                                         <?= $staff->find($document->upload_by)->lastname; ?>
                                     </td> 
                                     <td class="center" width="80">
-                                        <a target="_blank" href="<?php echo base_url('./uploads/patient/documents/'.$document->hidden_attach_file) ?>" class="btn btn-xs btn-info"><i class="fa fa-eye"></i></a>
-                                        <a download href="<?php echo base_url('./uploads/patient/documents/'.$document->hidden_attach_file) ?>" class="btn btn-xs btn-success"><i class="fa fa-download"></i></a>
-                                        <a href="<?php echo base_url("patient/document_delete/$document->id?file=$document->hidden_attach_file") ?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?') "><i class="fa fa-trash"></i></a> 
+                                        <a target="_blank" href="<?php echo base_url('./uploads/patient/documents/'.$document->hidden_attach_file) ?>" class="btn btn-xs btn-info" title="View Document"><i class="fa fa-eye"></i></a>
+                                        <a download href="<?php echo base_url('./uploads/patient/documents/'.$document->hidden_attach_file) ?>" class="btn btn-xs btn-success"  title="Download Document"><i class="fa fa-download"></i></a>
+                                        <a href="<?php echo base_url("patient/document_delete/$document->id?file=$document->hidden_attach_file") ?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?') "  title="Delete Document"><i class="fa fa-trash"></i></a> 
                                     </td>
                                 </tr>
                                 <?php $sl++; ?>

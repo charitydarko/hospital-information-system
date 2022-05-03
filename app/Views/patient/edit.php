@@ -13,7 +13,7 @@
         <div class="panel-body panel-form">
           <div class="row">
               <div class="col-md-9 col-sm-12 ">
-                <form action=<?="/patient/update/".$patient->id ?> method="post" >
+                <form action=<?="/patient/update/".$patient->registration_code ?> method="post" >
                   <?= csrf_field() ?>
                   <div class="form-group row">
                       <label for="firstname" class="col-xs-3 col-form-label">First Name<i class="text-danger">*</i></label>
@@ -69,13 +69,27 @@
                       <div class="col-xs-9">
                           <div class="form-check">
                               <label class="radio-inline">
-                              <input type="radio" name="gender" value="1" >Male
+                              <?php if($patient->gender == "1") { ?>
+                                <input type="radio" name="gender" value="1" checked > Male
+                              <?php } else { ?>
+                                <input type="radio" name="gender" value="1" >Male
+                              <?php } ?>
                               </label>
+
                               <label class="radio-inline">
-                              <input type="radio" name="gender" value="2">Female
+                              <?php if($patient->gender == "2") { ?>
+                                <input type="radio" name="gender" value="2" checked > Female
+                              <?php } else { ?>
+                                <input type="radio" name="gender" value="2" >Female
+                              <?php } ?>
                               </label>
+
                               <label class="radio-inline">
-                              <input type="radio" name="gender" value="3">Other
+                              <?php if($patient->gender == "3") { ?>
+                                <input type="radio" name="gender" value="3" checked > Other
+                              <?php } else { ?>
+                                <input type="radio" name="gender" value="3" >Other
+                              <?php } ?>
                               </label>
                           </div>
                       </div>

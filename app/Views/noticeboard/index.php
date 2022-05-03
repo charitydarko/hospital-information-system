@@ -40,9 +40,9 @@
                                     </td>
                                     <td><?= ((esc($item->status)==1)?'Active':'Inactive'); ?></td>
                                     <td class="center" width="80">
-                                        <a href="<?= site_url("/noticeboard/view/".$item->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a> 
-                                        <a href="<?= site_url("/noticeboard/edit/".$item->id)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a> 
-                                        <a href="<?= site_url("/noticeboard/delete/".$item->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('<?php echo 'Are you sure' ?>')"><i class="fa fa-trash"></i></a>
+                                        <a href="<?= site_url("/noticeboard/view/".$item->id)?>" class="btn btn-xs btn-success" title="View Notice"><i class="fa fa-eye"></i></a> 
+                                        <a href="<?= site_url("/noticeboard/edit/".$item->id)?>" class="btn btn-xs btn-primary" title="Edit Notice"><i class="fa fa-edit"></i></a> 
+                                        <a href="<?= site_url("/noticeboard/delete/".$item->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('<?php echo 'Are you sure' ?>')" title="Delete Notice"><i class="fa fa-trash"></i></a>
                                     </td> 
                                 </tr>
                                 <?php $sl++; ?>

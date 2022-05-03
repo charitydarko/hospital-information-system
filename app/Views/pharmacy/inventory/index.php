@@ -50,9 +50,9 @@
                                     </td>
                                     <td><?= ((esc($billing->status)==1)?'Paid':'Unpaid'); ?></td>
                                     <td class="center">
-                                        <a href="<?=site_url("pharmacy/inventory/view/".$billing->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a>
-                                        <a href="<?=site_url("pharmacy/inventory/edit/".$billing->id)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a> 
-                                        <a href="<?=site_url("pharmacy/inventory/delete/".$billing->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i></a> 
+                                        <a href="<?=site_url("pharmacy/inventory/view/".$billing->id)?>" class="btn btn-xs btn-success" title="View Pharmacy Sale"><i class="fa fa-eye"></i></a>
+                                        <a href="<?=site_url("pharmacy/inventory/edit/".$billing->id)?>" class="btn btn-xs btn-primary" title="Edit Pharmacy Sale"><i class="fa fa-edit"></i></a> 
+                                        <a href="<?=site_url("pharmacy/inventory/delete/".$billing->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Pharmacy Sale"><i class="fa fa-trash"></i></a> 
                                     </td>
                                 </tr>
                                 <?php $sl++; ?>

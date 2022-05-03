@@ -18,7 +18,7 @@
               <?= csrf_field() ?>
 
               <div class="form-group row">
-                <label for="patient_id" class="col-xs-3 col-form-label">Patient Id<i class="text-danger">*</i></label>
+                <label for="patient_id" class="col-xs-3 col-form-label">Patient Code<i class="text-danger">*</i></label>
                 <div class="col-xs-9">
                   <input name="patient_id"  type="text" class="form-control" id="patient_id" value="<?= old('patient_id') ?>">
                 </div>

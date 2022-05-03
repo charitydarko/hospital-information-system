@@ -21,10 +21,10 @@
                             <th>Mobile</th>
                             <th>Address</th>
                             <th>Gender</th>
-                            <th>Action</th>
                             <th>User Role</th>
                             <th>Create Date</th>
                             <th>Status</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -52,11 +52,6 @@
                                             }
                                         ?>
                                     </td>
-                                    <td class="center" width="80">
-                                        <a href="<?= base_url("user/view/".$user->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a> 
-                                        <a href="<?= base_url("user/edit/".$user->id)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a> 
-                                        <a href="<?= site_url("user/delete/".$user->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('<?php echo 'Are you sure' ?>')"><i class="fa fa-trash"></i></a>
-                                    </td> 
                                     <td><?php
                                             switch($user->user_role) {
                                                 case 1:
@@ -92,6 +87,11 @@
                                     echo $strip;
                                 ?></td>
                                     <td><?= ((esc($user->status)==1)?'Active':'Inactive'); ?></td>
+                                    <td class="center" width="80">
+                                        <a href="<?= base_url("user/view/".$user->id)?>" class="btn btn-xs btn-success" title="View User"><i class="fa fa-eye"></i></a> 
+                                        <a href="<?= base_url("user/edit/".$user->id)?>" class="btn btn-xs btn-primary" title="Edit User"><i class="fa fa-edit"></i></a> 
+                                        <a href="<?= site_url("user/delete/".$user->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('<?php echo 'Are you sure' ?>')" title="Delete User"><i class="fa fa-trash"></i></a>
+                                    </td>
                                 </tr>
                                 <?php $sl++; ?>
                             <?php } ?> 

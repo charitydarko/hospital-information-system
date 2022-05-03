@@ -62,10 +62,10 @@
                                         ?>
                                     </td>
                                     <td class="center">
-                                        <a href="<?=site_url("/vitals/view/".$vital->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a>
-                                        <a href="<?=site_url("/diagnosis/add/".$vital->id)?>" class="btn btn-xs btn-warning"><i class="fa ti-book"></i></a> 
-                                        <a href="<?=site_url("/vitals/edit/".$vital->id)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a> 
-                                        <a href="<?=site_url("/vitals/delete/".$vital->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i></a> 
+                                        <a href="<?=site_url("/vitals/view/".$vital->id)?>" class="btn btn-xs btn-success" title="View Vitals"><i class="fa fa-eye"></i></a>
+                                        <a href="<?=site_url("/diagnosis/add/".$vital->id)?>" class="btn btn-xs btn-warning" title="Add Diagnosis"><i class="fa ti-book"></i></a> 
+                                        <a href="<?=site_url("/vitals/edit/".$vital->id)?>" class="btn btn-xs btn-primary" title="Edit Vitals"><i class="fa fa-edit"></i></a> 
+                                        <a href="<?=site_url("/vitals/delete/".$vital->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Vitals"><i class="fa fa-trash"></i></a> 
                                     </td>
                                 </tr>
                                 <?php $sl++; ?>

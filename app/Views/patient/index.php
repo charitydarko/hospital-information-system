@@ -52,12 +52,13 @@
                                     <td><?php echo esc($patient->phone); ?></td>
                                     <td><?php echo esc($patient->address); ?></td>
                                     <td class="center">
-                                        <a href="<?=site_url("/patient/view/".$patient->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a> 
-                                        <a href="<?=site_url("/patient/edit/".$patient->id)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a> 
+                                        <a href="<?=site_url("/patient/view/".$patient->registration_code)?>" class="btn btn-xs btn-success"><i class="fa fa-eye" title="View Patient Info"></i></a>
 
-                                        <a href="<?=site_url("/patient/add_document/".$patient->id)?>" class="btn btn-xs btn-warning" title="Add Patient Document"><i class="fa fa-plus"></i></a> 
+                                        <a href="<?=site_url("/patient/edit/".$patient->registration_code)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit" title="Edit Patient Info"></i></a> 
 
-                                        <a href="<?=site_url("/patient/delete/".$patient->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i></a> 
+                                        <a href="<?=site_url("/patient/add_document/".$patient->registration_code)?>" class="btn btn-xs btn-warning" title="Add Patient Document"><i class="fa fa-plus"></i></a> 
+
+                                        <a href="<?=site_url("/patient/delete/".$patient->registration_code)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Patient Info"><i class="fa fa-trash"></i></a> 
                                     </td>
                                     <td>
                                         <?php

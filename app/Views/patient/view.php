@@ -33,7 +33,7 @@
                         <div class="row">
                             <div class="col-sm-9"> 
                                 <dl class="dl-horizontal">
-                                    <dt>Patient Id</dt><dd><?php echo esc($patient->id) ?></dd> 
+                                    <dt>Patient Code</dt><dd><?php echo esc($patient->registration_code) ?></dd> 
                                     <dt>Name</dt><dd><?php echo esc($patient->firstname. ' ' . $patient->lastname) ?></dd> 
                                     <dt>Age</dt><dd><?php echo esc($patient->age); ?> Years</dd> 
                                     <dt>Gender</dt>
@@ -95,13 +95,13 @@
                                                         <?= $staff->find($document->upload_by)->lastname; ?>
                                                     </td> 
                                                     <td class="center no-print" width="110"> 
-                                                    <a target="_blank" href="<?php echo base_url('./uploads/patient/documents/'.$document->hidden_attach_file) ?>" class="btn btn-xs btn-info"><i class="fa fa-eye"></i></a>
+                                                    <a target="_blank" href="<?php echo base_url('./uploads/patient/documents/'.$document->hidden_attach_file) ?>" class="btn btn-xs btn-info" title="View Patient Document"><i class="fa fa-eye"></i></a>
 
-                                                        <a href="<?php echo base_url("patient/add_document/$document->patient_id") ?>" class="btn btn-xs btn-warning" title="Add Document"><i class="fa fa-plus"></i></a>
+                                                        <a href="<?php echo base_url("patient/add_document/$document->patient_id") ?>" class="btn btn-xs btn-warning" title="Add Patient Document"><i class="fa fa-plus"></i></a>
 
-                                                        <a download target="_blank" href="<?= base_url('./uploads/patient/documents/'.$document->hidden_attach_file) ?>" class="btn btn-xs btn-success"><i class="fa fa-download"></i></a>
+                                                        <a download target="_blank" href="<?= base_url('./uploads/patient/documents/'.$document->hidden_attach_file) ?>" class="btn btn-xs btn-success" title="Download Patient Document"><i class="fa fa-download"></i></a>
 
-                                                        <a href="<?php echo base_url("patient/document_delete/$document->id?file=$document->hidden_attach_file") ?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?') "><i class="fa fa-trash"></i></a> 
+                                                        <a href="<?php echo base_url("patient/document_delete/$document->id?file=$document->hidden_attach_file") ?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?') " title="Delete Patient Document"><i class="fa fa-trash"></i></a> 
                                                     </td>
                                                 </tr>
                                                 <?php $sl++; ?>
@@ -161,10 +161,13 @@
                                                             </td>
                                                             <td><?php echo esc($appointment->status==1?'Active':'Inactive'); ?></td>
                                                             <td class="center">
-                                                                <a href="<?=site_url("/appointment/view/".$appointment->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a>
-                                                                <a href="<?=site_url("/vitals/add/".$appointment->id)?>" class="btn btn-xs btn-warning"><i class="fa fa-heart-pulse"></i></a> 
-                                                                <a href="<?=site_url("/appointment/edit/".$appointment->id)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a> 
-                                                                <a href="<?=site_url("/appointment/delete/".$appointment->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i></a> 
+                                                                <a href="<?=site_url("/appointment/view/".$appointment->id)?>" class="btn btn-xs btn-success" title="View Patient Appointment"><i class="fa fa-eye"></i></a>
+
+                                                                <a href="<?=site_url("/vitals/add/".$appointment->id)?>" class="btn btn-xs btn-warning" title="Add Patient Vitals"><i class="fa fa-heart-pulse"></i></a> 
+
+                                                                <a href="<?=site_url("/appointment/edit/".$appointment->id)?>" class="btn btn-xs btn-primary" title="Edit Patient Appointment"><i class="fa fa-edit"></i></a> 
+
+                                                                <a href="<?=site_url("/appointment/delete/".$appointment->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Patient Appointment"><i class="fa fa-trash"></i></a> 
                                                             </td>
                                                         </tr>
                                                         <?php $sl++; ?>

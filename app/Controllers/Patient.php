@@ -16,8 +16,8 @@ class Patient extends BaseController
     }
 
     // View info
-    public function view($id) {
-      $data['patient'] = $this->getPatientOr404($id);
+    public function view($registration_code = null) {
+      $data['patient'] = $this->getPatientOr404($registration_code);
       $data['documents'] = $this->document_model->where('patient_id', $data['patient']->registration_code)->select('*')->find();
       $data['appointments'] = $this->appointment_model->where('patient_id', $data['patient']->registration_code)->select('*')->find();
       $data['staff'] = $this->user_model;
@@ -45,7 +45,10 @@ class Patient extends BaseController
         'age'  => 'required',
         'phone' => 'required',
         'address'    => 'required',
-        'registration_code'    => 'required|is_unique[patient.registration_code]'
+        'registration_code'    => [
+          'label' => 'Registration Code',
+          'rules' => 'required|is_unique[patient.registration_code]'
+        ]
       ]);
       if(!$validate) {
         $data['validation'] = $this->validator->listErrors();
@@ -57,8 +60,8 @@ class Patient extends BaseController
     } 
 
     // Edit Patient info
-    public function edit($id) {
-      $patient = $this->getPatientOr404($id);
+    public function edit($registration_code = null) {
+      $patient = $this->getPatientOr404($registration_code);
       $data['patient'] = $patient;
       $data['heading'] = $this->heading;
       $data['title'] = 'Edit';
@@ -67,8 +70,9 @@ class Patient extends BaseController
     }
 
      // Update Patient info
-     public function update($id) {
-      $patient = $this->patient_model->find($id);
+     public function update($registration_code = null) {
+      $patient = $this->patient_model->where('registration_code', $registration_code)->first();
+
       $patient->fill($this->request->getPost());
 
       if(!$patient->hasChanged()){
@@ -76,7 +80,7 @@ class Patient extends BaseController
       }
 
       if ($this->patient_model->save($patient)) {
-        return redirect()->to("/patient/profile/$id")->with('info', 'Task updated successfully');
+        return redirect()->to("/patient/view/$registration_code")->with('info', 'Task updated successfully');
       } else {
         return redirect()->back()->with('error', $patient_model->errors)->with('error', 'Invalid data');
       }
@@ -94,20 +98,12 @@ class Patient extends BaseController
     }
 
     // Add Document
-    public function add_document($id = null){
-      $patient = $this->getPatientOr404($id);
+    public function add_document($registration_code = null){
+      $patient = $this->getPatientOr404($registration_code);
       $data['isPost'] = $this->request->getMethod()=='post'; 
       $data['heading'] = 'Patient Document';
       $data['title'] = 'Add';
       $data['uri'] = $this->request->uri->getSegment(3);
-      // $data['doctor_list'] = $this->user_model->find(2);
-
-      // $doctors = [];
-      // foreach ($data['doctor_list'] as $doctor) {
-      //   $fullname = $doctor['firstname'] . ' ' . $doctor['lastname'];
-      //   array_push($doctors, $fullname);
-      // }
-      // $data['doctor_list'] = $doctors;
       $data['content'] = view('patient/add_document', $data);
       return view('layout/main_wrapper',$data);
     }
@@ -161,25 +157,26 @@ class Patient extends BaseController
     } 
 
     // Delete Patient by ID
-    public function delete($id) {
-      $patient = $this->getPatientOr404($id);
-      $data['post'] = $this->patient_model->where('id', $id)->delete();
+    public function delete($registration_code) {
+      $patient = $this->getPatientOr404($registration_code);
+      $data['post'] = $this->patient_model->where('iregistration_coded', $registration_code)->delete();
       return redirect()->to( base_url('patient') );
     }
 
     // Delete document
-    public function document_delete($id=null, $file=null) {
-      $data['document'] = $this->document_model->where('id', $id)->delete();
+    public function document_delete($registration_code=null, $file=null) {
+      $data['document'] = $this->document_model->where('registration_code', $registration_code)->delete();
       return redirect()->to( base_url('patient/document'))->with('info', 'Deleted successfully');
     }
 
     // Get patient by ID
-    public function getPatientOr404($id) {
-      $patient = $this->patient_model->find($id);
+    public function getPatientOr404($registration_code = null) {
+      $patient = $this->patient_model->where('registration_code', $registration_code)->select('*')->find();
+      $patient = $patient['0'];
       if($patient === null) {
-        throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with id $id not found");
+          throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");
       }
-      return $patient;
+        return $patient;
     }
 
   }

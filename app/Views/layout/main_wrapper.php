@@ -133,7 +133,6 @@
             <ul class="treeview-menu">
               <li><a href="<?= base_url("patient/new") ?>">Add Patient</a></li>
               <li><a href="<?= base_url("patient") ?>">Patient List</a></li> 
-              <li><a href="<?= base_url("patient/add_document") ?>">Add Document</a></li> 
             </ul>
           </li>
           <li class="treeview">

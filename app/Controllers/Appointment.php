@@ -125,7 +125,7 @@ class Appointment extends BaseController
     // Delete Appointment by ID
     public function delete($id) {
         $appointment = $this->getAppointmentOr404($id);
-        $data['post'] = $this->appointment_model->where('id', $id)->delete();
+        $data['post'] = $this->appointment_model->where('appointment_id', $id)->delete();
         return redirect()->to( base_url('appointment'))->with('info', 'Appointment deleted successfully');
     }
 

@@ -13,10 +13,11 @@ class Vitals extends BaseController
     {
         $data['vitals'] = $this->vitals_model->findAll();
         $data['staff'] = $this->user_model;
-        $data['appointments'] = $this->appointment_model;
+        $data['appointment'] = $this->appointment_model;
         $data['patients'] = $this->patient_model;
         $data['heading'] = $this->heading;
         $data['title'] = 'List';
+        $data['callfromview'] = $this;
         $data['content']  = view('vitals/index',$data);
         return view('layout/main_wrapper',$data);
     }
@@ -152,23 +153,32 @@ class Vitals extends BaseController
 
 
     // Get Appointment by ID
-    public function getAppointmentOr404($id) {
+   public function getAppointment($id) {
         $appointment = $this->appointment_model->where("appointment_id", $id)->find();
-        $appointment = $appointment['0'];
         if($appointment === null) {
-          throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $id not found");
+        throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $id not found");
         }
         return $appointment;
     }
 
-    // Get patient by registration_code
-    public function getPatientOr404($registration_code) {
-        $patient = $this->patient_model->where('registration_code', $registration_code)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
-        $patient = $patient['0'];
-        if($patient === null) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");
+   // Get Appointment by ID
+   public function getAppointmentOr404($id) {
+        $appointment = $this->appointment_model->where("appointment_id", $id)->find();
+        $appointment = $appointment['0'];
+        if($appointment === null) {
+        throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $id not found");
         }
-        return $patient;
+        return $appointment;
     }
+
+// Get patient by registration_code
+public function getPatientOr404($registration_code) {
+    $patient = $this->patient_model->where('registration_code', $registration_code)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
+    $patient = $patient['0'];
+    if($patient === null) {
+        throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");
+    }
+    return $patient;
+}
 
 }

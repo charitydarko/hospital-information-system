@@ -2,12 +2,12 @@
     <!--  table area -->
     <div class="col-sm-12">
         <div  class="panel panel-default thumbnail">
- 
+
             <div class="panel-heading no-print">
-                <div class="btn-group"> 
-                    <a class="btn btn-success" href="<?php echo base_url("/vitals/add") ?>"> <i class="fa fa-plus"></i>  Add Vitals </a>  
+                <div class="btn-group">
+                    <a class="btn btn-success" href="<?php echo base_url("/vitals/add") ?>"> <i class="fa fa-plus"></i>  Add Vitals </a>
                 </div>
-            </div> 
+            </div>
             <div class="panel-body">
                 <table width="100%" class="datatable table table-striped table-bordered table-hover">
                     <thead>
@@ -33,15 +33,12 @@
                                     <td><?= $sl; ?></td>
                                     <td><?= esc($vital->appointment_id); ?></td>
                                     <td>
-                                        <?php 
-                                            
-                                            $appointment = $appointments->find($vital->appointment_id);
-                                            echo esc($appointment->patient_id);
-                                        ?>
+                                    <?= $appointment->find($vital->appointment_id)->patient_id; ?>
                                     </td>
                                     <td>
                                         <input type="hidden" name="patient_registration_code" value="<?php #$appointment->patient_id ?>">
-                                        <?php 
+                                        <?php
+                                            $appointment = $appointment->find($vital->appointment_id);
                                             $patient = $patients->where('registration_code', $appointment->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
                                             echo esc($patient[0]->firstname) . ' ' . esc($patient[0]->lastname);
                                         ?>
@@ -55,7 +52,7 @@
                                         <?= $staff->find($vital->created_by)->lastname; ?>
                                     </td>
                                     <td>
-                                        <?php 
+                                        <?php
                                             $date = new DateTime($vital->updated_at);
                                             $strip = $date->format('Y-m-d');
                                             echo $strip;
@@ -63,14 +60,14 @@
                                     </td>
                                     <td class="center">
                                         <a href="<?=site_url("/vitals/view/".$vital->id)?>" class="btn btn-xs btn-success" title="View Vitals"><i class="fa fa-eye"></i></a>
-                                        <a href="<?=site_url("/diagnosis/add/".$vital->id)?>" class="btn btn-xs btn-warning" title="Add Diagnosis"><i class="fa ti-book"></i></a> 
-                                        <a href="<?=site_url("/vitals/edit/".$vital->id)?>" class="btn btn-xs btn-primary" title="Edit Vitals"><i class="fa fa-edit"></i></a> 
-                                        <a href="<?=site_url("/vitals/delete/".$vital->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Vitals"><i class="fa fa-trash"></i></a> 
+                                        <a href="<?=site_url("/diagnosis/add/".$vital->id)?>" class="btn btn-xs btn-warning" title="Add Diagnosis"><i class="fa ti-book"></i></a>
+                                        <a href="<?=site_url("/vitals/edit/".$vital->id)?>" class="btn btn-xs btn-primary" title="Edit Vitals"><i class="fa fa-edit"></i></a>
+                                        <a href="<?=site_url("/vitals/delete/".$vital->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Vitals"><i class="fa fa-trash"></i></a>
                                     </td>
                                 </tr>
                                 <?php $sl++; ?>
-                            <?php } ?> 
-                        <?php } ?> 
+                            <?php } ?>
+                        <?php } ?>
                     </tbody>
                 </table>  <!-- /.table-responsive -->
             </div>

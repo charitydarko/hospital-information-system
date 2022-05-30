@@ -20,6 +20,30 @@ class Inventory extends BaseController
         return view('layout/main_wrapper',$data);
     }
 
+    public function today()
+    {
+        $data['staff'] = $this->user_model;
+        $data['appointments'] = $this->appointment_model;
+        $data['patients'] = $this->patient_model;
+        $data['billings_today'] = $this->pharmacy_billing_model->where('payment_method', 'pharmacy_sale')->select('*')->find();
+        $data['heading'] = $this->heading;
+        $data['title'] = 'Today\'s Prescription Sales List';
+        $data['content']  = view('pharmacy/inventory/today',$data);
+        return view('layout/main_wrapper',$data);
+    }
+
+    public function month()
+    {
+        $data['staff'] = $this->user_model;
+        $data['appointments'] = $this->appointment_model;
+        $data['patients'] = $this->patient_model;
+        $data['billings_month'] = $this->pharmacy_billing_model->where('payment_method', 'pharmacy_sale')->select('*')->find();
+        $data['heading'] = $this->heading;
+        $data['title'] = 'Month\'s Prescription Sales List';
+        $data['content']  = view('pharmacy/inventory/month',$data);
+        return view('layout/main_wrapper',$data);
+    }
+
     public function sale()
     {
         $data['heading'] = $this->heading;

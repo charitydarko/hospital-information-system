@@ -186,7 +186,12 @@
                   <div class="form-group row">
                     <label for="registration_code" class="col-xs-3 col-form-label">Registration Code<i class="text-danger">*</i></label>
                     <div class="col-xs-9">
-                      <input name="registration_code" class="form-control" type="text" placeholder="Registration Code" id="registration_code" value="<?= old('registration_code') ?>">
+                      <div class="col-xs-9 no-padding">
+                        <input name="registration_code" class="form-control" type="text" placeholder="Registration Code" id="registration_code" value="<?= old('registration_code') ?>">
+                      </div>
+                      <div class="col-xs-3 no-padding">
+                        <button type="button" class="ui button positive generate_btn" id="generate_btn" onclick="generatePatientCode()">Generate</button>
+                      </div>
                     </div>
                   </div>
 
@@ -229,4 +234,10 @@
   </div>
 </div>
 
+<script>
+  function generatePatientCode() {
+    var num = Math.floor(Math.random() * 90000) + 10000;
+    document.getElementById("registration_code").value = num;
+  }
+</script>
  

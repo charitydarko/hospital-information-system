@@ -23,6 +23,36 @@ class Billing extends BaseController
         return view('layout/main_wrapper',$data);
     }
 
+    public function today()
+    {
+        $data['diagnosis'] = $this->diagnosis_model->findAll();
+        $data['loadLaboratory'] = $this->laboratory_model->findAll();
+        $data['laboratory'] = $this->laboratory_model;
+        $data['staff'] = $this->user_model;
+        $data['appointments'] = $this->appointment_model;
+        $data['patients'] = $this->patient_model;
+        $data['billings_today'] = $this->billing_model->findAll();
+        $data['heading'] = $this->heading;
+        $data['title'] = 'List';
+        $data['content']  = view('billing/index',$data);
+        return view('layout/main_wrapper',$data);
+    }
+
+    public function month()
+    {
+        $data['diagnosis'] = $this->diagnosis_model->findAll();
+        $data['loadLaboratory'] = $this->laboratory_model->findAll();
+        $data['laboratory'] = $this->laboratory_model;
+        $data['staff'] = $this->user_model;
+        $data['appointments'] = $this->appointment_model;
+        $data['patients'] = $this->patient_model;
+        $data['billings_today'] = $this->billing_model->findAll();
+        $data['heading'] = $this->heading;
+        $data['title'] = 'List';
+        $data['content']  = view('billing/index',$data);
+        return view('layout/main_wrapper',$data);
+    }
+
 
     public function add($id=null) {
         $data['heading'] = $this->heading;

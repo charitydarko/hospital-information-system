@@ -28,9 +28,9 @@
                             <?php foreach ($appointments as $appointment) { ?>
                                 <tr class="<?= ($sl & 1)?"odd gradeX":"even gradeC" ?>">
                                     <td><?= $sl; ?></td>
-                                    <td><?= esc($appointment->appointment_id); ?></td>
+                                    <td><?= esc($appointment->id); ?></td>
                                     <td><?= esc($appointment->patient_id); ?></td>
-                                    <td><?= character_limiter(strip_tags($appointment->note)); ?></td>
+                                    <td><?= esc(character_limiter(strip_tags($appointment->note))); ?></td>
                                     <td>
                                         <?= $staff->find($appointment->created_by)->firstname; ?>
                                         <?= $staff->find($appointment->created_by)->lastname; ?>
@@ -44,10 +44,10 @@
                                     </td>
                                     <td><?php echo esc($appointment->status==1?'Active':'Inactive'); ?></td>
                                     <td class="center">
-                                        <a href="<?=site_url("/appointment/view/".$appointment->appointment_id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye" title="View Appointment"></i></a>
-                                        <a href="<?=site_url("/vitals/add/".$appointment->appointment_id)?>" class="btn btn-xs btn-warning" title="Add Vitals"><i class="fa fa-heart-pulse"></i></a> 
-                                        <a href="<?=site_url("/appointment/edit/".$appointment->appointment_id)?>" class="btn btn-xs btn-primary" title="Edit Appointment"><i class="fa fa-edit"></i></a> 
-                                        <a href="<?=site_url("/appointment/delete/".$appointment->appointment_id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Appointment"><i class="fa fa-trash"></i></a> 
+                                        <a href="<?=site_url("/appointment/view/".$appointment->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye" title="View Appointment"></i></a>
+                                        <a href="<?=site_url("/vitals/add/".$appointment->id)?>" class="btn btn-xs btn-warning" title="Add Vitals"><i class="fa fa-heart-pulse"></i></a> 
+                                        <a href="<?=site_url("/appointment/edit/".$appointment->id)?>" class="btn btn-xs btn-primary" title="Edit Appointment"><i class="fa fa-edit"></i></a> 
+                                        <a href="<?=site_url("/appointment/delete/".$appointment->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Appointment"><i class="fa fa-trash"></i></a> 
                                     </td>
                                 </tr>
                                 <?php $sl++; ?>

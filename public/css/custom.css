@@ -12,6 +12,14 @@ body {
     min-height: 100%;
 }
 
+.no-padding {
+    padding: 0 !important;
+}
+
+.generate_btn {
+    width: 100%;
+}
+
 .layout-boxed html,
 .layout-boxed body {
     height: 100%;

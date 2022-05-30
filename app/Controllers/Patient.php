@@ -15,6 +15,23 @@ class Patient extends BaseController
       return view('layout/main_wrapper',$data);
     }
 
+    public function today() {
+      $date = $date = date('Y-m-d');
+      $data['patients_today'] = $this->patient_model->where("created_at", $date)->findAll();
+      $data['heading'] = $this->heading;
+      $data['title'] = 'Today\'s List';
+      $data['content']  = view('patient/today',$data);
+      return view('layout/main_wrapper',$data);
+    }
+
+    public function month() {
+      $data['patients_month'] = $this->patient_model->findAll();
+      $data['heading'] = $this->heading;
+      $data['title'] = 'Month\'s List';
+      $data['content']  = view('patient/month',$data);
+      return view('layout/main_wrapper',$data);
+    }
+
     // View info
     public function view($registration_code = null) {
       $data['patient'] = $this->getPatientOr404($registration_code);
@@ -159,7 +176,7 @@ class Patient extends BaseController
     // Delete Patient by ID
     public function delete($registration_code) {
       $patient = $this->getPatientOr404($registration_code);
-      $data['post'] = $this->patient_model->where('iregistration_coded', $registration_code)->delete();
+      $data['post'] = $this->patient_model->where('registration_code', $registration_code)->delete();
       return redirect()->to( base_url('patient') );
     }
 

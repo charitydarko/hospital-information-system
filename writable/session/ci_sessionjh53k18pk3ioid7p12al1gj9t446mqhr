@@ -1,9 +1,0 @@
-__ci_last_regenerate|i:1650738049;_ci_previous_url|s:33:"http://localhost:8080/patient/new";id|s:1:"1";firstname|s:7:"Charity";lastname|s:5:"Darko";email|s:16:"afyacy@gmail.com";user_role|s:1:"1";isLoggedIn|b:1;_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:19:{s:9:"firstname";s:6:"Boakye";s:8:"lastname";s:7:"Boateng";s:3:"age";s:2:"45";s:13:"date_of_birth";s:0:"";s:5:"phone";s:10:"0501431357";s:6:"mobile";s:0:"";s:5:"email";s:0:"";s:6:"gender";s:1:"2";s:4:"town";s:0:"";s:4:"city";s:0:"";s:6:"region";s:0:"";s:7:"address";s:6:"Dugonu";s:10:"occupation";s:0:"";s:14:"marital_status";s:0:"";s:8:"religion";s:0:"";s:17:"registration_code";s:4:"2223";s:22:"emergency_contact_name";s:0:"";s:23:"emergency_contact_phone";s:0:"";s:25:"emergency_contact_address";s:0:"";}}__ci_vars|a:3:{s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";s:5:"error";s:3:"old";}_ci_validation_errors|s:95:"a:1:{s:17:"registration_code";s:56:"The Registration Code field must contain a unique value.";}";error|s:270:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
-	<div class="errors" role="alert">
-		<ul>
-					<li>The Registration Code field must contain a unique value.</li>
-				</ul>
-	</div>
-
-<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
-";

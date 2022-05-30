@@ -21,6 +21,31 @@ class Vitals extends BaseController
         return view('layout/main_wrapper',$data);
     }
 
+    public function today()
+    {
+        $date = $date = date('Y-m-d');
+        $data['vitals'] = $this->vitals_model->where("created_at", $date)->findAll();
+        $data['staff'] = $this->user_model;
+        $data['appointments'] = $this->appointment_model;
+        $data['patients'] = $this->patient_model;
+        $data['heading'] = $this->heading;
+        $data['title'] = 'List';
+        $data['content']  = view('vitals/today',$data);
+        return view('layout/main_wrapper',$data);
+    }
+
+    public function month()
+    {
+        $data['vitals_month'] = $this->vitals_model->findAll();
+        $data['staff'] = $this->user_model;
+        $data['appointments'] = $this->appointment_model;
+        $data['patients'] = $this->patient_model;
+        $data['heading'] = $this->heading;
+        $data['title'] = 'List';
+        $data['content']  = view('vitals/month',$data);
+        return view('layout/main_wrapper',$data);
+    }
+
     // Add Vitals
     public function add($id=null)
     {
@@ -128,9 +153,10 @@ class Vitals extends BaseController
 
     // Get Appointment by ID
     public function getAppointmentOr404($id) {
-        $appointment = $this->appointment_model->find($id);
+        $appointment = $this->appointment_model->where("appointment_id", $id)->find();
+        $appointment = $appointment['0'];
         if($appointment === null) {
-          throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $id not found");
+          throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $id not found");
         }
         return $appointment;
     }

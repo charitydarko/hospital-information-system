@@ -132,7 +132,8 @@
             </a>
             <ul class="treeview-menu">
               <li><a href="<?= base_url("patient/new") ?>">Add Patient</a></li>
-              <li><a href="<?= base_url("patient") ?>">Patient List</a></li> 
+              <li><a href="<?= base_url("patient/today") ?>">Added Today</a></li>
+              <li><a href="<?= base_url("patient") ?>">List All Patients</a></li> 
             </ul>
           </li>
           <li class="treeview">
@@ -144,7 +145,8 @@
             </a>
             <ul class="treeview-menu">
               <li><a href="<?= base_url("appointment/add") ?>">Add Appointment</a></li>
-              <li><a href="<?= base_url("appointment") ?>">List Appointments</a></li> 
+              <li><a href="<?= base_url("appointment/today") ?>">Added Today</a></li>
+              <li><a href="<?= base_url("appointment") ?>">List All Appointments</a></li> 
             </ul>
           </li>
           <li class="treeview">
@@ -156,6 +158,7 @@
             </a>
             <ul class="treeview-menu">
               <li><a href="<?= base_url("vitals/add") ?>">Capture Vitals</a></li>
+              <li><a href="<?= base_url("vitals/today") ?>">Added Today</a></li>
               <li><a href="<?= base_url("vitals") ?>">View Vitals List</a></li> 
             </ul>
           </li>
@@ -167,6 +170,7 @@
               </span>
             </a>
             <ul class="treeview-menu">
+              <li><a href="<?= base_url("diagnosis/today") ?>">Added Today</a></li>
               <li><a href="<?= base_url("diagnosis") ?>">Patient Diagnosis List</a></li>
             </ul>
           </li>
@@ -179,7 +183,8 @@
             </a>
             <ul class="treeview-menu">
               <li><a href="<?= base_url("pharmacy/inventory/sale") ?>">Add Sale</a></li>
-              <li><a href="<?= base_url("pharmacy/inventory") ?>">Sales List</a></li>
+              <li><a href="<?= base_url("pharmacy/inventory/today") ?>">Added Today</a></li>
+              <li><a href="<?= base_url("pharmacy/inventory") ?>">List All Sales</a></li>
               <li><a href="<?= base_url("pharmacy/prescription/request") ?>">Requests from Diagnosis</a></li>
             </ul>
           </li>
@@ -191,6 +196,8 @@
               </span>
             </a>
             <ul class="treeview-menu">
+              <li><a href="<?= base_url("laboratory/add") ?>">Add Lab Report</a></li>
+              <li><a href="<?= base_url("laboratory/today") ?>">Served Today</a></li>
               <li><a href="<?= base_url("laboratory/request") ?>">Requests from Diagnosis</a></li>
             </ul>
           </li>
@@ -203,6 +210,7 @@
             </a>
             <ul class="treeview-menu">
               <li><a href="<?= base_url("billing/add") ?>">Add Invoice</a></li>
+              <li><a href="<?= base_url("billing/today") ?>">Added Today</a></li>
               <li><a href="<?= base_url("billing") ?>">Invoice List</a></li>
             </ul>
           </li>

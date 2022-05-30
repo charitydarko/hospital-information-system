@@ -1,0 +1,12 @@
+CRITICAL - 2022-05-10 16:50:28 --> Attempt to read property "blood_pressure" on null
+#0 C:\wamp64\www\hospital-information-system\app\Views\appointment\view.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 86)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('appointment/vie...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Appointment.php(74): view('appointment/vie...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Appointment->view('2')
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appointment))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}

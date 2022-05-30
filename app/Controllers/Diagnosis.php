@@ -19,6 +19,28 @@ class Diagnosis extends BaseController
         return view('layout/main_wrapper',$data);
     }
 
+    public function today()
+    {
+        $data['diagnosis_today'] = $this->diagnosis_model->findAll();
+        $data['staff'] = $this->user_model;
+        $data['appointments'] = $this->appointment_model;
+        $data['heading'] = $this->heading;
+        $data['title'] = 'List';
+        $data['content']  = view('diagnosis/index',$data);
+        return view('layout/main_wrapper',$data);
+    }
+
+    public function month()
+    {
+        $data['diagnosis_month'] = $this->diagnosis_model->findAll();
+        $data['staff'] = $this->user_model;
+        $data['appointments'] = $this->appointment_model;
+        $data['heading'] = $this->heading;
+        $data['title'] = 'List';
+        $data['content']  = view('diagnosis/index',$data);
+        return view('layout/main_wrapper',$data);
+    }
+
     public function add($id=null) {
         $data['heading'] = $this->heading;
         $data['title'] = 'Add';

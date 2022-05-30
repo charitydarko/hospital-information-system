@@ -17,6 +17,17 @@ class Appointment extends BaseController
         return view('layout/main_wrapper',$data);
     }
 
+    public function today() {
+        $date = $date = date('Y-m-d');
+        $data['appointments'] = $this->appointment_model->where("created_at", $date)->findAll();
+        $data['staff'] = $this->user_model;
+        $data['heading'] = $this->heading;
+        $data['title'] = 'Today\'s List';
+        $data['content']  = view('appointment/index',$data);
+        return view('layout/main_wrapper',$data);
+    }
+
+
     public function add() {
         $data['heading'] = $this->heading;
         $data['title'] = 'Add';
@@ -37,14 +48,23 @@ class Appointment extends BaseController
             $patient_id = $this->request->getPost('patient_id');
             $note = $this->request->getPost('note');
 
+            $randomId = 'A'.rand(10000,99999);
+            $appointmentFind = $this->appointment_model->find(['appointment_id', $randomId]);
+
+            while ($appointmentFind !== []) {
+                $randomId = 'A'.rand(10000,99999);
+                $appointmentFind = $this->appointment_model->find(['appointment_id', $randomId]);
+            }
+
             $data = [
                 'patient_id' => $patient_id,
+                'appointment_id' => $randomId,
                 'note' => $note,
                 'created_by' => $this->session->get('id')
             ];
-
+            
             $this->getPatientOr404($patient_id);
-
+            
             if ($this->appointment_model->save($data)) {
                 return redirect()->back()->with('info', 'Appointment added successfully');
             } else {
@@ -111,7 +131,8 @@ class Appointment extends BaseController
 
      // Get Appointment by ID
      public function getAppointmentOr404($id) {
-        $appointment = $this->appointment_model->find($id);
+        $appointment = $this->appointment_model->where("appointment_id", $id)->find();
+        $appointment = $appointment['0'];
         if($appointment === null) {
           throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $id not found");
         }

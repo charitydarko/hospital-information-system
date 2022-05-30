@@ -43,7 +43,7 @@
                             <div class="col-sm-9"> 
                                 <dl class="dl-horizontal">
                                     <dt>Appointment Code</dt><dd><?php echo esc($appointment->id) ?></dd>
-                                    <dt>Appointment Note</dt><dd><?php echo esc(character_limiter(strip_tags($appointment->note))) ?></dd>  
+                                    <dt>Appointment Note</dt><dd><?php echo strip_tags($appointment->note) ?></dd>  
                                     <dt>Patient Code</dt><dd><?php echo esc($appointment->patient_id) ?></dd>
                                     <dt>Patient Name</dt><dd><?= $patient->firstname . ' ' . $patient->lastname ?></dd>
                                     <dt>Patient Age</dt><dd><?= $patient->age ?></dd>
@@ -83,11 +83,16 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <dl class="dl-horizontal">
-                                    <dt>Blood Pressure</dt><dd><?= esc($vital->blood_pressure)?>mmHg</dd> 
-                                    <dt>Pulse</dt><dd><?= esc($vital->pulse)?>bpm</dd>
-                                    <dt>Height</dt><dd><?= esc($vital->height)?>cm</dd>
-                                    <dt>Weight</dt><dd><?= esc($vital->height)?>kg</dd>
-                                    <dt>Note</dt><dd><?= strip_tags($vital->note)?></dd>
+                                    <dt>Blood Pressure</dt><dd>
+                                        <?php if($vital) echo esc($vital->blood_pressure);?>mmHg</dd> 
+                                    <dt>Pulse</dt><dd>
+                                        <?php if($vital) echo esc($vital->pulse); ?>bpm</dd>
+                                    <dt>Height</dt><dd>
+                                        <?php if($vital) echo esc($vital->height); ?>cm</dd>
+                                    <dt>Weight</dt><dd>
+                                        <?php if($vital) echo esc($vital->height); ?>kg</dd>
+                                    <dt>Note</dt><dd>
+                                        <?php if($vital) echo strip_tags($vital->note)?></dd>
                                 </dl>
                             </div>
                         </div>
@@ -96,43 +101,54 @@
                     <!-- Diagnosis -->
                     <div role="tabpanel" class="tab-pane" id="diagnosis">
                         <dl class="dl-horizontal">
-                            <dt>Complain</dt><dd><?= strip_tags($diagnosis[0]->complain)?></dd>
-                            <dt>Diagnosis</dt><dd><?= strip_tags($diagnosis[0]->diagnosis)?></dd>
-                            <dt>Prescription</dt><dd><?= strip_tags($diagnosis[0]->prescription)?></dd>
-                            <dt>Visiting Fees</dt><dd><?= strip_tags($diagnosis[0]->visiting_fees)?></dd>
-                            <dt>Visiting Fees Reason</dt><dd><?= strip_tags($diagnosis[0]->visiting_fees_reason)?></dd>
+                            <dt>Complain</dt><dd>
+                                <?php if($diagnosis) echo strip_tags($diagnosis[0]->complain); ?></dd>
+                            <dt>Diagnosis</dt><dd>
+                                <?php if($diagnosis) echo strip_tags($diagnosis[0]->diagnosis); ?></dd>
+                            <dt>Prescription</dt><dd>
+                                <?php if($diagnosis) echo strip_tags($diagnosis[0]->prescription); ?></dd>
+                            <dt>Visiting Fees</dt><dd>
+                                <?php if($diagnosis) echo strip_tags($diagnosis[0]->visiting_fees); ?></dd>
+                            <dt>Visiting Fees Reason</dt><dd>
+                                <?php if($diagnosis) echo strip_tags($diagnosis[0]->visiting_fees_reason); ?></dd>
                         </dl> 
                     </div>
 
                     <!-- Prescription -->
                     <div role="tabpanel" class="tab-pane" id="prescription">
                         <dl class="dl-horizontal">
-                            <dt>Prescription</dt><dd><?php echo esc($diagnosis[0]->prescription) ?></dd>
-                            <dt>Status</dt><dd><?php echo esc($prescription[0]->status==1?'Served':'Not Served') ?></dd>
+                            <dt>Prescription</dt><dd>
+                                <?php if($diagnosis) echo esc($diagnosis[0]->prescription); ?></dd>
+                            <dt>Status</dt><dd>
+                                <?php if($prescription) echo esc($prescription[0]->status==1?'Served':'Not Served') ?></dd>
                             <dt>Served By</dt>
                             <dd>
                                 <?php
-                                    $staffp = $staff->where('id', $prescription[0]->served_by)->select('firstname, lastname')->find();
+                                    if($prescription){
+                                        $staffp = $staff->where('id', $prescription[0]->served_by)->select('firstname, lastname')->find();
 
-                                    if(!$staffp) {
-                                        echo 'N/A';
-                                    } else {
-                                        echo $staffp[0]->firstname . ' ' . $staffp[0]->lastname;
+                                        if(!$staffp) {
+                                            echo 'N/A';
+                                        } else {
+                                            echo $staffp[0]->firstname . ' ' . $staffp[0]->lastname;
+                                        }
                                     }
                                 ?>
                             </dd>
-                            <dt>Prescription Note</dt><dd><?php echo esc($prescription[0]->note) ?></dd>
+                            <dt>Prescription Note</dt><dd>
+                                <?php if($prescription) echo strip_tags($prescription[0]->note) ?></dd>
                         </dl> 
                     </div>
 
                     <!-- Laboratory -->
                     <div role="tabpanel" class="tab-pane" id="laboratory">
                         <dl class="dl-horizontal">
-                            <dt>laboratory</dt><dd><?php echo esc($diagnosis[0]->laboratory) ?></dd>
-                            <dt>Status</dt><dd><?php echo esc($laboratory[0]->status==1?'Served':'Not Served') ?></dd>
+                            <dt>laboratory</dt><dd><?php if($prescription) echo esc($diagnosis[0]->laboratory) ?></dd>
+                            <dt>Status</dt><dd><?php if($laboratory) echo esc($laboratory[0]->status==1?'Served':'Not Served') ?></dd>
                             <dt>Served By</dt>
                             <dd>
                                 <?php
+                                    if($laboratory) {
                                     $staffl = $staff->where('id', $laboratory[0]->served_by)->select('firstname, lastname')->find();
 
                                     if(!$staffl) {
@@ -140,9 +156,10 @@
                                     } else {
                                         echo $staffl[0]->firstname . ' ' . $staffl[0]->lastname;
                                     }
+                                }
                                 ?>
                             </dd>
-                            <dt>laboratory Note</dt><dd><?php echo esc($laboratory[0]->note) ?></dd>
+                            <dt>laboratory Note</dt><dd><?php if($laboratory) echo strip_tags($laboratory[0]->note) ?></dd>
                         </dl> 
                     </div>
 

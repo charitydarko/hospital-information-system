@@ -9,7 +9,6 @@ $(document).ready(function() {
 
         // Once the value is greater than 0
         if(appointment_code.length > 0) {
-
             $.ajax({
                 headers: {
                     'X-Requested-With': 'XMLHttpRequest',

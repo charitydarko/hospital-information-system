@@ -25,7 +25,7 @@
               <i class="pe-7s-unlock"></i>
             </div>
             <div class="header-title">
-              <h3>Vestir Hospital</h3>
+              <h3><?php echo ucwords(HOSPITAL_TITLE); ?></h3>
               <small><strong>Please Login</strong></small>
             </div>
           </div>

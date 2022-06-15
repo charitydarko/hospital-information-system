@@ -22,25 +22,14 @@ class Inventory extends BaseController
 
     public function today()
     {
+        $date = $date = date('Y-m-d');
         $data['staff'] = $this->user_model;
         $data['appointments'] = $this->appointment_model;
         $data['patients'] = $this->patient_model;
-        $data['billings_today'] = $this->pharmacy_billing_model->where('payment_method', 'pharmacy_sale')->select('*')->find();
+        $data['billings_today'] = $this->pharmacy_billing_model->where(['payment_method' => 'pharmacy_sale', "created_at" => $date])->select('*')->find();
         $data['heading'] = $this->heading;
         $data['title'] = 'Today\'s Prescription Sales List';
         $data['content']  = view('pharmacy/inventory/today',$data);
-        return view('layout/main_wrapper',$data);
-    }
-
-    public function month()
-    {
-        $data['staff'] = $this->user_model;
-        $data['appointments'] = $this->appointment_model;
-        $data['patients'] = $this->patient_model;
-        $data['billings_month'] = $this->pharmacy_billing_model->where('payment_method', 'pharmacy_sale')->select('*')->find();
-        $data['heading'] = $this->heading;
-        $data['title'] = 'Month\'s Prescription Sales List';
-        $data['content']  = view('pharmacy/inventory/month',$data);
         return view('layout/main_wrapper',$data);
     }
 
@@ -54,7 +43,10 @@ class Inventory extends BaseController
 
     public function createSale() {
         $validate = $this->validate([
-            'appointment_code' => 'required'
+            'appointment_code' => [
+                'rules' => 'required|is_unique[prescription.appointment_id]',
+                'label' => 'Appointment Code'
+            ]
         ]);
 
         if(!$validate) {
@@ -105,7 +97,7 @@ class Inventory extends BaseController
 				}
 
             return redirect()->back()->withInput()->with('info', 'Patient Prescription Sale Successful');
-          }
+        }
     }
 
     public function view($id = null) {
@@ -129,7 +121,6 @@ class Inventory extends BaseController
         $data['content']  = view('pharmacy/inventory/edit',$data);
         return view('layout/main_wrapper',$data);
     }
-
 
     public function update($id = null) {
         $prescription_sale = $this->pharmacy_billing_model->find($id);
@@ -177,7 +168,6 @@ class Inventory extends BaseController
             return redirect()->back()->with('error', $pharmacy_billing_model->errors)->with('error', 'Invalid data');
         }
     }
-
 
     public function delete($id = null)  {
         $this->pharmacy_billing_model->where('id', $id)->delete();

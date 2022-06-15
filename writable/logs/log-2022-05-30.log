@@ -1338,3 +1338,11 @@ CRITICAL - 2022-05-30 03:06:59 --> Undefined array key 0
 #5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
 #7 {main}
+CRITICAL - 2022-05-30 03:14:41 --> Cannot use object of type App\Entities\VitalsEntity as array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Diagnosis.php(38): App\Controllers\Diagnosis->getVitalsOr404('8')
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Diagnosis->add('8')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}

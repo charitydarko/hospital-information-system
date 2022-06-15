@@ -9,7 +9,8 @@ class Dashboard extends BaseController
   public function __construct() {
   }
 
-  public function index() {      
+  public function index() {     
+    $data['auth'] = $this->setting_model->find(1); 
     $data['heading'] = $this->heading;
     $data['title'] = 'Home';
     $data['doctors'] = sizeof($this->user_model->find(['user_role',2]));

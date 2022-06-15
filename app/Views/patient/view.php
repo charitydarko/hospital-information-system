@@ -87,8 +87,26 @@
                                             <?php foreach ($documents as $document) { ?>
                                                 <tr>
                                                     <td><?php echo $sl; ?></td>
-                                                    <td><?php echo esc($document->category); ?></td> 
-                                                    <td><?php echo esc(character_limiter(strip_tags($document->description),50)); ?></td>
+                                                    <td>
+                                                        <?php
+                                                            switch($document->category) {
+                                                                case("0"): {
+                                                                    echo "Other";
+                                                                    break;
+                                                                }
+                                                                case("2"): {
+                                                                    echo "Lab Report";
+                                                                }
+                                                            }
+                                                        ?>
+                                                    </td> 
+                                                    <td>
+                                                        <?php
+                                                            if ($document->description) {
+                                                                echo esc(character_limiter(strip_tags($document->description),50)); 
+                                                            } else echo "N/A "
+                                                        ?>
+                                                    </td>
                                                     <td><?php echo date('d-m-Y',strtotime($document->date)); ?></td> 
                                                     <td>
                                                         <?= $staff->find($document->upload_by)->firstname; ?>

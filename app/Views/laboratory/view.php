@@ -45,9 +45,26 @@
                                             }
                                         ?>
                                     </dd>
-                                    <dt>Appointment Code</dt><dd><?= esc($appointment->id) ?></dd>
+                                    <dt>Appointment Code</dt><dd><?= esc($appointment->appointment_id) ?></dd>
                                     <dt>Patient Code</dt><dd><?php echo esc($appointment->patient_id) ?></dd>
                                     <dt>laboratory</dt><dd><?php echo esc($diagnosis->laboratory) ?></dd>
+                                    <dt>Lab View</dt><dd>
+                                        <?php if($laboratory[0]->attach_file !== "") { ?>
+                                            <a target="_blank" href="<?php echo base_url('./uploads/patient/laboratory/'.$laboratory[0]->attach_file) ?>" class="btn btn-xs btn-info" title="View Lab Document"><i class="fa fa-eye"></i></a>
+                                        <?php } else echo "N/A "?>
+                                    </dd>
+                                    <dt>Laboratory Fees:</dt><dd>
+                                        <?php if($laboratory[0]->fees !== "") {
+                                            echo esc($laboratory[0]->fees);
+                                        } else echo "N/A "
+                                        ?>
+                                    </dd>
+                                    <dt>Lab Fees Reason:</dt><dd>
+                                    <?php if($laboratory[0]->fees_reason !== "") 
+                                        {
+                                            echo esc($laboratory[0]->fees_reason);
+                                        } else echo "N/A "
+                                    ?></dd>
                                     <dt>Status</dt><dd><?php echo esc($laboratory[0]->status==1?'Served':'Not Served') ?></dd>
                                     <dt>Served By</dt>
                                     <dd>

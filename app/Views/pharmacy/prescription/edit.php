@@ -13,7 +13,7 @@
           <div class="row">
             <div class="col-sm-6">
                 <div>
-                    <strong>Appointment Code:</strong> <?= $appointment->id ?>
+                    <strong>Appointment Code:</strong> <?= $appointment->appointment_id ?>
                 </div>
                 <div>
                     <strong>Patient Code:</strong> <?= $appointment->patient_id ?>

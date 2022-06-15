@@ -31,12 +31,19 @@
                 </div>
               </div>
 
-              <div class="form-group row">
-                <label for="category" class="col-xs-3 col-form-label"> Category<i class="text-danger">*</i></label>
+              <div class="row form-group">
+                <label for="category" class="col-xs-3 col-form-label">Category:<i class="text-danger">*</i></label>
                 <div class="col-xs-9">
-                  <input type="text" name="category" class="form-control"  placeholder="category" >
+                  <?php
+                      $categoryList = array(
+                          ''   => 'Choose category of the file',
+                          '2' => 'Lab Report',
+                          '0' => 'Other',
+                      );
+                      echo form_dropdown('category', $categoryList, '', 'class="form-control" id="category" ');
+                  ?>
                 </div>
-              </div> 
+              </div>
 
               <div class="form-group row">
                 <label for="description" class="col-xs-3 col-form-label"> Description</label>
@@ -44,6 +51,13 @@
                   <textarea name="description" class="form-control tinymce"  placeholder="Description"  rows="7"></textarea>
                 </div>
               </div> 
+
+              <div class="form-group row">
+                <label for="lab_fees" class="col-xs-3 col-form-label">Lab fees<i class="text-danger">*</i></label>
+                <div class="col-xs-9">
+                  <input name="lab_fees"  type="text" class="form-control" id="lab_fees" placeholder="" />
+                </div>
+              </div>
 
               <div class="form-group row">
                 <div class="col-sm-offset-3 col-sm-6">

@@ -30,16 +30,6 @@ class Diagnosis extends BaseController
         return view('layout/main_wrapper',$data);
     }
 
-    public function month()
-    {
-        $data['diagnosis_month'] = $this->diagnosis_model->findAll();
-        $data['staff'] = $this->user_model;
-        $data['appointments'] = $this->appointment_model;
-        $data['heading'] = $this->heading;
-        $data['title'] = 'List';
-        $data['content']  = view('diagnosis/index',$data);
-        return view('layout/main_wrapper',$data);
-    }
 
     public function add($id=null) {
         $data['heading'] = $this->heading;
@@ -56,8 +46,8 @@ class Diagnosis extends BaseController
     public function create() {
         $rules = [
             'appointment_id' => [
-                'rules' => 'required',
-                'label' => 'Appointment Id'
+                'rules' => 'required|is_unique[diagnosis.appointment_id]',
+                'label' => 'Appointment Code'
             ],
             'complain' => [
                 'rules' => 'required',
@@ -105,7 +95,6 @@ class Diagnosis extends BaseController
         }
     }
 
-
     public function view($id = null) {
         $data['diagnosis'] = $this->diagnosis_model->find($id);
         $data['vital'] = $this->getVitalsOr404($data['diagnosis']->appointment_id);
@@ -149,9 +138,8 @@ class Diagnosis extends BaseController
     }
 
     // Get Vitals by appointment_id
-    public function getVitalsOr404($appointment_id) {
-        $vitals = $this->vitals_model->where('appointment_id', $appointment_id)->select()->find();
-        $vitals = $vitals['0'];
+    public function getVitalsOr404($registration_code) {
+        $vitals = $this->vitals_model->find($registration_code);
         if($vitals === null) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException("Vitals with Appointment code $registration_code not found");
         }

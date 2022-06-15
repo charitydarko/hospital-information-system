@@ -27,7 +27,6 @@ class Appointment extends BaseController
         return view('layout/main_wrapper',$data);
     }
 
-
     public function add() {
         $data['heading'] = $this->heading;
         $data['title'] = 'Add';
@@ -82,7 +81,7 @@ class Appointment extends BaseController
         $appointment = $this->getAppointmentOr404($id);
         $patient = $this->getPatientOr404($appointment->patient_id);
         $data['appointment'] = $appointment;
-        $data['vital'] = $this->vitals_model->find($id);
+        $data['vital'] = $this->vitals_model->where('appointment_id', $id)->select('*')->find();
         $data['diagnosis'] = $this->diagnosis_model->where('appointment_id', $id)->select('*')->find();
         $data['prescription'] = $this->prescription_model->where('appointment_id', $id)->select('*')->find();
         $data['laboratory'] = $this->laboratory_model->where('appointment_id', $id)->select('*')->find();
@@ -107,7 +106,8 @@ class Appointment extends BaseController
 
     // Update Appointment info
     public function update($id) {
-        $appointment = $this->appointment_model->find($id);
+        $appointment = $this->appointment_model->where("appointment_id", $id)->find();
+        $appointment = $appointment['0'];
         $appointment->fill($this->request->getPost());
   
         if(!$appointment->hasChanged()){
@@ -141,7 +141,7 @@ class Appointment extends BaseController
 
     // Get patient by registration_code
     public function getPatientOr404($registration_code) {
-        $patient = $this->patient_model->where('registration_code', $registration_code)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
+        $patient = $this->patient_model->where('registration_code', $registration_code)->select('firstname, lastname, gender, phone, mobile, address, age, date_of_birth, status')->find();
         $patient = $patient['0'];
         if($patient === null) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");

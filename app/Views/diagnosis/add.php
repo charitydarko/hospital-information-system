@@ -13,7 +13,7 @@
           <div class="row">
             <div class="col-sm-6">
                 <div>
-                    <strong>Appointment Code:</strong> <?= $appointment->id ?>
+                    <strong>Appointment Code:</strong> <?= $appointment->appointment_id ?>
                 </div>
                 <div>
                     <strong>Patient Code:</strong> <?= $appointment->patient_id ?>
@@ -56,7 +56,7 @@
           <div class="row">
               <form action="/diagnosis/create" method="post" >
                   <?= csrf_field() ?>
-                  <input type="hidden" name="appointment_id" id="appointment_id" value="<?= $appointment->id ?>">
+                  <input type="hidden" name="appointment_id" id="appointment_id" value="<?= $appointment->appointment_id ?>">
                   <div class="col-sm-12 bg-success">
                       <div class="col-sm-4"><h3>Diagnosis</h3></div>
                       <div class="col-sm-4"><h3>Prescription</h3></div>

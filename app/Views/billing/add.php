@@ -92,6 +92,56 @@
                                     </tr>
                                     <tr>
                                         <td>
+                                            <input type="text" name="item_name[]" id="item" class="form-control" value="Laboratory Cost">
+                                        </td> 
+                                        <td>
+                                            <textarea name="description[]" class="form-control" placeholder="Description" rows="1" id="laboratory_cost_reason"></textarea>
+                                        </td> 
+
+                                        <td>
+                                            <input type="number" name="quantity[]" required autocomplete="off" class="totalCal form-control" placeholder="Quantity" min="0">
+                                        </td>  
+                                        <td>
+                                            <input type="number" name="price[]" required autocomplete="off" class="totalCal form-control" placeholder="Price" min="0" id="laboratory_cost_price">
+                                        </td>  
+                                        <td>
+                                            <input type="number" name="subtotal[]" required readonly autocomplete="off" class="subtotal form-control" placeholder="Subtotal" value="0.00" min="0">
+                                        </td>   
+
+                                        <td>
+                                        <div class="btn btn-group">
+                                            <button type="button" class="btn btn-sm btn-primary addBtn">Add</button>
+                                            <button type="button" class="btn btn-sm btn-danger removeBtn">Remove</button>
+                                            </div>
+                                        </td>   
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="item_name[]" id="item" class="form-control" value="Pharmacy Cost">
+                                        </td> 
+                                        <td>
+                                            <textarea name="description[]" class="form-control" placeholder="Description" rows="1" id="pharmacy_cost_reason"></textarea>
+                                        </td> 
+
+                                        <td>
+                                            <input type="number" name="quantity[]" required autocomplete="off" class="totalCal form-control" placeholder="Quantity" min="0">
+                                        </td>  
+                                        <td>
+                                            <input type="number" name="price[]" required autocomplete="off" class="totalCal form-control" placeholder="Price" min="0" id="pharmacy_cost_price">
+                                        </td>  
+                                        <td>
+                                            <input type="number" name="subtotal[]" required readonly autocomplete="off" class="subtotal form-control" placeholder="Subtotal" value="0.00" min="0">
+                                        </td>   
+
+                                        <td>
+                                        <div class="btn btn-group">
+                                            <button type="button" class="btn btn-sm btn-primary addBtn">Add</button>
+                                            <button type="button" class="btn btn-sm btn-danger removeBtn">Remove</button>
+                                            </div>
+                                        </td>   
+                                    </tr>
+                                    <tr>
+                                        <td>
                                             <input type="text" name="item_name[]" id="item" class="form-control">
                                         </td> 
                                         <td><textarea name="description[]" class="form-control" placeholder="Description" rows="1"></textarea></td> 

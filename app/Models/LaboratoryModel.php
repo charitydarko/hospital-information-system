@@ -17,8 +17,11 @@ class LaboratoryModel extends Model
     protected $allowedFields = [
         'appointment_id',
         'diagnosis_id',
+        'attach_file',
         'note',
         'served_by',
+        'fees',
+        'fees_reason',
         'status'
     ];
 

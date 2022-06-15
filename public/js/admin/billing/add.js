@@ -36,6 +36,12 @@ $(document).ready(function() {
                             $("#diagnosis_cost_price").val(newData.diagnosis_fees);
                             $("#diagnosis_cost_reason").text(newData.diagnosis_fees_reason);
                             $("#diagnosis_cost_subtotal").val(newData.diagnosis_fees);
+                            $("#laboratory_cost_price").val(newData.laboratory_fees);
+                            $("#laboratory_cost_reason").text(newData.laboratory_fees_reason);
+                            $("#laboratory_cost_subtotal").val(newData.laboratory_fees);
+                            $("#pharmacy_cost_price").val(newData.pharmacy_billing_total);
+                            $("#pharmacy_cost_reason").text(newData.pharmacy_billing_reason);
+                            $("#pharmacy_cost_subtotal").val(newData.pharmacy_billing_total);
                             break;
                         }
                         default: {

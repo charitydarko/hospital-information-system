@@ -6,7 +6,7 @@
  
             <div class="panel-heading no-print">
                 <div class="btn-group"> 
-                    <a class="btn btn-success" href="<?php echo base_url("/vitals") ?>"> <i class="fa fa-plus"></i>  Add laboratorys Sales </a>  
+                    <!-- <a class="btn btn-success" href=""> <i class="fa fa-plus"></i>  Add laboratorys Sales </a>   -->
                 </div>
             </div> 
             <div class="panel-body">

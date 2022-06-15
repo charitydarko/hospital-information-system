@@ -45,7 +45,7 @@
                                             }
                                         ?>
                                     </dd>
-                                    <dt>Appointment Code</dt><dd><?= esc($appointment->id) ?></dd>
+                                    <dt>Appointment Code</dt><dd><?= esc($appointment->appointment_id) ?></dd>
                                     <dt>Patient Code</dt><dd><?php echo esc($appointment->patient_id) ?></dd>
                                     <dt>Prescription</dt><dd><?php echo esc($diagnosis->prescription) ?></dd>
                                     <dt>Status</dt><dd><?php echo esc($prescription[0]->status==1?'Served':'Not Served') ?></dd>
@@ -61,7 +61,12 @@
                                             }
                                         ?>
                                     </dd>
-                                    <dt>Prescription Note</dt><dd><?php echo esc($prescription[0]->note) ?></dd>
+                                    <dt>Prescription Note</dt><dd>
+                                        <?php
+                                            if($prescription[0]->note) {
+                                                echo esc($prescription[0]->note);
+                                            } else echo 'N/A';
+                                        ?></dd>
                                 </dl> 
                             </div>
                         </div>

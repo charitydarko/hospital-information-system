@@ -13,7 +13,7 @@
           <div class="row">
             <div class="col-sm-6">
                 <div>
-                    <strong>Appointment Code:</strong> <?= $appointment->id ?>
+                    <strong>Appointment Code:</strong> <?= $appointment->appointment_id ?>
                 </div>
                 <div>
                     <strong>Patient Code:</strong> <?= $appointment->patient_id ?>
@@ -46,17 +46,17 @@
           <br/><br/>
           <div class="row">
               <?php
-                $laboratory = $laboratory->where('diagnosis_id', $diagnosis->id)->select('id')->find();
+                $laboratory = $laboratory->where('diagnosis_id', $diagnosis->id)->select('*')->find();
                 $laboratory_id = $laboratory[0]->id;
               ?>
-              <form action=<?="/laboratory/request/update/$laboratory_id"?> method="post" >
+              <form action=<?="/laboratory/request/update/$laboratory_id"?> method="post" enctype="multipart/form-data">
                   <?= csrf_field() ?>
                   <br/><br/><br/>
                   <div class="col-sm-12 form-group">
-                      <input type="hidden" value="<?= session()->get('id') ?>" name="served_by" class="form-control">
+                      <input type="hidden" value="<?=  $appointment->patient_id ?>" name="patient_id" class="form-control">
                   </div>
                   <div class="col-sm-12 form-group">
-                      <label for="Status" class="col-sm-2 col-form-label">Status:</label>
+                      <label for="Status" class="col-sm-2 col-form-label">Status:<i class="text-danger">*</i></label>
                       <div class="col-sm-10">
                         <?php
                             $statusList = array(
@@ -68,11 +68,45 @@
                         ?>
                       </div>
                   </div>
+                  <div class="col-sm-12 form-group">
+                      <label for="category" class="col-sm-2 col-form-label">Category:<i class="text-danger">*</i></label>
+                      <div class="col-sm-10">
+                        <?php
+                            $categoryList = array(
+                                ''   => 'Choose category of the file',
+                                '2' => 'Lab Report',
+                                '0' => 'Other',
+                            );
+                            echo form_dropdown('category', $categoryList, '', 'class="form-control" id="category" ');
+                        ?>
+                      </div>
+                  </div>
+                  <div class="col-sm-12 form-group">
+                    <label for="attach_file" class="col-sm-2 col-form-label"> Attach File<i class="text-danger">*</i></label>
+                    <div class="col-sm-10">
+                    <input type="file" name="attach_file" id="attach_file" value="<?= old('attach_file') ?>">
+                    </div>
+                  </div>
+                  <div class="col-sm-12 form-group">
+                      <label for="note" class="col-sm-2 col-form-label">Note:<i class="text-danger">*</i></label>
+                      <div class="col-sm-10">
+                          <textarea name="note" class="form-control"  placeholder="Note"  rows="5"><?= $laboratory[0]->note; ?></textarea>
+                        </div>
+                  </div>
 
                   <div class="col-sm-12 form-group">
-                      <label for="note" class="col-sm-2 col-form-label">Note:</label>
+                      <label for="laboratory_fees" class="col-sm-2 col-form-label">Laboratory Fees:</label>
                       <div class="col-sm-10">
-                          <textarea name="note" class="form-control"  placeholder="Note"  rows="5"></textarea>
+                          <input name="laboratory_fees" class="form-control"  placeholder="Laboratory Fees" value="<?= $laboratory[0]->fees; ?>" />
+                      </div>
+                  </div>
+
+                  <div class="col-sm-12 form-group">
+                      <label for="laboratory_fees_reason" class="col-sm-2 col-form-label">Reason for Laboratory Fees:</label>
+                      <div class="col-sm-10">
+                          <textarea name="laboratory_fees_reason" class="form-control"  placeholder="List reason for charges here"  rows="5">
+                            <?= trim(strip_tags($laboratory[0]->fees_reason)); ?>
+                          </textarea>
                         </div>
                   </div>
 

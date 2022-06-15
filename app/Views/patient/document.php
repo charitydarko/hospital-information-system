@@ -5,7 +5,7 @@
 
             <div class="panel-heading">
                 <div class="btn-group">
-                    <a class="btn btn-success" href="<?php echo base_url("patient/add_document/") ?>"> <i class="fa fa-plus"></i> Add Document</a>  
+                    <!-- <a class="btn btn-success" href="<?php echo base_url("patient/add_document/") ?>"> <i class="fa fa-plus"></i> Add Document</a>   -->
                 </div>
             </div>
 
@@ -30,9 +30,33 @@
                                 <tr>
                                     <td><?php echo $sl; ?></td>
                                     <td><?= esc($document->patient_id); ?></td>
-                                    <td><?= esc($document->category); ?></td>
-                                    <td><?= esc(character_limiter(strip_tags($document->description),50)); ?></td>
-                                    <td><?= esc($document->created_at); ?></td> 
+                                    <td>
+                                        <?php
+                                            switch($document->category) {
+                                                case("0"): {
+                                                    echo "Other";
+                                                    break;
+                                                }
+                                                case("2"): {
+                                                    echo "Lab Report";
+                                                }
+                                            }
+                                        ?>
+                                    </td>
+                                    <td>
+                                        <?php
+                                            if ($document->description) {
+                                                echo esc(character_limiter(strip_tags($document->description),50)); 
+                                            } else echo "N/A "
+                                        ?>
+                                    </td>
+                                    <td>
+                                        <?php
+                                            $date = new DateTime($document->created_at);
+                                            $strip = $date->format('Y-m-d');
+                                            echo $strip;
+                                         ?>
+                                    </td> 
                                     <td>
                                         <?= $staff->find($document->upload_by)->firstname; ?>
                                         <?= $staff->find($document->upload_by)->lastname; ?>

@@ -25,34 +25,19 @@ class Billing extends BaseController
 
     public function today()
     {
+        $date = $date = date('Y-m-d');
         $data['diagnosis'] = $this->diagnosis_model->findAll();
         $data['loadLaboratory'] = $this->laboratory_model->findAll();
         $data['laboratory'] = $this->laboratory_model;
         $data['staff'] = $this->user_model;
         $data['appointments'] = $this->appointment_model;
         $data['patients'] = $this->patient_model;
-        $data['billings_today'] = $this->billing_model->findAll();
+        $data['billings_today'] = $this->billing_model->where("created_at", $date)->findAll();
         $data['heading'] = $this->heading;
         $data['title'] = 'List';
         $data['content']  = view('billing/index',$data);
         return view('layout/main_wrapper',$data);
     }
-
-    public function month()
-    {
-        $data['diagnosis'] = $this->diagnosis_model->findAll();
-        $data['loadLaboratory'] = $this->laboratory_model->findAll();
-        $data['laboratory'] = $this->laboratory_model;
-        $data['staff'] = $this->user_model;
-        $data['appointments'] = $this->appointment_model;
-        $data['patients'] = $this->patient_model;
-        $data['billings_today'] = $this->billing_model->findAll();
-        $data['heading'] = $this->heading;
-        $data['title'] = 'List';
-        $data['content']  = view('billing/index',$data);
-        return view('layout/main_wrapper',$data);
-    }
-
 
     public function add($id=null) {
         $data['heading'] = $this->heading;
@@ -62,7 +47,6 @@ class Billing extends BaseController
         $data['content']  = view('billing/add',$data);
         return view('layout/main_wrapper',$data);
     }
-
 
     public function create() {
         $validate = $this->validate([
@@ -202,17 +186,23 @@ class Billing extends BaseController
     // Appointment for json
     public function appointmentNow() {
         $appointment_code = $this->request->getPost('appointment_code');
-        $appointment = $this->appointment_model->find($appointment_code);
+        $appointment = $this->appointment_model->where('appointment_id', $appointment_code)->find();
         if($appointment) {
-            $patient =$this->getPatientOr404($appointment->patient_id);
+            $patient =$this->getPatientOr404($appointment[0]->patient_id);
             $diagnosis = $this->getDiagnosisOr404($appointment_code);
+            $laboratory = $this->getLaboratoryOr404($appointment_code);
+            $pharmacy_billing = $this->getPharmacyBillingOr404($appointment_code);
             if($patient) {
                 $data = [
                     'status' => 'true',
                     'message' => 'Patient found',
                     'patient' => $patient,
                     'diagnosis_fees' => $diagnosis[0]->visiting_fees,
-                    'diagnosis_fees_reason' => $diagnosis[0]->visiting_fees_reason
+                    'diagnosis_fees_reason' => $diagnosis[0]->visiting_fees_reason,
+                    'laboratory_fees' => $laboratory[0]->fees,
+                    'laboratory_fees_reason' => $laboratory[0]->fees_reason,
+                    'pharmacy_billing_total' => $pharmacy_billing[0]->total,
+                    'pharmacy_billing_reason' => 'For drugs',
                 ];
                 return json_encode($data); 
             } else {
@@ -231,30 +221,49 @@ class Billing extends BaseController
         }
     }
 
+    // Get Laboratory by ID
+    public function getPharmacyBillingOr404($appointment_code) {
+        $pharmacy_billing = $this->pharmacy_billing_model->where('appointment_id', $appointment_code)->select('*')->find();
+        if($pharmacy_billing === null) {
+        throw new \CodeIgniter\Exceptions\PageNotFoundException("Pharmacy Billing with Appointment code $appointment_code not found");
+        }
+        return $pharmacy_billing;
+    }
+
     // Get Billing by ID
     public function getBillingOr404($appointment_code) {
         $billing = $this->billing_details_model->where('appointment_id', $appointment_code)->select('appointment_id, item_name, description, quantity, price, subtotal')->find();
         if($billing === null) {
-          throw new \CodeIgniter\Exceptions\PageNotFoundException("Billing with id $id not found");
+          throw new \CodeIgniter\Exceptions\PageNotFoundException("Billing with id $appointment_code not found");
         }
         return $billing;
+    }
+
+    
+    // Get Laboratory by ID
+    public function getLaboratoryOr404($appointment_code) {
+        $laboratory = $this->laboratory_model->where('appointment_id', $appointment_code)->select('fees, fees_reason')->find();
+        if($laboratory === null) {
+        throw new \CodeIgniter\Exceptions\PageNotFoundException("Laboratory with Appointment code $appointment_code not found");
+        }
+        return $laboratory;
     }
 
     // Get Diagnosis by ID
     public function getDiagnosisOr404($appointment_code) {
         $diagnosis = $this->diagnosis_model->where('appointment_id', $appointment_code)->select('visiting_fees, visiting_fees_reason')->find();
         if($diagnosis === null) {
-          throw new \CodeIgniter\Exceptions\PageNotFoundException("Diagnosis with Appointment code $id not found");
+          throw new \CodeIgniter\Exceptions\PageNotFoundException("Diagnosis with Appointment code $appointment_code not found");
         }
         return $diagnosis;
     }
 
 
     // Get Appointment by ID
-    public function getAppointmentOr404($id) {
-        $appointment = $this->appointment_model->find($id);
+    public function getAppointmentOr404($appointment_code) {
+        $appointment = $this->appointment_model->where("appointment_id", $appointment_code)->find();
         if($appointment === null) {
-          throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $id not found");
+          throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $appointment_code not found");
         }
         return $appointment;
     }

@@ -24,9 +24,9 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php if (!empty($billings)) { ?>
+                        <?php if (!empty($billings_today)) { ?>
                             <?php $sl = 1; ?>
-                            <?php foreach ($billings as $billing) { ?>
+                            <?php foreach ($billings_today as $billing) { ?>
                                 <tr class="<?= ($sl & 1)?"odd gradeX":"even gradeC" ?>">
                                     <td><?= $sl; ?></td>
                                     <td><?= esc($billing->appointment_id); ?></td>

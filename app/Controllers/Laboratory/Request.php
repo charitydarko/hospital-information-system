@@ -25,7 +25,7 @@ class Request extends BaseController
 
     public function view($id = null) {
         $data['diagnosis'] = $this->diagnosis_model->find($id);
-        $data['laboratory'] = $this->laboratory_model->where('diagnosis_id', $id)->select('note, status, served_by')->find();
+        $data['laboratory'] = $this->laboratory_model->where('diagnosis_id', $id)->select('*')->find();
         $data['staff'] = $this->user_model;
         $data['appointment'] = $this->appointment_model->find($data['diagnosis']->appointment_id);
         $data['patient'] = $this->patient_model->where('registration_code', $data['appointment']->patient_id)->select('firstname, lastname, gender, age')->find();
@@ -49,17 +49,61 @@ class Request extends BaseController
 
 
     public function update($id = null){
-        $laboratory = $this->laboratory_model->find($id);
-        $laboratory->fill($this->request->getPost());
+        $rules = [
+            'status' => [
+              'rules' => 'required',
+              'label' => 'Status'
+            ],
+            'note' => [
+                'rules' => 'required',
+                'label' => 'Note'
+            ],
+            'category' => [
+                'rules' => 'required',
+                'label' => 'Category'
+            ],
+            'attach_file' => [
+              'rules' => 'uploaded[attach_file]|max_size[attach_file, 20000]',
+              'label' => 'Attach File'
+            ]
+        ];
 
-        if(!$laboratory->hasChanged()){
-            return redirect()->back()->withInput()->with('warning', 'Nothing to update');
-        }
+        if ($this->validate($rules)) {
+            $patient_id = $this->request->getPost('patient_id');
+            $file = $this->request->getFile('attach_file');
+            $status = $this->request->getPost('status');
+            $category = $this->request->getPost('category');
+            $description = $this->request->getPost('note');
+            $lab_fees = $this->request->getPost('laboratory_fees');
+            $lab_fees_reason = $this->request->getPost('laboratory_fees_reason');
 
-        if ($this->laboratory_model->save($laboratory)) {
-            return redirect()->to("/laboratory/request")->with('info', 'Laboratory updated successfully');
+            if($file->isValid() && !$file->hasMoved()) {
+                $file->move('./uploads/patient/laboratory', $file->getRandomName());
+
+                $data_lab_model = [
+                    'note' => $description,
+                    'status' => $status,
+                    'attach_file' => $file->getName(),
+                    'served_by' => $this->session->get('id'),
+                    'fees' => $lab_fees,
+                    'fees_reason' => $lab_fees_reason,
+                  ];
+      
+                $laboratory = $this->laboratory_model->find($id);
+                $laboratory->fill($data_lab_model);
+
+                if(!$laboratory->hasChanged()){
+                    return redirect()->back()->withInput()->with('warning', 'Nothing to update');
+                }
+                if ($this->laboratory_model->save($laboratory)) {
+                    return redirect()->to("/laboratory/request")->with('info', 'Laboratory updated successfully');
+                } else {
+                    return redirect()->back()->with('error', $laboratory_model->errors)->with('error', 'Invalid data');
+                }
+            }
         } else {
-            return redirect()->back()->with('error', $laboratory_model->errors)->with('error', 'Invalid data');
+            $data['validation'] = $this->validator->listErrors();
+            return redirect()->back()->withInput()->with('error', $data['validation']);
         }
     }
 

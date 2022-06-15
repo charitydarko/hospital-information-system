@@ -14,7 +14,7 @@
         <div class="row">
           <div id="output" class="hide alert"></div>
           <div class="col-md-9 col-sm-12">
-            <form action=<?="/appointment/update/".$appointment->id ?> method="post" >
+            <form action=<?="/appointment/update/".$appointment->appointment_id ?> method="post" >
               <?= csrf_field() ?>
 
               <div class="form-group row">

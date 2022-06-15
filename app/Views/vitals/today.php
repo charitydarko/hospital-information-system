@@ -34,7 +34,6 @@
                                     <td><?= esc($vital->appointment_id); ?></td>
                                     <td>
                                         <?php 
-                                            
                                             $appointment = $appointments->find($vital->appointment_id);
                                             echo esc($appointment->patient_id);
                                         ?>

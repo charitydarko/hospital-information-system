@@ -51,7 +51,7 @@
         </span>
         <span class="logo-lg">
           <div></div>
-          <h2>VESTIR HOSPITAL</h2>
+          <h2><?php echo strtoupper(HOSPITAL_TITLE); ?></h2>
         </span>
       </a>
 
@@ -134,6 +134,7 @@
               <li><a href="<?= base_url("patient/new") ?>">Add Patient</a></li>
               <li><a href="<?= base_url("patient/today") ?>">Added Today</a></li>
               <li><a href="<?= base_url("patient") ?>">List All Patients</a></li> 
+              <li><a href="<?= base_url("patient/document") ?>">List Documents</a></li> 
             </ul>
           </li>
           <li class="treeview">
@@ -196,8 +197,7 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="<?= base_url("laboratory/add") ?>">Add Lab Report</a></li>
-              <li><a href="<?= base_url("laboratory/today") ?>">Served Today</a></li>
+              <!-- <li><a href="">Served Today</a></li> -->
               <li><a href="<?= base_url("laboratory/request") ?>">Requests from Diagnosis</a></li>
             </ul>
           </li>
@@ -304,7 +304,7 @@
       </div> <!-- /.content -->
 		</div> <!-- /.content-wrapper -->
     <footer class="main-footer">
-      2022©Copyright Ultisoft Technologies
+      2022©Copyright Vestir Technologies
     </footer>
   </div>
 

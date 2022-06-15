@@ -77,3 +77,10 @@ defined('EXIT_USER_INPUT')     || define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       || define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+// HEALTH INSTITUTION INFORMATION
+defined('HOSPITAL_TITLE')        || define('HOSPITAL_TITLE', 'Vestir Hospital');
+defined('HOSPITAL_NAME')        || define('HOSPITAL_NAME', 'Vestir Hospital and More');
+defined('HOSPITAL_EMAIL')        || define('HOSPITAL_EMAIL', 'hospital@vestir.com');
+defined('HOSPITAL_PHONE')        || define('HOSPITAL_PHONE', '0543842488');
+defined('HOSPITAL_LOCATION')        || define('HOSPITAL_LOCATION', 'Duase, Kumasi');

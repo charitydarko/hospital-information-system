@@ -24,14 +24,6 @@ class Patient extends BaseController
       return view('layout/main_wrapper',$data);
     }
 
-    public function month() {
-      $data['patients_month'] = $this->patient_model->findAll();
-      $data['heading'] = $this->heading;
-      $data['title'] = 'Month\'s List';
-      $data['content']  = view('patient/month',$data);
-      return view('layout/main_wrapper',$data);
-    }
-
     // View info
     public function view($registration_code = null) {
       $data['patient'] = $this->getPatientOr404($registration_code);
@@ -151,7 +143,7 @@ class Patient extends BaseController
 
         if($file->isValid() && !$file->hasMoved()) {
           $file->move('./uploads/patient/documents', $file->getRandomName());
-
+          
           $data = [
             'patient_id' => $patient_id,
             'category' => $category,

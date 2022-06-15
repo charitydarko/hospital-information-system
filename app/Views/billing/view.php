@@ -51,7 +51,7 @@
                                             }
                                         ?>
                                     </dd>
-                                    <dt>Appointment Code</dt><dd><?= esc($appointment[0]->id) ?></dd>
+                                    <dt>Appointment Code</dt><dd><?= esc($appointment[0]->appointment_id) ?></dd>
                                     <dt>Patient Code</dt><dd><?php echo esc($appointment[0]->patient_id) ?></dd>
                                     
                                 </dl> 

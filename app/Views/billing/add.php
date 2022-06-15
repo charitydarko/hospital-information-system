@@ -45,8 +45,8 @@
                                             <h4>
                                                 Date :  
                                                 <input type="text" name="date" required value="<?php echo date('d-m-Y') ?>" class="datepicker invoice-input"><br> 
-                                                Ultisoft Hospital<br> 
-                                                Kumasi, Ashanti Region
+                                                <?= HOSPITAL_TITLE ?><br> 
+                                                <?= HOSPITAL_LOCATION ?>
                                             </h4>
                                         </th> 
                                     </tr>
@@ -134,9 +134,9 @@
                                         </td>   
 
                                         <td>
-                                        <div class="btn btn-group">
-                                            <button type="button" class="btn btn-sm btn-primary addBtn">Add</button>
-                                            <button type="button" class="btn btn-sm btn-danger removeBtn">Remove</button>
+                                            <div class="btn btn-group">
+                                                <button type="button" class="btn btn-sm btn-primary addBtn">Add</button>
+                                                <button type="button" class="btn btn-sm btn-danger removeBtn">Remove</button>
                                             </div>
                                         </td>   
                                     </tr>

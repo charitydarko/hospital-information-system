@@ -1,0 +1,16 @@
+CRITICAL - 2022-06-17 11:52:53 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, array given, called in C:\wamp64\www\hospital-information-system\app\Controllers\User.php on line 17
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\User.php(17): CodeIgniter\BaseModel->findAll(Array)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\User->index('2')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-17 11:53:47 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\wamp64\www\hospital-information-system\app\Controllers\User.php on line 17
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\User.php(17): CodeIgniter\BaseModel->findAll('user_role', '2')
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\User->index('2')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}

@@ -205,6 +205,13 @@ $routes->group('', ['filter'=>'authGuard'], function($routes){
     $routes->get('noticeboard/update/(:any)', 'Noticeboard::update/$1');
     $routes->get('noticeboard/delete', 'Noticeboard::delete');
     $routes->get('noticeboard/delete/(:any)', 'Noticeboard::delete/$1');
+
+
+    // Receptionist Routes
+    $routes->get('receptionist/dashboard', 'Receptionist\Dashboard::index');
+
+    // Doctor Routes
+    $routes->get('doctor/dashboard', 'Doctor\Dashboard::index');
 });
 
 //$routes->get('/', 'Home::index');

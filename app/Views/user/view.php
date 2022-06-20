@@ -63,7 +63,9 @@
                         <?php if(!empty($user->mobile)) { ?>
                             <dt>Mobile</dt><dd><?= esc($user->mobile); ?></dd>
                         <?php } ?> 
-   
+                        <?php if(!empty($user->phone)) { ?>
+                            <dt>Phone</dt><dd><?= esc($user->phone); ?></dd>
+                        <?php } ?> 
                         <?php if(!empty($user->gender)) { ?>
                             <dt>Gender</dt><dd>
                                 <?php 
@@ -109,8 +111,8 @@
 
             <div class="panel-footer">
                 <div class="text-center">
-                    <strong>Vestir Hospital</strong>
-                    <p class="text-center">Dohinaayilli, opposite Ayaana building, along TTH Road, Tamale</p>
+                    <strong><?= HOSPITAL_TITLE ?><br> </strong>
+                    <p class="text-center"><?= HOSPITAL_LOCATION ?></p>
                 </div>
             </div>
         </div>

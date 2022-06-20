@@ -26,22 +26,48 @@ class Auth extends BaseController {
       $email = $this->request->getPost('email');
       $password = $this->request->getPost('password');
 
-      $user = $this->user_model->where('email', $email)->first();
+      $user = $this->user_model->where('email', $email)->find();
 
       if($user === null) {
         return redirect()->back()->withInput()->with('error', 'User not found');
       } else {
-        if(password_verify($password, $user->password)){
+        if(password_verify($password, $user[0]->password)){
           $session_data = [
-            'id' => $user->id,
-            'firstname' => $user->firstname,
-            'lastname' => $user->lastname,
-            'email' => $user->email,
-            'user_role' => $user->user_role,
+            'id' => $user[0]->id,
+            'firstname' => $user[0]->firstname,
+            'lastname' => $user[0]->lastname,
+            'email' => $user[0]->email,
+            'user_role' => $user[0]->user_role,
             'isLoggedIn' => TRUE
           ];
           $this->session->set($session_data);
-          return redirect()->to('/dashboard');
+
+          switch($user[0]->user_role) {
+            case("1"): {
+              return redirect()->to('/dashboard');
+            }
+            case("2"): {
+              return redirect()->to('doctor/dashboard');
+            }
+            case("3"): {
+              return redirect()->to('accountant/dashboard');
+            }
+            case("4"): {
+              return redirect()->to('cashier/dashboard');
+            }
+            case("5"): {
+              return redirect()->to('pharmacist/dashboard');
+            }
+            case("6"): {
+              return redirect()->to('laboratorist/dashboard');
+            }
+            case("7"): {
+              return redirect()->to('receptionist/dashboard');
+            }
+            default: 
+              return redirect()->back();
+          }
+
         } else {
           return redirect()->back()->withInput()->with('error', 'Incorrect password');
         }

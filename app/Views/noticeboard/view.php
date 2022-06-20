@@ -31,8 +31,12 @@
                                     <dt>Description</dt><dd><?php echo strip_tags($notice->description) ?></dd> 
                                     <dt>Start Date</dt><dd><?php echo esc($notice->start_date) ?></dd>
                                     <dt>End Date</dt><dd><?php echo esc($notice->end_date) ?></dd>  
-                                    <dt>Created By</dt><dd><?php echo esc($notice->created_by) ?></dd>
-                                    <dt>Status</dt><dd><?php echo esc($notice->status) ?></dd> 
+                                    <dt>Created By</dt>
+                                    <dd>
+                                        <?= $staff->find($notice->created_by)->firstname; ?>
+                                        <?= $staff->find($notice->created_by)->lastname; ?>
+                                    </dd>
+                                    <dt>Status</dt><dd><?= ((esc($notice->status)==1)?'Active':'Inactive'); ?></dd> 
                                 </dl> 
                             </div>
                         </div>

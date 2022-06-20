@@ -62,6 +62,7 @@ class Noticeboard extends BaseController
         $notice = $this->getNoticeOr404($id);
         $data['notice'] = $notice;
         $data['heading'] = $this->heading;
+        $data['staff'] = $this->user_model;
         $data['title'] = 'View';
         $data['content']  = view('noticeboard/view',$data);
         return view('layout/main_wrapper',$data);

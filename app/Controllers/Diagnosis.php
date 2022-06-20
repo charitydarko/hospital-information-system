@@ -35,7 +35,8 @@ class Diagnosis extends BaseController
         $data['heading'] = $this->heading;
         $data['title'] = 'Add';
         $data['uri'] = $id;
-        $data['vitals'] = $this->getVitalsOr404($id);
+        $data['diagnosis'] = $this->diagnosis_model->find($id);
+        $data['vitals'] = $this->getVitalsOr404($data['diagnosis']->appointment_id);
         $data['appointment'] = $this->getAppointmentOr404($data['vitals']->appointment_id);
         $data['patient'] = $this->getPatientOr404($data['appointment']->patient_id);
         $data['content']  = view('diagnosis/add',$data);
@@ -99,7 +100,7 @@ class Diagnosis extends BaseController
         $data['diagnosis'] = $this->diagnosis_model->find($id);
         $data['vital'] = $this->getVitalsOr404($data['diagnosis']->appointment_id);
         $data['appointment'] = $this->appointment_model->find($data['diagnosis']->appointment_id);
-        $data['patient'] = $this->patient_model->find(['registration_code', $data['appointment']->patient_id]);
+        $data['patient'] = $this->patient_model->where('registration_code', $data['appointment']->patient_id)->find();
         $data['heading'] = $this->heading;
         $data['title'] = 'View';
         $data['content']  = view('diagnosis/view',$data);
@@ -139,7 +140,8 @@ class Diagnosis extends BaseController
 
     // Get Vitals by appointment_id
     public function getVitalsOr404($registration_code) {
-        $vitals = $this->vitals_model->find($registration_code);
+        $vitals = $this->vitals_model->where("appointment_id", $registration_code)->find();
+        $vitals = $vitals['0'];
         if($vitals === null) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException("Vitals with Appointment code $registration_code not found");
         }

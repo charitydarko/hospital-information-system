@@ -62,7 +62,7 @@
                   First Name
                 <i class="text-danger">*</i></label>
                 <div class="col-xs-9">
-                  <input name="firstname" type="text" class="form-control" id="firstname" placeholder="" value="" >
+                  <input name="firstname" type="text" class="form-control" id="firstname" placeholder="" value="<?= old('firstname') ?>" >
                 </div>
               </div>
               <div class="form-group row">
@@ -70,14 +70,14 @@
                   Last Name
                 <i class="text-danger">*</i></label>
                 <div class="col-xs-9">
-                  <input name="lastname" type="text" class="form-control" id="lastname" placeholder="" value="">
+                  <input name="lastname" type="text" class="form-control" id="lastname" placeholder="" value="<?= old('lastname') ?>">
                 </div>
               </div>
               <div class="form-group row">
                 <label for="email" class="col-xs-3 col-form-label">
                   Email <i class="text-danger">*</i></label>
                 <div class="col-xs-9">
-                  <input name="email" class="form-control" type="email" placeholder=""  value="">
+                  <input name="email" class="form-control" type="email" placeholder=""  value="<?= old('email') ?>">
                 </div>
               </div>
 
@@ -93,7 +93,7 @@
                 <label for="mobile" class="col-xs-3 col-form-label">
                   Mobile No.<i class="text-danger">*</i></label>
                 <div class="col-xs-9">
-                  <input name="mobile" class="form-control" type="number" placeholder="" id="mobile"  value="">
+                  <input name="mobile" class="form-control" type="number" placeholder="" id="mobile"  value="<?= old('mobile') ?>">
                 </div>
               </div>
 
@@ -102,19 +102,19 @@
                 <div class="col-xs-9">
                   <div class="form-check">
                   <label class="radio-inline">
-                  <input type="radio" name="gender" value="Male" <?php echo  esc(set_radio('gender', 'Male', TRUE)); ?> >Male
+                  <input type="radio" name="gender" value="1">Male
                   </label>
                   <label class="radio-inline">
-                  <input type="radio" name="gender" value="Female" <?php echo  esc(set_radio('gender', 'Female')); ?> >Female
+                  <input type="radio" name="gender" value="2">Female
                   </label>
                   <label class="radio-inline">
-                  <input type="radio" name="gender" value="Other" <?php echo  esc(set_radio('gender', 'Other')); ?> >Other
+                  <input type="radio" name="gender" value="Other" >Other
                   </label>
                   </div>
                 </div>
               </div>
               <div class="form-group row">
-                      <label for="age" class="col-xs-3 col-form-label">Age<i class="text-danger">*</i></label>
+                      <label for="age" class="col-xs-3 col-form-label">Age</label>
                       <div class="col-xs-9">
                           <input name="age" class="form-control" type="number" placeholder="Age" id="age" value="<?= old('age') ?>">
                       </div>
@@ -126,13 +126,13 @@
                           <input name="date_of_birth" type="date" class="form-control" id="date_of_birth" placeholder="Date of birth" value="<?= old('date_of_birth') ?>">
                       </div>
                   </div>
-              <div class="form-group row">
+              <!-- <div class="form-group row">
                 <label for="picture" class="col-xs-3 col-form-label">Picture</label>
                 <div class="col-xs-9">
                   <input type="file" name="picture" id="picture" value="">
                   <input type="hidden" name="old_picture" value="">
                 </div>
-              </div>
+              </div> -->
               <div class="form-group row">
                 <label for="address" class="col-xs-3 col-form-label"> Address<i class="text-danger">*</i></label>
                 <div class="col-xs-9">
@@ -144,10 +144,10 @@
                 <div class="col-xs-9">
                   <div class="form-check">
                     <label class="radio-inline">
-                      <input type="radio" name="status" value="1" <?php echo  esc(set_radio('status', '1', TRUE)); ?> />Active
+                      <input type="radio" name="status" value="1" />Active
                     </label>
                     <label class="radio-inline">
-                      <input type="radio" name="status" value="0" <?php echo  esc(set_radio('status', '0')); ?> >Inactive
+                      <input type="radio" name="status" value="0" />Inactive
                     </label>
                   </div>
                 </div>

@@ -14,7 +14,7 @@ class User extends BaseController
     $data['heading'] = $this->heading;
     $data['userRoles'] = $this->user_roles();
     if (isset($role)) {
-      $data['users'] = $this->user_model->find(['user_role', $role]);
+      $data['users'] = $this->user_model->where('user_role', $role)->findAll();
     } else {
       $data['users'] = $this->user_model->findAll();
     }
@@ -41,15 +41,32 @@ class User extends BaseController
       'firstname'         => 'required|min_length[2]|max_length[50]',
       'lastname'          => 'required|min_length[2]|max_length[50]',
       'email'             => 'required|min_length[4]|max_length[100]|valid_email|is_unique[user.email]',
-      'mobile'             => 'required|min_length[10]|max_length[13]',
-      'password'          => 'required'
+      'mobile'            => 'required|min_length[10]|max_length[13]',
+      'password'          => 'required',
+      'status'          => 'required'
     ]);
+
+    $data = [
+      'firstname'         => $this->request->getPost('firstname'),
+      'lastname'          => $this->request->getPost('lastname'),
+      'email'             => $this->request->getPost('email'),
+      'mobile'            => $this->request->getPost('mobile'),
+      'password'          => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+      'phone'             => $this->request->getPost('phone'),
+      'user_role'         => $this->request->getPost('user_role'),
+      'address'           => $this->request->getPost('address'),
+      'gender'            => $this->request->getPost('gender'),
+      'age'               => $this->request->getPost('age'),
+      'date_of_birth'          => $this->request->getPost('date_of_birth'),
+      'picture' => $this->request->getPost('picture'),
+      'status' => $this->request->getPost('status'),
+    ];
 
     if(!$validate) {
       $data['validation'] = $this->validator->listErrors();
       return redirect()->back()->withInput()->with('error', $data['validation']);
     } else {
-      $this->user_model->save($this->request->getPost());
+      $this->user_model->save($data);
       return redirect()->back()->withInput()->with('info', 'New User Added Successfully');
     }
   }

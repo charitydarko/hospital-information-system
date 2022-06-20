@@ -19,6 +19,7 @@
                             <th>Last name</th>
                             <th>Email</th>
                             <th>Mobile</th>
+                            <th>Phone</th>
                             <th>Address</th>
                             <th>Gender</th>
                             <th>User Role</th>
@@ -36,6 +37,7 @@
                                     <td><?php echo esc($user->firstname); ?></td>
                                     <td><?php echo esc($user->lastname); ?></td>
                                     <td><?php echo esc($user->email); ?></td>
+                                    <td><?php echo esc($user->mobile); ?></td>
                                     <td><?php echo esc($user->phone); ?></td>
                                     <td><?php echo esc($user->address); ?></td>
                                     <td>

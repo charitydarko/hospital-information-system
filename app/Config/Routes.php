@@ -212,6 +212,12 @@ $routes->group('', ['filter'=>'authGuard'], function($routes){
 
     // Doctor Routes
     $routes->get('doctor/dashboard', 'Doctor\Dashboard::index');
+
+    // Pharmacist Routes
+    $routes->get('pharmacist/dashboard', 'Pharmacist\Dashboard::index');
+
+    // Laboratorist Routes
+    $routes->get('laboratorist/dashboard', 'Laboratorist\Dashboard::index');
 });
 
 //$routes->get('/', 'Home::index');

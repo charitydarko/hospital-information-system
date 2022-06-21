@@ -1,0 +1,96 @@
+CRITICAL - 2022-06-21 04:48:05 --> Invalid file: pharmacist/patient/new.php
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pharmacist/pati...')
+#1 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacist/pati...', Array, true)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Patient.php(44): view('pharmacist/pati...')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Patient->new()
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Patient))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-06-21 04:57:36 --> Invalid file: pharmacist/patient/new.php
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pharmacist/pati...')
+#1 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacist/pati...', Array, true)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Patient.php(44): view('pharmacist/pati...')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Patient->new()
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Patient))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-06-21 05:17:37 --> Attempt to read property "appointment_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Prescription.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 30)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Prescription->view('pharmacist', 'inventory', 'addSale')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Prescription))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-21 05:18:08 --> Attempt to read property "appointment_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Prescription.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 30)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Prescription->view('pharmacist', 'inventory', 'addSale')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Prescription))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-21 15:49:06 --> Invalid file: laboratorist/dashboard/home.php
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laboratorist/da...')
+#1 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('laboratorist/da...', Array, true)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\Laboratorist\Dashboard.php(22): view('laboratorist/da...', Array)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Laboratorist\Dashboard->index()
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboratorist\Dashboard))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-06-21 15:50:37 --> Invalid file: laboratorist/dashboard/home.php
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laboratorist/da...')
+#1 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('laboratorist/da...', Array, true)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\Laboratorist\Dashboard.php(22): view('laboratorist/da...', Array)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Laboratorist\Dashboard->index()
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboratorist\Dashboard))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-06-21 15:50:39 --> Invalid file: laboratorist/dashboard/home.php
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laboratorist/da...')
+#1 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('laboratorist/da...', Array, true)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\Laboratorist\Dashboard.php(22): view('laboratorist/da...', Array)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Laboratorist\Dashboard->index()
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboratorist\Dashboard))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-06-21 15:50:47 --> Invalid file: laboratorist/dashboard/home.php
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laboratorist/da...')
+#1 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('laboratorist/da...', Array, true)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\Laboratorist\Dashboard.php(22): view('laboratorist/da...', Array)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Laboratorist\Dashboard->index()
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboratorist\Dashboard))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-06-21 15:52:14 --> Invalid file: laboratorist/dashboard/home.php
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laboratorist/da...')
+#1 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('laboratorist/da...', Array, true)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\Laboratorist\Dashboard.php(22): view('laboratorist/da...', Array)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Laboratorist\Dashboard->index()
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboratorist\Dashboard))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-06-21 15:52:31 --> Invalid file: laboratorist/dashboard/home.php
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laboratorist/da...')
+#1 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('laboratorist/da...', Array, true)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\Laboratorist\Dashboard.php(22): view('laboratorist/da...', Array)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Laboratorist\Dashboard->index()
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboratorist\Dashboard))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}

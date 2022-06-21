@@ -5,8 +5,8 @@
  
             <div class="panel-heading no-print">
                 <div class="btn-group"> 
-                    <a class="btn btn-success" href="<?php echo base_url("pharmacy/inventory/sale") ?>"> <i class="fa fa-plus"></i> Add Prescription Sale</a>  
-                    <a class="btn btn-primary" href="<?php echo base_url("pharmacy/prescription/request") ?>"> <i class="fa fa-list"></i> Prescription List</a>  
+                    <a class="btn btn-success" href="#"> <i class="fa fa-plus"></i> Add laboratory Sale</a>  
+                    <a class="btn btn-primary" href="<?php echo base_url("/laboratorist/request") ?>"> <i class="fa fa-list"></i> laboratory List</a>  
                     <button type="button" onclick="printContent('PrintMe')" class="btn btn-danger" ><i class="fa fa-print"></i></button> 
                 </div>
             </div> 
@@ -15,7 +15,7 @@
                 <!-- Nav tabs --> 
                 <ul class="col-xs-12 nav nav-tabs" role="tablist">
                     <li role="presentation" class="active">
-                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Prescription Information</a>
+                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">laboratory Information</a>
                     </li>
 
                 </ul>  
@@ -47,12 +47,29 @@
                                     </dd>
                                     <dt>Appointment Code</dt><dd><?= esc($appointment->appointment_id) ?></dd>
                                     <dt>Patient Code</dt><dd><?php echo esc($appointment->patient_id) ?></dd>
-                                    <dt>Prescription</dt><dd><?php echo esc($diagnosis->prescription) ?></dd>
-                                    <dt>Status</dt><dd><?php echo esc($prescription[0]->status==1?'Served':'Not Served') ?></dd>
+                                    <dt>laboratory</dt><dd><?php echo esc($diagnosis->laboratory) ?></dd>
+                                    <dt>Lab View</dt><dd>
+                                        <?php if($laboratory[0]->attach_file !== "") { ?>
+                                            <a target="_blank" href="<?php echo base_url('./uploads/patient/laboratory/'.$laboratory[0]->attach_file) ?>" class="btn btn-xs btn-info" title="View Lab Document"><i class="fa fa-eye"></i></a>
+                                        <?php } else echo "N/A "?>
+                                    </dd>
+                                    <dt>Laboratory Fees:</dt><dd>
+                                        <?php if($laboratory[0]->fees !== "") {
+                                            echo esc($laboratory[0]->fees);
+                                        } else echo "N/A "
+                                        ?>
+                                    </dd>
+                                    <dt>Lab Fees Reason:</dt><dd>
+                                    <?php if($laboratory[0]->fees_reason !== "") 
+                                        {
+                                            echo esc($laboratory[0]->fees_reason);
+                                        } else echo "N/A "
+                                    ?></dd>
+                                    <dt>Status</dt><dd><?php echo esc($laboratory[0]->status==1?'Served':'Not Served') ?></dd>
                                     <dt>Served By</dt>
                                     <dd>
                                         <?php
-                                            $staff = $staff->where('id', $prescription[0]->served_by)->select('firstname, lastname')->find();
+                                            $staff = $staff->where('id', $laboratory[0]->served_by)->select('firstname, lastname')->find();
 
                                             if(!$staff) {
                                                 echo 'N/A';
@@ -60,57 +77,15 @@
                                                 echo $staff[0]->firstname . ' ' . $staff[0]->lastname;
                                             }
                                         ?>
+                                       
                                     </dd>
-                                    <dt>Prescription Note</dt><dd>
-                                        <?php
-                                            if($prescription[0]->note) {
-                                                echo esc($prescription[0]->note);
-                                            } else echo 'N/A';
-                                        ?></dd>
+                                    <dt>laboratory Note</dt><dd><?php echo esc($laboratory[0]->note) ?></dd>
                                 </dl> 
                             </div>
                         </div>
                     </div> 
-
-                    <!-- Vitals -->
-                    <div role="tabpanel" class="tab-pane" id="vitals">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                Vitals
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Diagnosis -->
-                    <div role="tabpanel" class="tab-pane" id="diagnosis">
-                        Diagnosis
-                    </div>
-
-                    <!-- Prescription -->
-                    <div role="tabpanel" class="tab-pane" id="prescription">
-                        Prescription
-                    </div>
-
-                    <!-- Laboratory -->
-                    <div role="tabpanel" class="tab-pane" id="laboratory">
-                        Laboratory
-                    </div>
-
-                    <!-- Billing -->
-                    <div role="tabpanel" class="tab-pane" id="billing">
-                        Billing
-                    </div>
-
-                </div>  
-
-            </div> 
-
-            <!-- <div class="panel-footer">
-                <div class="text-center">
-                    <strong><?php #echo esc($this->session->userdata('title')); ?></strong>
-                    <p class="text-center"><?php #echo esc($this->session->userdata('address')); ?></p>
                 </div>
-            </div> -->
+            </div> 
         </div>
     </div>
   

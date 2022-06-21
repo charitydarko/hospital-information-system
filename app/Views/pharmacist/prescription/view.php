@@ -5,8 +5,8 @@
  
             <div class="panel-heading no-print">
                 <div class="btn-group"> 
-                    <a class="btn btn-success" href="<?php echo base_url("pharmacy/inventory/sale") ?>"> <i class="fa fa-plus"></i> Add Prescription Sale</a>  
-                    <a class="btn btn-primary" href="<?php echo base_url("pharmacy/prescription/request") ?>"> <i class="fa fa-list"></i> Prescription List</a>  
+                    <a class="btn btn-success" href="<?php echo base_url("pharmacist/inventory/sale") ?>"> <i class="fa fa-plus"></i> Add Prescription Sale</a>  
+                    <a class="btn btn-primary" href="<?php echo base_url("pharmacist/prescription/request") ?>"> <i class="fa fa-list"></i> Prescription List</a>  
                     <button type="button" onclick="printContent('PrintMe')" class="btn btn-danger" ><i class="fa fa-print"></i></button> 
                 </div>
             </div> 
@@ -70,36 +70,7 @@
                                 </dl> 
                             </div>
                         </div>
-                    </div> 
-
-                    <!-- Vitals -->
-                    <div role="tabpanel" class="tab-pane" id="vitals">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                Vitals
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Diagnosis -->
-                    <div role="tabpanel" class="tab-pane" id="diagnosis">
-                        Diagnosis
-                    </div>
-
-                    <!-- Prescription -->
-                    <div role="tabpanel" class="tab-pane" id="prescription">
-                        Prescription
-                    </div>
-
-                    <!-- Laboratory -->
-                    <div role="tabpanel" class="tab-pane" id="laboratory">
-                        Laboratory
-                    </div>
-
-                    <!-- Billing -->
-                    <div role="tabpanel" class="tab-pane" id="billing">
-                        Billing
-                    </div>
+                    </div>                     
 
                 </div>  
 

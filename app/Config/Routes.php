@@ -218,6 +218,12 @@ $routes->group('', ['filter'=>'authGuard'], function($routes){
 
     // Laboratorist Routes
     $routes->get('laboratorist/dashboard', 'Laboratorist\Dashboard::index');
+
+    // Cashier Routes
+    $routes->get('cashier/dashboard', 'Cashier\Dashboard::index');
+
+    // Accountant Routes
+    $routes->get('accountant/dashboard', 'Accountant\Dashboard::index');
 });
 
 //$routes->get('/', 'Home::index');

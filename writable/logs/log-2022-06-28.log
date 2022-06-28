@@ -1163,3 +1163,15 @@ CRITICAL - 2022-06-28 14:05:30 --> Undefined array key 0
 #8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
 #10 {main}
+CRITICAL - 2022-06-28 14:37:24 --> Undefined variable $user
+#0 C:\wamp64\www\hospital-information-system\app\Views\doctor\dashboard\home.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp64\\www\\h...', 113)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('doctor/dashboar...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Dashboard.php(22): view('doctor/dashboar...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Dashboard->index()
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Dashboard))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}

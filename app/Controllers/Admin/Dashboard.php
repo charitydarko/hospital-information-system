@@ -17,7 +17,8 @@ class Dashboard extends BaseController
     $data['prescriptions'] = sizeof($this->prescription_model->findAll());
     $data['notice'] = $this->noticeboard_model->findAll();
     $data['staff'] = $this->user_model;
-    $data['messages'] = $this->message_model->find(['receiver_id', session()->get('id')]);
+    $data['messages'] = $this->message_model->where('receiver_id', session()->get('id'))->find();
+    $data['user'] = $this->user_model;
     $data['content']  = view('admin/dashboard/home',$data);
     return view('admin/layout/main_wrapper',$data);
   }

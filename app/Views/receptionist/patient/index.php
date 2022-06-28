@@ -22,6 +22,7 @@
                             <th>Address</th>
                             <th>Action</th>
                             <th>Created Date</th>
+                            <th>Updated Date</th>
                             <th>Status</th>
                         </tr>
                     </thead>
@@ -60,12 +61,18 @@
                                     </td>
                                     <td>
                                         <?php
+                                            $date = new DateTime($patient->created_at);
+                                            $strip = $date->format('Y-m-d');
+                                            echo $strip;
+                                        ?>
+                                    </td>
+                                    <td>
+                                        <?php
                                             $date = new DateTime($patient->updated_at);
                                             $strip = $date->format('Y-m-d');
                                             echo $strip;
                                         ?>
                                     </td>
-                                    
                                     <td><?php echo esc($patient->status==1?'Active':'Inactive'); ?></td>
                                 </tr>
                                 <?php $sl++; ?>

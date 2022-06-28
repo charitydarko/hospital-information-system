@@ -44,7 +44,7 @@ class Auth extends BaseController {
 
           switch($user[0]->user_role) {
             case("1"): {
-              return redirect()->to('/dashboard');
+              return redirect()->to('admin/dashboard');
             }
             case("2"): {
               return redirect()->to('doctor/dashboard');

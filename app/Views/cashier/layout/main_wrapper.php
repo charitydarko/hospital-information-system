@@ -44,7 +44,7 @@
 <body class="hold-transition sidebar-mini">
   <div class="wrapper">
     <header class="main-header">
-      <a href="<?php echo base_url('dashboard/home') ?>" class="logo"> <!-- Logo -->
+      <a href="<?php echo base_url('cashier/dashboard') ?>" class="logo"> <!-- Logo -->
         <span class="logo-mini">
           <div></div>
           <h2>VH</h2>

@@ -93,7 +93,15 @@
                 <label for="mobile" class="col-xs-3 col-form-label">
                   Mobile No.<i class="text-danger">*</i></label>
                 <div class="col-xs-9">
-                  <input name="mobile" class="form-control" type="number" placeholder="" id="mobile"  value="">
+                  <input name="mobile" class="form-control" type="text" placeholder="" id="mobile"  value="<?= $user->mobile ?>">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="mobile" class="col-xs-3 col-form-label">
+                  Phone No.<i class="text-danger">*</i></label>
+                <div class="col-xs-9">
+                  <input name="phone" class="form-control" type="text" placeholder="" id="phone"  value="<?= $user->phone ?>">
                 </div>
               </div>
 

@@ -44,7 +44,7 @@
 <body class="hold-transition sidebar-mini">
   <div class="wrapper">
     <header class="main-header">
-      <a href="<?php echo base_url('dashboard/home') ?>" class="logo"> <!-- Logo -->
+      <a href="<?php echo base_url('accountant/dashboard') ?>" class="logo"> <!-- Logo -->
         <span class="logo-mini">
           <div></div>
           <h2>VH</h2>
@@ -67,9 +67,9 @@
             <li class="dropdown dropdown-user">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="pe-7s-settings"></i></a>
               <ul class="dropdown-menu">
-                  <li><a href="<?= base_url("user/view/".session()->get('id'))?>"><i class="pe-7s-users"></i>Profile</a></li>
-                  <li><a href="<?= base_url("user/edit/".session()->get('id'))?>"><i class="pe-7s-settings"></i>Edit Profile</a></li>
-                  <li><a href="<?= base_url("user/reset_password")?>"><i class="pe-7s-key"></i>Update Password</a></li>
+                  <li><a href="<?= base_url("accountant/user/view/".session()->get('id'))?>"><i class="pe-7s-users"></i>Profile</a></li>
+                  <li><a href="<?= base_url("accountant/user/edit/".session()->get('id'))?>"><i class="pe-7s-settings"></i>Edit Profile</a></li>
+                  <li><a href="<?= base_url("accountant/user/reset_password")?>"><i class="pe-7s-key"></i>Update Password</a></li>
                   <li><a href="<?= base_url("auth/logout") ?>"><i class="pe-7s-power"></i>Logout</a></li>
               </ul>
             </li>

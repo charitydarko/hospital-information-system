@@ -209,6 +209,59 @@ $routes->group('', ['filter'=>'authGuard'], function($routes){
 
     // Receptionist Routes
     $routes->get('receptionist/dashboard', 'Receptionist\Dashboard::index');
+    $routes->get('receptionist/patient', 'Receptionist\Patient::index');
+    $routes->get('patient/today', 'Receptionist\Patient::today');
+    $routes->get('receptionist/patient/view', 'Receptionist\Patient::view');
+    $routes->get('receptionist/patient/view/(:any)', 'Receptionist\Patient::view/$1');
+    $routes->get('receptionist/patient/new', 'Receptionist\Patient::new');
+    $routes->get('receptionist/patient/create', 'Receptionist\Patient::create');
+    $routes->get('receptionist/patient/create/(:any)', 'Receptionist\Patient::create/$1');
+    $routes->get('receptionist/patient/edit', 'Receptionist\Patient::edit');
+    $routes->get('receptionist/patient/edit/(:any)', 'Receptionist\Patient::edit/$1');
+    $routes->get('receptionist/patient/update', 'Receptionist\Patient::update');
+    $routes->get('receptionist/patient/update/(:any)', 'Receptionist\Patient::update/$1');
+    $routes->get('receptionist/patient/document', 'Receptionist\Patient::document');
+    $routes->get('receptionist/patient/add_document', 'Receptionist\Patient::add_document');
+    $routes->get('receptionist/patient/add_document/(:any)', 'Receptionist\Patient::add_document/$1');
+    $routes->get('receptionist/patient/document_upload', 'Receptionist\Patient::document_upload');
+    $routes->get('receptionist/patient/document_upload/(:any)', 'Receptionist\Patient::document_upload/$1');
+    $routes->get('receptionist/appointment', 'Receptionist\Appointment::index');
+    $routes->get('receptionist/appointment/today', 'Receptionist\Appointment::today');
+    $routes->get('receptionist/appointment/add', 'Receptionist\Appointment::add');
+    $routes->get('receptionist/appointment/create', 'Receptionist\Appointment::create');
+    $routes->get('receptionist/appointment/create/(:any)', 'Receptionist\Appointment::create/$1');
+    $routes->get('receptionist/appointment/view', 'Receptionist\Appointment::view');
+    $routes->get('receptionist/appointment/view/(:any)', 'Receptionist\Appointment::view/$1');
+    $routes->get('receptionist/appointment/edit', 'Receptionist\Appointment::edit');
+    $routes->get('receptionist/appointment/edit/(:any)', 'Receptionist\Appointment::edit/$1');
+    $routes->get('receptionist/appointment/update', 'Receptionist\Appointment::update');
+    $routes->get('receptionist/appointment/update/(:any)', 'Receptionist\Appointment::update/$1');
+    $routes->get('receptionist/vitals', 'Receptionist\Vitals::index');
+    $routes->get('receptionist/vitals/today', 'Receptionist\Vitals::today');
+    $routes->get('receptionist/vitals/month', 'Receptionist\Vitals::month');
+    $routes->get('receptionist/vitals/add', 'Receptionist\Vitals::add');
+    $routes->get('receptionist/vitals/create', 'Receptionist\Vitals::create');
+    $routes->get('receptionist/vitals/create/(:any)', 'Receptionist\Vitals::create/$1');
+    $routes->get('receptionist/vitals/view', 'Receptionist\Vitals::view');
+    $routes->get('receptionist/vitals/view/(:any)', 'Receptionist\Vitals::view/$1');
+    $routes->get('receptionist/vitals/edit', 'Receptionist\Vitals::edit');
+    $routes->get('receptionist/vitals/edit/(:any)', 'Receptionist\Vitals::edit/$1');
+    $routes->get('receptionist/vitals/update', 'Receptionist\Vitals::update');
+    $routes->get('receptionist/vitals/update/(:any)', 'Receptionist\Vitals::update/$1');
+    $routes->get('receptionist/message', 'Receptionist\Message::index');
+    $routes->get('receptionist/message/add', 'Receptionist\Message::add');
+    $routes->get('receptionist/message/create', 'Receptionist\Message::create');
+    $routes->get('receptionist/message/create/(:any)', 'Receptionist\Message::create/$1');
+    $routes->get('receptionist/message/sent', 'Receptionist\Message::sent');
+    $routes->get('receptionist/message/sent/(:any)', 'Receptionist\Message::sent/$1');
+    $routes->get('receptionist/message/inbox_information', 'Receptionist\Message::inbox_information');
+    $routes->get('receptionist/message/inbox_information/(:any)', 'Receptionist\Message::inbox_information/$1');
+    $routes->get('receptionist/message/inbox_information_inbox', 'Receptionist\Message::inbox_information_inbox');
+    $routes->get('receptionist/message/inbox_information_inbox/(:any)', 'Receptionist\Message::inbox_information_inbox/$1');
+    $routes->get('receptionist/noticeboard', 'Receptionist\Noticeboard::index');
+    $routes->get('receptionist/noticeboard/view', 'Receptionist\Noticeboard::view');
+    $routes->get('receptionist/noticeboard/view/(:any)', 'Receptionist\Noticeboard::view/$1');
+
 
     // Doctor Routes
     $routes->get('doctor/dashboard', 'Doctor\Dashboard::index');
@@ -224,6 +277,9 @@ $routes->group('', ['filter'=>'authGuard'], function($routes){
 
     // Accountant Routes
     $routes->get('accountant/dashboard', 'Accountant\Dashboard::index');
+
+    // Accountant Routes
+    $routes->get('admin/dashboard', 'Admin\Dashboard::index');
 });
 
 //$routes->get('/', 'Home::index');

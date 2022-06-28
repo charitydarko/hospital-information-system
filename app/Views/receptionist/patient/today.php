@@ -57,12 +57,10 @@
                                         <a href="<?=site_url("/receptionist/patient/edit/".$patient->registration_code)?>" class="btn btn-xs btn-primary"><i class="fa fa-edit" title="Edit Patient Info"></i></a> 
 
                                         <a href="<?=site_url("/receptionist/patient/add_document/".$patient->registration_code)?>" class="btn btn-xs btn-warning" title="Add Patient Document"><i class="fa fa-plus"></i></a> 
-
-                                        <a href="<?=site_url("/receptionist/patient/delete/".$patient->registration_code)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Patient Info"><i class="fa fa-trash"></i></a> 
                                     </td>
                                     <td>
                                         <?php
-                                            $date = new DateTime($patient->updated_at);
+                                            $date = new DateTime($patient->created_at);
                                             $strip = $date->format('Y-m-d');
                                             echo $strip;
                                         ?>

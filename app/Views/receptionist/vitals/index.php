@@ -34,14 +34,14 @@
                                     <td><?= esc($vital->appointment_id); ?></td>
                                     <td>
                                     <?php 
-                                            $appointment = $appointments->find($vital->appointment_id);
-                                            echo esc($appointment->patient_id);
+                                            $appointment = $appointments->where("appointment_id", $vital->appointment_id)->find();
+                                            echo esc($appointment[0]->patient_id);
                                     ?>
                                     </td>
                                     <td>
                                         <input type="hidden" name="patient_registration_code" value="<?php #$appointment->patient_id ?>">
                                         <?php
-                                            $patient = $patients->where('registration_code', $appointment->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
+                                            $patient = $patients->where('registration_code', $appointment[0]->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
                                             echo esc($patient[0]->firstname) . ' ' . esc($patient[0]->lastname);
                                         ?>
                                     </td>

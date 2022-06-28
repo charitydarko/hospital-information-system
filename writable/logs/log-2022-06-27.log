@@ -1,0 +1,104 @@
+CRITICAL - 2022-06-27 14:35:18 --> Invalid file: admin/user/add.php
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/user/add....')
+#1 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('admin/user/add', Array, true)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\User.php(34): view('admin/user/add', Array)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\User->add()
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-06-27 14:40:05 --> Invalid file: layout/main_wrapper.php
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main_wra...')
+#1 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('layout/main_wra...', Array, true)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\User.php(36): view('layout/main_wra...', Array)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\User->add()
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-06-27 14:52:16 --> Invalid file: layout/main_wrapper.php
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main_wra...')
+#1 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('layout/main_wra...', Array, true)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\User.php(93): view('layout/main_wra...', Array)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\User->edit('1')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-06-27 14:53:17 --> Invalid file: layout/main_wrapper.php
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main_wra...')
+#1 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('layout/main_wra...', Array, true)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\User.php(93): view('layout/main_wra...', Array)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\User->edit('1')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-06-27 14:54:00 --> Invalid file: layout/main_wrapper.php
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main_wra...')
+#1 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('layout/main_wra...', Array, true)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\User.php(93): view('layout/main_wra...', Array)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\User->edit('1')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-06-27 14:55:19 --> Invalid file: admin/user/view.php
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/user/view...')
+#1 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('admin/user/view', Array, true)
+#2 C:\wamp64\www\hospital-information-system\app\Controllers\Admin\User.php(78): view('admin/user/view', Array)
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Admin\User->view('1')
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#8 {main}
+CRITICAL - 2022-06-27 16:06:08 --> Cannot redeclare App\Controllers\Receptionist\User::update()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-06-27 16:06:20 --> Cannot redeclare App\Controllers\Receptionist\User::update()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-06-27 17:33:56 --> Undefined constant "condition"
+#0 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include()
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('receptionist/pa...', Array, true)
+#3 C:\wamp64\www\hospital-information-system\app\Controllers\Receptionist\Patient.php(37): view('receptionist/pa...', Array)
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Receptionist\Patient->view('71557')
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Receptionist\Patient))
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#9 {main}
+CRITICAL - 2022-06-27 17:49:24 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Receptionist\Patient.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 185)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Receptionist\Patient.php(112): App\Controllers\Receptionist\Patient->getPatientOr404('receptionist')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Receptionist\Patient->add_document('receptionist', 'patient', 'document_upload')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Receptionist\Patient))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-06-27 17:51:01 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Receptionist\Patient.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 185)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Receptionist\Patient.php(112): App\Controllers\Receptionist\Patient->getPatientOr404('receptionist')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Receptionist\Patient->add_document('receptionist', 'patient', 'document_upload')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Receptionist\Patient))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-06-27 17:51:53 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Receptionist\Patient.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 185)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Receptionist\Patient.php(112): App\Controllers\Receptionist\Patient->getPatientOr404('receptionist')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Receptionist\Patient->add_document('receptionist', 'patient', 'document_upload')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Receptionist\Patient))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}

@@ -14,7 +14,7 @@
         <div class="row">
           <div id="output" class="hide alert"></div>
           <div class="col-md-9 col-sm-12">
-            <form action="receptionist/patient/document_upload" method="post" enctype="multipart/form-data">
+            <form action=<?= base_url("receptionist/patient/document_upload") ?> method="post" enctype="multipart/form-data">
               <?= csrf_field() ?>
 
               <div class="form-group row">

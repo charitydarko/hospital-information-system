@@ -12,7 +12,7 @@ class Message extends BaseController
     {
         $data['title'] = 'Inbox';
         $data['heading'] = $this->heading;
-        $data['messages'] = $this->message_model->find(['receiver_id', session()->get('id')]);
+        $data['messages'] = $this->message_model->where('receiver_id', session()->get('id'))->find();
         $data['user'] = $this->user_model;
         $data['content'] = view('accountant/message/index', $data);
 		return view('accountant/layout/main_wrapper',$data);

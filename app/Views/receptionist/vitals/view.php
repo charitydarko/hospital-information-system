@@ -45,12 +45,12 @@
                                             }
                                         ?>
                                     </dd>
-                                    <dt>Appointment Code</dt><dd><?= esc($appointment->appointment_id) ?></dd>
-                                    <dt>Patient Code</dt><dd><?php echo esc($appointment->patient_id) ?></dd>
+                                    <dt>Appointment Code</dt><dd><?= esc($appointment[0]->appointment_id) ?></dd>
+                                    <dt>Patient Code</dt><dd><?php echo esc($appointment[0]->patient_id) ?></dd>
                                     <dt>Blood Pressure</dt><dd><?= esc($vital->blood_pressure)?>mmHg</dd> 
                                     <dt>Pulse</dt><dd><?= esc($vital->pulse)?>bpm</dd>
                                     <dt>Height</dt><dd><?= esc($vital->height)?>cm</dd>
-                                    <dt>Weight</dt><dd><?= esc($vital->height)?>kg</dd>
+                                    <dt>Weight</dt><dd><?= esc($vital->weight)?>kg</dd>
                                     <dt>Note</dt><dd><?= strip_tags($vital->note)?></dd>
                                 </dl> 
                             </div>

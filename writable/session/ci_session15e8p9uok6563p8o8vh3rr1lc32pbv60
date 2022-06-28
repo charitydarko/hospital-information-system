@@ -1,0 +1,9 @@
+__ci_last_regenerate|i:1656399496;_ci_previous_url|s:50:"http://localhost:8080/receptionist/appointment/add";id|s:2:"10";firstname|s:5:"Eddie";lastname|s:6:"Nhyira";email|s:21:"receptionist@demo.com";user_role|s:1:"7";isLoggedIn|b:1;_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:3:{s:10:"patient_id";s:0:"";s:14:"appointment_id";s:6:"A28701";s:4:"note";s:0:"";}}__ci_vars|a:3:{s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";s:5:"error";s:3:"old";}_ci_validation_errors|s:67:"a:1:{s:10:"patient_id";s:35:"The Patient Code field is required.";}";error|s:249:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>The Patient Code field is required.</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";

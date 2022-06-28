@@ -11,7 +11,7 @@ class Vitals extends BaseController
     // List Vitals
     public function index()
     {
-        $data['vitals'] = $this->vitals_model->findAll();
+        $data['vitals'] = $this->vitals_model->orderBy('created_at','DESC')->findAll();
         $data['staff'] = $this->user_model;
         $data['appointments'] = $this->appointment_model;
         $data['patients'] = $this->patient_model;
@@ -97,8 +97,8 @@ class Vitals extends BaseController
     // View Vitals info
     public function view($id) {
         $data['vital'] = $this->vitals_model->find($id);
-        $data['appointment'] = $this->appointment_model->find($data['vital']->appointment_id);
-        $data['patient'] = $this->patient_model->where('registration_code', $data['appointment']->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
+        $data['appointment'] = $this->appointment_model->where("appointment_id", $data['vital']->appointment_id)->find();
+        $data['patient'] = $this->patient_model->where('registration_code', $data['appointment'][0]->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
         $data['heading'] = $this->heading;
         $data['title'] = 'View';
         $data['content']  = view('receptionist/vitals/view',$data);

@@ -10,7 +10,7 @@ class Patient extends BaseController
 
     public function index()
     {
-        $data['patients'] = $this->patient_model->findAll();
+        $data['patients'] = $this->patient_model->orderBy('created_at','DESC')->findAll();
         $data['heading'] = $this->heading;
         $data['title'] = 'List';
         $data['content']  = view('receptionist/patient/index',$data);

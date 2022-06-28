@@ -32,7 +32,7 @@ class Billing extends BaseController
         $data['staff'] = $this->user_model;
         $data['appointments'] = $this->appointment_model;
         $data['patients'] = $this->patient_model;
-        $data['billings_today'] = $this->billing_model->where("created_at", $date)->findAll();
+        $data['billings'] = $this->billing_model->where("created_at", $date)->findAll();
         $data['heading'] = $this->heading;
         $data['title'] = 'List';
         $data['content']  = view('accountant/billing/index',$data);
@@ -50,7 +50,10 @@ class Billing extends BaseController
 
     public function create() {
         $validate = $this->validate([
-            'appointment_code' => 'required'
+            'appointment_code' => [
+                    'label' => 'Appointment Code',
+                    'rules' => 'required|is_unique[billing.appointment_id]'
+            ]
         ]);
 
         if(!$validate) {
@@ -262,7 +265,7 @@ class Billing extends BaseController
     // Get Appointment by ID
     public function getAppointmentOr404($appointment_code) {
         $appointment = $this->appointment_model->where("appointment_id", $appointment_code)->find();
-        if($appointment === null) {
+        if(!$appointment) {
           throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $appointment_code not found");
         }
         return $appointment;
@@ -272,10 +275,10 @@ class Billing extends BaseController
     // Get patient by registration_code
     public function getPatientOr404($registration_code) {
         $patient = $this->patient_model->where('registration_code', $registration_code)->select('firstname, lastname, gender, registration_code, phone, mobile, address, age, status')->find();
-        $patient = $patient;
-        if($patient === null) {
+        if(!$patient) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");
         }
+        $patient = $patient;
         return $patient;
     }
 

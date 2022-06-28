@@ -5,37 +5,37 @@
       <!--  Start heading area with blue buttons -->
       <div class="panel-heading no-print">
         <div class="btn-group m-t-10 m-b-5"> 
-          <a class="btn btn-primary" href="<?= base_url("user/index/7") ?>">
+          <a class="btn btn-primary" href="<?= base_url("admin/user/index/7") ?>">
             <i class="fa fa-list"></i> Receptionist List
           </a>
         </div>
         <div class="btn-group m-t-10 m-b-5">
-          <a class="btn btn-primary" href="<?= base_url("user/index/2") ?>">
+          <a class="btn btn-primary" href="<?= base_url("admin/user/index/2") ?>">
             <i class="fa fa-list"></i> Doctor List
           </a>
         </div>
         <div class="btn-group m-t-10 m-b-5">
-          <a class="btn btn-primary" href="<?= base_url("user/index/5") ?>">
+          <a class="btn btn-primary" href="<?= base_url("admin/user/index/5") ?>">
             <i class="fa fa-list"></i> Pharmacist List
           </a>
         </div>
         <div class="btn-group m-t-10 m-b-5">
-          <a class="btn btn-primary" href="<?= base_url("user/index/6") ?>">
+          <a class="btn btn-primary" href="<?= base_url("admin/user/index/6") ?>">
             <i class="fa fa-list"></i> Laboratorist List
           </a>
         </div>
         <div class="btn-group m-t-10 m-b-5">
-          <a class="btn btn-primary" href="<?= base_url("user/index/4") ?>">
+          <a class="btn btn-primary" href="<?= base_url("admin/user/index/4") ?>">
             <i class="fa fa-list"></i> Cashier List
           </a>
         </div>
         <div class="btn-group m-t-10 m-b-5">
-          <a class="btn btn-primary" href="<?= base_url("user/index/3") ?>">
+          <a class="btn btn-primary" href="<?= base_url("admin/user/index/3") ?>">
             <i class="fa fa-list"></i> Accountant List
           </a>
         </div>
         <div class="btn-group m-t-10 m-b-5">
-          <a class="btn btn-primary" href="<?= base_url("user/index/1") ?>">
+          <a class="btn btn-primary" href="<?= base_url("admin/user/index/1") ?>">
             <i class="fa fa-list"></i> Admin List
           </a>
         </div>
@@ -45,7 +45,7 @@
       <div class="panel-body panel-form">
         <div  class="row">
           <div class="col-md-9 col-sm-12">
-            <form action="<?= base_url('user/create'); ?>" method="post">
+            <form action="<?= base_url('admin/user/create'); ?>" method="post">
               <?= csrf_field() ?>
               <div class="form-group row">
                 <label for="user_role" class="col-xs-3 col-form-label">
@@ -114,25 +114,18 @@
                 </div>
               </div>
               <div class="form-group row">
-                      <label for="age" class="col-xs-3 col-form-label">Age</label>
-                      <div class="col-xs-9">
-                          <input name="age" class="form-control" type="number" placeholder="Age" id="age" value="<?= old('age') ?>">
-                      </div>
+                  <label for="age" class="col-xs-3 col-form-label">Age</label>
+                  <div class="col-xs-9">
+                      <input name="age" class="form-control" type="number" placeholder="Age" id="age" value="<?= old('age') ?>">
                   </div>
+              </div>
 
-                  <div class="form-group row">
-                      <label for="date_of_birth" class="col-xs-3 col-form-label">Date of Birth</i></label>
-                      <div class="col-xs-9">
-                          <input name="date_of_birth" type="date" class="form-control" id="date_of_birth" placeholder="Date of birth" value="<?= old('date_of_birth') ?>">
-                      </div>
+              <div class="form-group row">
+                  <label for="date_of_birth" class="col-xs-3 col-form-label">Date of Birth</i></label>
+                  <div class="col-xs-9">
+                      <input name="date_of_birth" type="date" class="form-control" id="date_of_birth" placeholder="Date of birth" value="<?= old('date_of_birth') ?>">
                   </div>
-              <!-- <div class="form-group row">
-                <label for="picture" class="col-xs-3 col-form-label">Picture</label>
-                <div class="col-xs-9">
-                  <input type="file" name="picture" id="picture" value="">
-                  <input type="hidden" name="old_picture" value="">
-                </div>
-              </div> -->
+              </div>
               <div class="form-group row">
                 <label for="address" class="col-xs-3 col-form-label"> Address<i class="text-danger">*</i></label>
                 <div class="col-xs-9">

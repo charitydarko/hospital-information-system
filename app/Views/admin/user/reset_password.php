@@ -10,7 +10,7 @@
             <div class="panel-body panel-form">
                 <div class="row">
                     <div class="col-md-9 col-sm-12">
-                    <form action="<?= base_url('user/update_password'); ?>" method="post">
+                    <form action="<?= base_url('admin/user/update_password'); ?>" method="post">
                         <?= csrf_field() ?>
                         <div class="form-group row">
                             <label for="password" class="col-xs-3 col-form-label">Password <i class="text-danger">*</i></label>

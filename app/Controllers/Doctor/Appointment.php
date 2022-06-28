@@ -139,10 +139,10 @@ class Appointment extends BaseController
     // Get patient by registration_code
     public function getPatientOr404($registration_code) {
         $patient = $this->patient_model->where('registration_code', $registration_code)->select('firstname, lastname, gender, phone, mobile, address, age, date_of_birth, status')->find();
-        $patient = $patient['0'];
-        if($patient === null) {
+        if(!$patient) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");
         }
+        $patient = $patient['0'];
         return $patient;
     }
 }

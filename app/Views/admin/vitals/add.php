@@ -20,7 +20,15 @@
               <div class="form-group row">
                 <label for="appointment_id" class="col-xs-3 col-form-label">Appointment Code<i class="text-danger">*</i></label>
                 <div class="col-xs-9">
-                  <input name="appointment_id"  type="text" class="form-control" id="appointment_id" value="<?= $uri ?>">
+                  <input name="appointment_id"  type="text" class="form-control" id="appointment_id" value="
+                    <?php
+                      $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+                      $uri_segments = explode('/', $uri_path);
+                      if(isset($uri_segments[4])) {
+                        echo trim($uri_segments[4]);
+                      }
+                      echo "";
+                    ?>">
                 </div>
               </div>
 

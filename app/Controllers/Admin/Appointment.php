@@ -9,7 +9,7 @@ class Appointment extends BaseController
     private $heading = "Appointment";
 
     public function index() {
-        $data['appointments'] = $this->appointment_model->findAll();
+        $data['appointments'] = $this->appointment_model->orderBy('created_at','DESC')->findAll();
         $data['staff'] = $this->user_model;
         $data['heading'] = $this->heading;
         $data['title'] = 'List';
@@ -38,44 +38,42 @@ class Appointment extends BaseController
         //validation rules
         $rules = [
             'patient_id' => [
-            'rules' => 'required',
-            'label' => 'Patient Id'
+                'rules' => 'required',
+                'label' => 'Patient Code'
+            ],
+            'appointment_id'    => [
+                'label' => 'Appointment Code',
+                'rules' => 'required|is_unique[appointment.appointment_id]'
             ]
         ];
 
         if ($this->validate($rules)) {
             $patient_id = $this->request->getPost('patient_id');
+            $appointment_id = $this->request->getPost('appointment_id');
             $note = $this->request->getPost('note');
-
-            $randomId = 'A'.rand(10000,99999);
-            $appointmentFind = $this->appointment_model->find(['appointment_id', $randomId]);
-
-            while ($appointmentFind !== []) {
-                $randomId = 'A'.rand(10000,99999);
-                $appointmentFind = $this->appointment_model->find(['appointment_id', $randomId]);
-            }
 
             $data = [
                 'patient_id' => $patient_id,
-                'appointment_id' => $randomId,
+                'appointment_id' => $appointment_id,
                 'note' => $note,
                 'created_by' => $this->session->get('id')
             ];
             
             $this->getPatientOr404($patient_id);
-            
+
             if ($this->appointment_model->save($data)) {
                 return redirect()->back()->with('info', 'Appointment added successfully');
             } else {
                 return redirect()->back()->with('error', $appointment_model->errors)->with('error', 'Invalid data');
             }
-    
+
         } else {
             $data['validation'] = $this->validator->listErrors();
             return redirect()->back()->withInput()->with('error', $data['validation']);
         }
     }
 
+    
     // View appointmen info
     public function view($id) {
         $appointment = $this->getAppointmentOr404($id);
@@ -107,7 +105,7 @@ class Appointment extends BaseController
     // Update Appointment info
     public function update($id) {
         $appointment = $this->appointment_model->where("appointment_id", $id)->find();
-        $appointment = $appointment['0'];
+        $appointment = $appointment[0];
         $appointment->fill($this->request->getPost());
   
         if(!$appointment->hasChanged()){
@@ -132,20 +130,22 @@ class Appointment extends BaseController
      // Get Appointment by ID
      public function getAppointmentOr404($id) {
         $appointment = $this->appointment_model->where("appointment_id", $id)->find();
-        $appointment = $appointment['0'];
-        if($appointment === null) {
+        if(!$appointment) {
           throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $id not found");
         }
+        $appointment = $appointment[0];
         return $appointment;
     }
 
     // Get patient by registration_code
     public function getPatientOr404($registration_code) {
         $patient = $this->patient_model->where('registration_code', $registration_code)->select('firstname, lastname, gender, phone, mobile, address, age, date_of_birth, status')->find();
-        $patient = $patient['0'];
-        if($patient === null) {
+        // dd($patient);
+
+        if(!$patient) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");
         }
+        $patient = $patient[0];
         return $patient;
     }
 }

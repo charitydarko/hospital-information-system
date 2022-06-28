@@ -38,22 +38,162 @@
                                     <dt>Age</dt><dd><?php echo esc($patient->age); ?> Years</dd> 
                                     <dt>Gender</dt>
                                     <dd>
-                                    <?php 
-                                        switch($patient->gender) {
-                                            case '1':
-                                            {echo 'Male'; break;}
-                                            case '2':
-                                            {echo 'Female'; break;}
-                                            case '3':
-                                            {echo 'Other'; break;}
-                                            default:
-                                            {echo 'Not provided'; break;}
-                                        }
-                                    ?>
+                                        <?php 
+                                            switch($patient->gender) {
+                                                case '1':
+                                                {echo 'Male'; break;}
+                                                case '2':
+                                                {echo 'Female'; break;}
+                                                case '3':
+                                                {echo 'Other'; break;}
+                                                default:
+                                                {echo 'Not provided'; break;}
+                                            }
+                                        ?>
                                     </dd>
-                                    <dt>Phone</dt><dd><?php echo esc($patient->phone) ?></dd>
-                                    <dt>Email</dt><dd><?php echo esc($patient->email) ?></dd> 
-                                    <dt>Address</dt><dd><?php echo esc($patient->address) ?></dd> 
+                                    <dt>Phone</dt><dd>
+                                    <?php 
+                                            if ($patient->phone) {
+                                                echo ($patient->phone);
+                                            } else echo "N/A"; 
+                                        ?>
+                                    </dd>
+                                    <dt>Mobile</dt><dd>
+                                        <?php 
+                                            if ($patient->mobile) {
+                                                echo ($patient->mobile);
+                                            } else echo "N/A"; 
+                                        ?>
+                                    </dd>
+                                    <dt>Email</dt><dd>
+                                        <?php 
+                                            if ($patient->email) {
+                                                echo ($patient->email);
+                                            } else echo "N/A"; 
+                                        ?>
+                                    </dd>
+                                    <dt>Occupation</dt><dd>
+                                        <?php 
+                                            if ($patient->occupation) {
+                                                echo ($patient->occupation);
+                                            } else echo "N/A"; 
+                                        ?>
+                                    </dd>
+                                    <dt>Marital Status</dt><dd>
+                                        <?php 
+                                            switch($patient->gender) {
+                                                case '1':
+                                                {echo 'Single'; break;}
+                                                case '2':
+                                                {echo 'Married'; break;}
+                                                case '3':
+                                                {echo 'Other'; break;}
+                                                default:
+                                                {echo 'Not provided'; break;}
+                                            }
+                                        ?>
+                                    </dd>
+                                    <dt>Religion</dt><dd>
+                                        <?php 
+                                            switch($patient->gender) {
+                                                case '1':
+                                                {echo 'Christian'; break;}
+                                                case '2':
+                                                {echo 'Muslim'; break;}
+                                                case '3':
+                                                {echo 'Traditional'; break;}
+                                                case '4':
+                                                {echo 'Other'; break;}
+                                                default:
+                                                {echo 'Not provided'; break;}
+                                            }
+                                        ?>
+                                    </dd> 
+                                    <dt>Address</dt><dd>
+                                        <?php 
+                                            if ($patient->address) {
+                                                echo ($patient->address);
+                                            } else echo "N/A"; 
+                                        ?>
+                                    </dd>
+                                    <dt>Town</dt><dd>
+                                        <?php 
+                                            if ($patient->town) {
+                                                echo ($patient->town);
+                                            } else echo "N/A"; 
+                                        ?>
+                                    </dd> 
+                                    <dt>City</dt><dd>
+                                        <?php 
+                                            if ($patient->city) {
+                                                echo ($patient->city);
+                                            } else echo "N/A"; 
+                                        ?>
+                                    </dd> 
+                                    <dt>Region</dt>
+                                    <dd>
+                                        <?php 
+                                            if ($patient->region) {
+                                                switch($patient->region) {
+                                                    case '1':
+                                                    {echo 'Northern Region'; break;}
+                                                    case '2':
+                                                    {echo 'Ashanti Region'; break;}
+                                                    case '3':
+                                                    {echo 'Western Region'; break;}
+                                                    case '4':
+                                                    {echo 'Volta Region'; break;}
+                                                    case '5':
+                                                    {echo 'Eastern Region'; break;}
+                                                    case '6':
+                                                    {echo 'Upper West Region'; break;}
+                                                    case '7':
+                                                    {echo 'Upper East Region'; break;}
+                                                    case '8':
+                                                    {echo 'Central Region'; break;}
+                                                    case '9':
+                                                    {echo 'Bono East Region'; break;}
+                                                    case '10':
+                                                    {echo 'Greater Accra Region'; break;}
+                                                    case '11':
+                                                    {echo 'Savannah Region'; break;}
+                                                    case '12':
+                                                    {echo 'Oti Region'; break;}
+                                                    case '13':
+                                                    {echo 'Western North Region'; break;}
+                                                    case '14':
+                                                    {echo 'Ahafo Region'; break;}
+                                                    case '15':
+                                                    {echo 'Bono West Region'; break;}
+                                                    case '16':
+                                                    {echo 'North-East Region'; break;}
+                                                    default:
+                                                    {echo 'Not provided'; break;}
+                                                }
+                                            } else echo "N/A";
+                                        ?>
+                                    </dd>
+                                    <dt>Emergency name</dt><dd>
+                                        <?php 
+                                            if ($patient->emergency_contact_name) {
+                                                echo ($patient->emergency_contact_name);
+                                            } else echo "N/A"; 
+                                        ?>
+                                    </dd>
+                                    <dt>Emergency phone</dt><dd>
+                                        <?php 
+                                            if ($patient->emergency_contact_phone) {
+                                                echo ($patient->emergency_contact_phone);
+                                            } else echo "N/A"; 
+                                        ?>
+                                    </dd>
+                                    <dt>Emergency location</dt><dd>
+                                        <?php 
+                                            if ($patient->emergency_contact_address) {
+                                                echo ($patient->emergency_contact_address);
+                                            } else echo "N/A"; 
+                                        ?>
+                                    </dd>
                                     <dt>Created Date</dt><dd>
                                         <?php
                                             $date = new DateTime($patient->updated_at);

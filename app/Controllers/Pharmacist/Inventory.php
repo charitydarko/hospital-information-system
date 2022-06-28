@@ -217,7 +217,7 @@ class Inventory extends BaseController
     // Get Laboratory by ID
     public function getPharmacyBillingOr404($appointment_code) {
         $pharmacy_billing = $this->pharmacy_billing_model->where('appointment_id', $appointment_code)->select('*')->find();
-        if($pharmacy_billing === null) {
+        if(!$pharmacy_billing) {
         throw new \CodeIgniter\Exceptions\PageNotFoundException("Pharmacy Billing with Appointment code $appointment_code not found");
         }
         return $pharmacy_billing;
@@ -226,10 +226,10 @@ class Inventory extends BaseController
     // Get patient by registration_code
     public function getPatientOr404($registration_code) {
         $patient = $this->patient_model->where('registration_code', $registration_code)->select('firstname, lastname, gender, registration_code, phone, mobile, address, age, status')->find();
-        $patient = $patient;
-        if($patient === null) {
+        if(!$patient) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");
         }
+        $patient = $patient;
         return $patient;
     }
 }

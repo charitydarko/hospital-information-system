@@ -243,7 +243,7 @@ class Billing extends BaseController
     // Get Laboratory by ID
     public function getLaboratoryOr404($appointment_code) {
         $laboratory = $this->laboratory_model->where('appointment_id', $appointment_code)->select('fees, fees_reason')->find();
-        if($laboratory === null) {
+        if(!$laboratory) {
         throw new \CodeIgniter\Exceptions\PageNotFoundException("Laboratory with Appointment code $appointment_code not found");
         }
         return $laboratory;
@@ -252,7 +252,7 @@ class Billing extends BaseController
     // Get Diagnosis by ID
     public function getDiagnosisOr404($appointment_code) {
         $diagnosis = $this->diagnosis_model->where('appointment_id', $appointment_code)->select('visiting_fees, visiting_fees_reason')->find();
-        if($diagnosis === null) {
+        if(!$diagnosis) {
           throw new \CodeIgniter\Exceptions\PageNotFoundException("Diagnosis with Appointment code $appointment_code not found");
         }
         return $diagnosis;
@@ -262,7 +262,7 @@ class Billing extends BaseController
     // Get Appointment by ID
     public function getAppointmentOr404($appointment_code) {
         $appointment = $this->appointment_model->where("appointment_id", $appointment_code)->find();
-        if($appointment === null) {
+        if(!$appointment) {
           throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $appointment_code not found");
         }
         return $appointment;
@@ -272,10 +272,10 @@ class Billing extends BaseController
     // Get patient by registration_code
     public function getPatientOr404($registration_code) {
         $patient = $this->patient_model->where('registration_code', $registration_code)->select('firstname, lastname, gender, registration_code, phone, mobile, address, age, status')->find();
-        $patient = $patient;
-        if($patient === null) {
+        if(!$patient) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");
         }
+        $patient = $patient;
         return $patient;
     }
 }

@@ -5,7 +5,7 @@
  
             <div class="panel-heading no-print">
                 <div class="btn-group"> 
-                    <a class="btn btn-success" href="<?= base_url("user/add") ?>"> <i class="fa fa-plus"></i> Add User </a>   
+                    <a class="btn btn-success" href="<?= base_url("admin/user/add") ?>"> <i class="fa fa-plus"></i> Add User </a>   
                 </div>
             </div> 
 
@@ -90,9 +90,9 @@
                                 ?></td>
                                     <td><?= ((esc($user->status)==1)?'Active':'Inactive'); ?></td>
                                     <td class="center" width="80">
-                                        <a href="<?= base_url("user/view/".$user->id)?>" class="btn btn-xs btn-success" title="View User"><i class="fa fa-eye"></i></a> 
-                                        <a href="<?= base_url("user/edit/".$user->id)?>" class="btn btn-xs btn-primary" title="Edit User"><i class="fa fa-edit"></i></a> 
-                                        <a href="<?= site_url("user/delete/".$user->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('<?php echo 'Are you sure' ?>')" title="Delete User"><i class="fa fa-trash"></i></a>
+                                        <a href="<?= base_url("admin/user/view/".$user->id)?>" class="btn btn-xs btn-success" title="View User"><i class="fa fa-eye"></i></a> 
+                                        <a href="<?= base_url("admin/user/edit/".$user->id)?>" class="btn btn-xs btn-primary" title="Edit User"><i class="fa fa-edit"></i></a> 
+                                        <a href="<?= site_url("admin/user/delete/".$user->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('<?php echo 'Are you sure' ?>')" title="Delete User"><i class="fa fa-trash"></i></a>
                                     </td>
                                 </tr>
                                 <?php $sl++; ?>

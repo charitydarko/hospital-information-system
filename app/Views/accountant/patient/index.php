@@ -14,9 +14,9 @@
                             <th>Gender</th>
                             <th>Phone</th>
                             <th>Address</th>
-                            <th>Action</th>
                             <th>Created Date</th>
                             <th>Status</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -45,9 +45,6 @@
                                     </td>
                                     <td><?php echo esc($patient->phone); ?></td>
                                     <td><?php echo esc($patient->address); ?></td>
-                                    <td class="center">
-                                        <a href="<?=site_url("/accountant/patient/view/".$patient->registration_code)?>" class="btn btn-xs btn-success"><i class="fa fa-eye" title="View Patient Info"></i></a>
-                                    </td>
                                     <td>
                                         <?php
                                             $date = new DateTime($patient->updated_at);
@@ -55,8 +52,10 @@
                                             echo $strip;
                                         ?>
                                     </td>
-                                    
                                     <td><?php echo esc($patient->status==1?'Active':'Inactive'); ?></td>
+                                    <td class="center">
+                                        <a href="<?=site_url("/accountant/patient/view/".$patient->registration_code)?>" class="btn btn-xs btn-success"><i class="fa fa-eye" title="View Patient Info"></i></a>
+                                    </td>
                                 </tr>
                                 <?php $sl++; ?>
                             <?php } ?> 

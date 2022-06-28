@@ -9,7 +9,7 @@ class Patient extends BaseController
     private $heading = "Patient";
 
     public function index(){
-      $data['patients'] = $this->patient_model->findAll();
+      $data['patients'] = $this->patient_model->orderBy('created_at','DESC')->findAll();
       $data['heading'] = $this->heading;
       $data['title'] = 'List';
       $data['content']  = view('admin/patient/index',$data);
@@ -98,7 +98,7 @@ class Patient extends BaseController
 
     // Document List
     public function document(){
-      $data['documents'] = $this->document_model->findAll();
+      $data['documents'] = $this->document_model->orderBy('updated_at','DESC')->findAll();
       $data['staff'] = $this->user_model;
       $data['heading'] = 'Patient Document';
       $data['title'] = 'List';
@@ -169,22 +169,22 @@ class Patient extends BaseController
     public function delete($registration_code) {
       $patient = $this->getPatientOr404($registration_code);
       $data['post'] = $this->patient_model->where('registration_code', $registration_code)->delete();
-      return redirect()->to( base_url('patient') );
+      return redirect()->to( base_url('admin/patient') );
     }
 
     // Delete document
-    public function document_delete($registration_code=null, $file=null) {
-      $data['document'] = $this->document_model->where('registration_code', $registration_code)->delete();
+    public function document_delete($id=null, $file=null) {
+      $data['document'] = $this->document_model->where('id', $id)->delete();
       return redirect()->to( base_url('admin/patient/document'))->with('info', 'Deleted successfully');
     }
 
     // Get patient by ID
     public function getPatientOr404($registration_code = null) {
-      $patient = $this->patient_model->where('registration_code', $registration_code)->select('*')->find();
-      $patient = $patient['0'];
-      if($patient === null) {
-          throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");
-      }
+        $patient = $this->patient_model->where('registration_code', $registration_code)->select('*')->find();
+        if(!$patient) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");
+        }
+        $patient = $patient[0];
         return $patient;
     }
 

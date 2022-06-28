@@ -25,6 +25,17 @@
               </div>
 
               <div class="form-group row">
+                <label for="appointment_id" class="col-xs-3 col-form-label">Appointment Code<i class="text-danger">*</i></label>
+                <div class="col-xs-9">
+                  <div class="col-xs-9 no-padding">
+                    <input name="appointment_id" class="form-control" type="text" Appointment="Registration Code" id="appointment_id" value="<?= old('appointment_id') ?>">
+                  </div>
+                  <div class="col-xs-3 no-padding">
+                    <button type="button" class="ui button positive generate_btn" id="generate_btn" onclick="generateAppointmentCode()">Generate</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
                 <label for="note" class="col-xs-3 col-form-label"> Note</label>
                 <div class="col-xs-9">
                   <textarea name="note" class="form-control tinymce"  placeholder="note"  rows="7"></textarea>
@@ -47,3 +58,10 @@
     </div>
   </div>
 </div>
+
+<script>
+  function generateAppointmentCode() {
+    var num = Math.floor(Math.random() * 90000) + 10000;
+    document.getElementById("appointment_id").value = "A" + num;
+  }
+</script>

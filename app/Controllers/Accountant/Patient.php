@@ -9,7 +9,7 @@ class Patient extends BaseController
     private $heading = "Patient";
 
     public function index(){
-      $data['patients'] = $this->patient_model->findAll();
+      $data['patients'] = $this->patient_model->orderBy('created_at','DESC')->findAll();
       $data['heading'] = $this->heading;
       $data['title'] = 'List';
       $data['content']  = view('accountant/patient/index',$data);
@@ -40,7 +40,7 @@ class Patient extends BaseController
   
       // Document List
       public function document(){
-        $data['documents'] = $this->document_model->findAll();
+        $data['documents'] = $this->document_model->orderBy('created_at','DESC')->findAll();
         $data['staff'] = $this->user_model;
         $data['heading'] = 'Patient Document';
         $data['title'] = 'List';
@@ -63,7 +63,7 @@ class Patient extends BaseController
       public function getPatientOr404($registration_code = null) {
         $patient = $this->patient_model->where('registration_code', $registration_code)->select('*')->find();
         $patient = $patient['0'];
-        if($patient === null) {
+        if(!$patient) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");
         }
           return $patient;

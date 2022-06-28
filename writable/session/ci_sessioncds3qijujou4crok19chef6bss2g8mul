@@ -1,0 +1,9 @@
+__ci_last_regenerate|i:1656427974;_ci_previous_url|s:44:"http://localhost:8080/accountant/billing/add";id|s:1:"6";firstname|s:7:"Abigail";lastname|s:5:"Dufie";email|s:19:"accountant@demo.com";user_role|s:1:"3";isLoggedIn|b:1;_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:12:{s:16:"appointment_code";s:6:"A27778";s:4:"date";s:10:"28-06-2022";s:9:"item_name";a:3:{i:0;s:14:"Diagnosis Cost";i:1;s:15:"Laboratory Cost";i:2;s:13:"Pharmacy Cost";}s:11:"description";a:3:{i:0;s:21:"Machine for diagnosis";i:1;s:45:"Some reason for lab                          ";i:2;s:9:"For drugs";}s:8:"quantity";a:3:{i:0;s:1:"1";i:1;s:1:"1";i:2;s:1:"1";}s:5:"price";a:3:{i:0;s:2:"54";i:1;s:2:"98";i:2;s:2:"24";}s:8:"subtotal";a:3:{i:0;s:5:"54.00";i:1;s:5:"98.00";i:2;s:5:"24.00";}s:5:"total";s:6:"176.00";s:3:"vat";s:4:"0.00";s:8:"discount";s:4:"0.00";s:11:"Grand_Total";s:6:"176.00";s:6:"status";s:1:"1";}}__ci_vars|a:3:{s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";s:5:"error";s:3:"old";}_ci_validation_errors|s:93:"a:1:{s:16:"appointment_code";s:55:"The appointment_code field must contain a unique value.";}";error|s:269:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>The appointment_code field must contain a unique value.</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";

@@ -5,7 +5,7 @@ $(document).ready(function() {
     //   ENDS OF APPOINTMENT AND PATIENT INFORMATION
     $('#appointment_code').on('change', function(){
         var appointment_code = $(this).val();
-        var url = window.location.origin+'/billing/appointmentNow/';
+        var url = window.location.origin+'/cashier/billing/appointmentNow/';
 
         // Once the value is greater than 0
         if(appointment_code.length > 0) {

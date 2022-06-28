@@ -141,7 +141,7 @@ class Vitals extends BaseController
     // Get Appointment by ID
     public function getAppointment($id) {
         $appointment = $this->appointment_model->where("appointment_id", $id)->find();
-        if($appointment === null) {
+        if(!$appointment) {
         throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $id not found");
         }
         return $appointment;
@@ -150,10 +150,10 @@ class Vitals extends BaseController
     // Get Appointment by ID
     public function getAppointmentOr404($id) {
         $appointment = $this->appointment_model->where("appointment_id", $id)->find();
-        $appointment = $appointment['0'];
-        if($appointment === null) {
-        throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $id not found");
+        if(!$appointment) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $id not found");
         }
+        $appointment = $appointment['0'];
         return $appointment;
     }
 
@@ -161,10 +161,10 @@ class Vitals extends BaseController
     // Get patient by registration_code
     public function getPatientOr404($registration_code) {
         $patient = $this->patient_model->where('registration_code', $registration_code)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
-        $patient = $patient['0'];
-        if($patient === null) {
+        if(!$patient) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");
         }
+        $patient = $patient['0'];
         return $patient;
     }
 }

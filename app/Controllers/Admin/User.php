@@ -146,6 +146,28 @@ class User extends BaseController
         }
     }
 
+    // User roles
+    public function user_roles($user_role = null) {
+        $user_list = array(
+            'Admin'          => 1,
+            'Doctor'         => 2,
+            'Accountant'     => 3,
+            'Cashier'        => 4,
+            'Pharmacist'     => 5,
+            'Laboratorist'   => 6,
+            'Receptionist'   => 7,
+        );
+        if (!empty($user_role)) {
+            $user_role = ucfirst($user_role);
+            if (array_key_exists($user_role, $user_list)) {
+                return $user_list[$user_role];
+            } else {
+                return null;
+            }			
+        } else {
+            return array_flip($user_list);
+        }
+    }
     
     public function getUserOr404($id) {
         $user = $this->user_model->find($id);

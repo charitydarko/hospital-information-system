@@ -20,7 +20,16 @@
               <div class="form-group row">
                 <label for="patient_id" class="col-xs-3 col-form-label">Patient Code<i class="text-danger">*</i></label>
                 <div class="col-xs-9">
-                  <input name="patient_id"  type="text" class="form-control" id="patient_id" placeholder="" value="<?= $uri ?>">
+                  <input name="patient_id"  type="text" class="form-control" id="patient_id" placeholder="patient id" 
+                  value="
+                    <?php
+                      $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+                      $uri_segments = explode('/', $uri_path);
+                      if(isset($uri_segments[4])) {
+                        echo trim($uri_segments[4]);
+                      }
+                      echo "";
+                    ?>">
                 </div>
               </div>
 
@@ -53,7 +62,7 @@
               </div> 
 
               <div class="form-group row">
-                <label for="lab_fees" class="col-xs-3 col-form-label">Lab fees<i class="text-danger">*</i></label>
+                <label for="lab_fees" class="col-xs-3 col-form-label">Lab fees</label>
                 <div class="col-xs-9">
                   <input name="lab_fees"  type="text" class="form-control" id="lab_fees" placeholder="" />
                 </div>

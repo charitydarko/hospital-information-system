@@ -181,11 +181,11 @@ class Patient extends BaseController
   
       // Get patient by ID
       public function getPatientOr404($registration_code = null) {
-        $patient = $this->patient_model->where('registration_code', $registration_code)->select('*')->find();
-        $patient = $patient['0'];
-        if($patient === null) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");
-        }
+          $patient = $this->patient_model->where('registration_code', $registration_code)->select('*')->find();
+          if(!$patient) {
+              throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");
+          }
+          $patient = $patient[0];
           return $patient;
       }
 }

@@ -6,7 +6,7 @@
             <div class="panel-heading no-print">
                  <div class="btn-group">
                     <button type="button" onclick="printContent('PrintMe')" class="btn btn-success" ><i class="fa fa-print"></i></button>            
-                    <a href="<?= base_url("user/edit/".session()->get('id'))?>" class="btn btn-primary"><i class="fa fa-edit"></i></a> 
+                    <a href="<?= base_url("admin/user/edit/".session()->get('id'))?>" class="btn btn-primary"><i class="fa fa-edit"></i></a> 
                 </div>
             </div>
 
@@ -54,10 +54,6 @@
 
                         <?php if(!empty($user->address)) { ?>
                             <dt>Address</dt><dd><?= esc($user->address); ?></dd>
-                        <?php } ?> 
-
-                        <?php if(!empty($user->phone)) { ?>
-                            <dt>Phone</dt><dd><?= esc($user->phone); ?></dd>
                         <?php } ?> 
 
                         <?php if(!empty($user->mobile)) { ?>

@@ -24,7 +24,13 @@
                                     <td><?= $sl; ?></td>
                                     <td><?= esc($appointment->appointment_id); ?></td>
                                     <td><?= esc($appointment->patient_id); ?></td>
-                                    <td><?= character_limiter(strip_tags($appointment->note)); ?></td>
+                                    <td>
+                                        <?php
+                                            if ($appointment->note) {
+                                                echo character_limiter(strip_tags($appointment->note));
+                                            } else echo "N/A";
+                                        ?>
+                                    </td>
                                     <td>
                                         <?= $staff->find($appointment->created_by)->firstname; ?>
                                         <?= $staff->find($appointment->created_by)->lastname; ?>

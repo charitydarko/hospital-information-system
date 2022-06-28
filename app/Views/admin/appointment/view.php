@@ -187,7 +187,7 @@
                                 ?>
                             </dd>
                             <dt>Prescription Note</dt><dd>
-                                <?php if($prescription[0]->note !== "") 
+                                <?php if($prescription) 
                                     {
                                         echo strip_tags($prescription[0]->note);
                                     } else echo "N/A "
@@ -205,18 +205,18 @@
                                     } else echo "N/A "
                                 ?></dd>
                             <dt>Lab View:</dt><dd>
-                            <?php if($laboratory[0]->attach_file !== "") { ?>
+                            <?php if($laboratory) { ?>
                                 <a target="_blank" href="<?php echo base_url('./uploads/patient/laboratory/'.$laboratory[0]->attach_file) ?>" class="btn btn-xs btn-info" title="View Lab Document"><i class="fa fa-eye"></i></a>
                             <?php } else echo "N/A "?></dd>
                             <dt>Laboratory Fees:</dt><dd>
-                                <?php if($laboratory[0]->fees !== "") 
+                                <?php if($laboratory) 
                                     {
                                         echo esc($laboratory[0]->fees);
                                     } else echo "N/A "
                                 ?>
                             </dd>
                             <dt>Lab Fees Reason:</dt><dd>
-                            <?php if($laboratory[0]->fees_reason !== "") 
+                            <?php if($laboratory) 
                                 {
                                     echo esc($laboratory[0]->fees_reason);
                                 } else echo "N/A "
@@ -242,7 +242,7 @@
                                 ?>
                             </dd>
                             <dt>laboratory Note</dt><dd>
-                                <?php if($laboratory[0]->note !== "") 
+                                <?php if($laboratory) 
                                     {
                                         echo strip_tags($laboratory[0]->note);
                                     } else echo "N/A "

@@ -19,7 +19,6 @@
                             <th>Message</th>
                             <th>Date</th> 
                             <th>Status</th> 
-                            <th>Action</th> 
                         </tr>
                     </thead>
                     <tbody>
@@ -38,9 +37,6 @@
                                     <td><?php echo esc(character_limiter(strip_tags($message->message),50)); ?></td>
                                     <td><?php echo date('d M Y h:i:s a', strtotime(esc($message->created_at))); ?></td>  
                                     <td><?php echo ((esc($message->receiver_status) == 0) ? "<i class='label label-warning'>not seen</label>" : "<i class='label label-success'>seen</label>"); ?></td>
-                                    <td class="center" width="80">
-                                        <a href="<?php echo base_url("admin/message/inbox_information/$message->id") ?>" class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a> 
-                                    </td>
                                 </tr>
                                 <?php $sl++; ?>
                             <?php } ?> 

@@ -5,7 +5,7 @@ $(document).ready(function() {
     //   ENDS OF APPOINTMENT AND PATIENT INFORMATION
     $('#appointment_code').on('change', function(){
         var appointment_code = $(this).val();
-        var url = window.location.origin+'/billing/appointmentNow/';
+        var url = window.location.origin+'/pharmacist/inventory/appointmentNow/';
 
         // Once the value is greater than 0
         if(appointment_code.length > 0) {
@@ -32,9 +32,6 @@ $(document).ready(function() {
                             $("#patient_code").val(newData.patient[0].registration_code);
                             $("#patient_name").val(newData.patient[0].firstname + ' ' + newData.patient[0].lastname);
                             $("#patient_address").val(newData.patient[0].address);
-                            $("#diagnosis_cost_price").val(newData.diagnosis_fees);
-                            $("#diagnosis_cost_reason").text(newData.diagnosis_fees_reason);
-                            $("#diagnosis_cost_subtotal").val(newData.diagnosis_fees);
                             break;
                         }
                         default: {

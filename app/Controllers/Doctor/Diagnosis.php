@@ -10,7 +10,7 @@ class Diagnosis extends BaseController
 
     public function index()
     {
-        $data['diagnosis'] = $this->diagnosis_model->findAll();
+        $data['diagnosis'] = $this->diagnosis_model->orderBy('created_at','DESC')->findAll();
         $data['staff'] = $this->user_model;
         $data['appointments'] = $this->appointment_model;
         $data['heading'] = $this->heading;
@@ -21,7 +21,8 @@ class Diagnosis extends BaseController
 
     public function today()
     {
-        $data['diagnosis_today'] = $this->diagnosis_model->findAll();
+        $date = $date = date('Y-m-d');
+        $data['diagnosis'] = $this->diagnosis_model->where("created_at", $date)->findAll();
         $data['staff'] = $this->user_model;
         $data['appointments'] = $this->appointment_model;
         $data['heading'] = $this->heading;
@@ -34,10 +35,8 @@ class Diagnosis extends BaseController
     public function add($id=null) {
         $data['heading'] = $this->heading;
         $data['title'] = 'Add';
-        $data['uri'] = $id;
-        $data['diagnosis'] = $this->diagnosis_model->find($id);
-        $data['vitals'] = $this->getVitalsOr404($data['diagnosis']->appointment_id);
-        $data['appointment'] = $this->getAppointmentOr404($data['vitals']->appointment_id);
+        $data['appointment'] = $this->getAppointmentOr404($id);
+        $data['vitals'] = $this->getVitalsOr404($id);
         $data['patient'] = $this->getPatientOr404($data['appointment']->patient_id);
         $data['content']  = view('doctor/diagnosis/add',$data);
         return view('doctor/layout/main_wrapper',$data);
@@ -97,9 +96,15 @@ class Diagnosis extends BaseController
     }
 
     public function view($id = null) {
-        $data['diagnosis'] = $this->diagnosis_model->find($id);
-        $data['vital'] = $this->getVitalsOr404($data['diagnosis']->appointment_id);
-        $data['appointment'] = $this->appointment_model->find($data['diagnosis']->appointment_id);
+        $data['diagnosis'] = $this->diagnosis_model->where('appointment_id', $id)->find();
+        if($data['diagnosis']) {
+            $data['diagnosis'] = $data['diagnosis'][0];
+        }
+        $data['vital'] = $this->getVitalsOr404($id);
+        $data['appointment'] = $this->appointment_model->where('appointment_id', $id)->find();
+        if($data['appointment']) {
+            $data['appointment'] = $data['appointment'][0];
+        }
         $data['patient'] = $this->patient_model->where('registration_code', $data['appointment']->patient_id)->find();
         $data['heading'] = $this->heading;
         $data['title'] = 'View';
@@ -108,19 +113,28 @@ class Diagnosis extends BaseController
     }
 
     public function edit($id = null) {
-        $data['diagnosis']  = $this->diagnosis_model->find($id);
+        $data['diagnosis']  = $this->diagnosis_model->where('appointment_id', $id)->find();
+        if($data['diagnosis']) {
+            $data['diagnosis'] = $data['diagnosis'][0];
+        }
         $data['heading'] = $this->heading;
         $data['title'] = 'Edit';
         $data['vitals'] = $this->getVitalsOr404($data['diagnosis']->appointment_id);
-        $data['appointment'] = $this->getAppointmentOr404($data['diagnosis']->appointment_id);
+        $data['appointment'] = $this->appointment_model->where('appointment_id', $id)->find();
+        if($data['appointment']) {
+            $data['appointment'] = $data['appointment'][0];
+        }
         $data['patient'] = $this->getPatientOr404($data['appointment']->patient_id);
         $data['content']  = view('doctor/diagnosis/edit',$data);
         return view('doctor/layout/main_wrapper',$data);
     }
 
     public function update($id) {
-        $diagnosis = $this->diagnosis_model->find($id);
-        $diagnosis->fill($this->request->getPost());
+        $diagnosis = $this->diagnosis_model->where('appointment_id', $id)->find();
+        if($diagnosis) {
+            $diagnosis = $diagnosis[0];
+            $diagnosis->fill($this->request->getPost());
+        }
 
         if(!$diagnosis->hasChanged()){
             return redirect()->back()->withInput()->with('warning', 'Nothing to update');
@@ -144,16 +158,17 @@ class Diagnosis extends BaseController
         if($vitals === null) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException("Vitals with Appointment code $registration_code not found");
         }
-        $vitals = $vitals['0'];
+        $vitals = $vitals[0];
         return $vitals;
     }
 
     // Get Appointment by ID
     public function getAppointmentOr404($id) {
-        $appointment = $this->appointment_model->find($id);
+        $appointment = $this->appointment_model->where('appointment_id', $id)->find();
         if($appointment === null) {
           throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $id not found");
         }
+        $appointment = $appointment[0];
         return $appointment;
     }
 

@@ -67,9 +67,9 @@
             <li class="dropdown dropdown-user">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="pe-7s-settings"></i></a>
               <ul class="dropdown-menu">
-                  <li><a href="<?= base_url("user/view/".session()->get('id'))?>"><i class="pe-7s-users"></i>Profile</a></li>
-                  <li><a href="<?= base_url("user/edit/".session()->get('id'))?>"><i class="pe-7s-settings"></i>Edit Profile</a></li>
-                  <li><a href="<?= base_url("user/reset_password")?>"><i class="pe-7s-key"></i>Update Password</a></li>
+                  <li><a href="<?= base_url("doctor/user/view/".session()->get('id'))?>"><i class="pe-7s-users"></i>Profile</a></li>
+                  <li><a href="<?= base_url("doctor/user/edit/".session()->get('id'))?>"><i class="pe-7s-settings"></i>Edit Profile</a></li>
+                  <li><a href="<?= base_url("doctor/user/reset_password")?>"><i class="pe-7s-key"></i>Update Password</a></li>
                   <li><a href="<?= base_url("auth/logout") ?>"><i class="pe-7s-power"></i>Logout</a></li>
               </ul>
             </li>
@@ -121,7 +121,7 @@
 
         <ul class="sidebar-menu">
           <li class="">
-            <a href="<?= base_url('dashboard'); ?>"><i class="fa fa ti-home"></i> Dashboard</a>
+            <a href="<?= base_url('doctor/dashboard'); ?>"><i class="fa fa ti-home"></i> Dashboard</a>
           </li>
           <li class="treeview">
             <a href="#">

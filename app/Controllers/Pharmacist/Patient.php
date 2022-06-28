@@ -8,8 +8,8 @@ class Patient extends BaseController
 {
     private $heading = "Patient";
 
-    public function index(){
-      $data['patients'] = $this->patient_model->findAll();
+    public function index() {
+      $data['patients'] = $this->patient_model->orderBy('created_at','DESC')->findAll();
       $data['heading'] = $this->heading;
       $data['title'] = 'List';
       $data['content']  = view('pharmacist/patient/index',$data);
@@ -40,7 +40,7 @@ class Patient extends BaseController
   
       // Document List
       public function document(){
-        $data['documents'] = $this->document_model->findAll();
+        $data['documents'] = $this->document_model->orderBy('created_at','DESC')->findAll();
         $data['staff'] = $this->user_model;
         $data['heading'] = 'Patient Document';
         $data['title'] = 'List';

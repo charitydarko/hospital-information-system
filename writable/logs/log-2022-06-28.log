@@ -134,3 +134,480 @@ CRITICAL - 2022-06-28 02:20:36 --> Attempt to read property "patient_id" on arra
 #8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
 #10 {main}
+CRITICAL - 2022-06-28 05:46:01 --> Attempt to read property "appointment_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 39)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->add('14')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 05:46:21 --> Attempt to read property "appointment_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 39)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->add('14')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 05:57:21 --> Attempt to read property "appointment_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 39)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->add('14')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 05:58:23 --> Attempt to read property "appointment_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 39)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->add('14')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 05:59:10 --> Attempt to read property "appointment_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 39)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->add('A95747')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 06:14:05 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 146)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(100): App\Controllers\Doctor\Diagnosis->getVitalsOr404('0')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->view('13')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-06-28 06:14:14 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 146)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(113): App\Controllers\Doctor\Diagnosis->getVitalsOr404('0')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->edit('13')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-06-28 06:15:26 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 146)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(113): App\Controllers\Doctor\Diagnosis->getVitalsOr404('0')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->edit('13')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-06-28 06:16:01 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 155)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(114): App\Controllers\Doctor\Diagnosis->getAppointmentOr404('0')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->edit('13')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-06-28 06:16:11 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 115)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->edit('13')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 06:16:37 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 115)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->edit('13')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 06:17:26 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 146)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(113): App\Controllers\Doctor\Diagnosis->getVitalsOr404('0')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->edit('13')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-06-28 06:20:46 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 146)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(113): App\Controllers\Doctor\Diagnosis->getVitalsOr404('0')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->edit('13')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-06-28 06:21:17 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 146)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(113): App\Controllers\Doctor\Diagnosis->getVitalsOr404('0')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->edit('13')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-06-28 06:26:30 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 146)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(100): App\Controllers\Doctor\Diagnosis->getVitalsOr404('0')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->view('13')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-06-28 06:26:40 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 146)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(113): App\Controllers\Doctor\Diagnosis->getVitalsOr404('0')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->edit('13')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-06-28 06:27:34 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 146)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(100): App\Controllers\Doctor\Diagnosis->getVitalsOr404('0')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->view('12')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-06-28 06:27:56 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 146)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(113): App\Controllers\Doctor\Diagnosis->getVitalsOr404('0')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->edit('12')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-06-28 06:28:47 --> Attempt to read property "appointment_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 100)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->view('0')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 06:29:13 --> Attempt to read property "appointment_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 100)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->view('0')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 06:30:03 --> Attempt to read property "appointment_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 100)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->view('0')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 06:31:34 --> Attempt to read property "appointment_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 100)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->view('A27778')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 06:33:32 --> Attempt to read property "appointment_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 100)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->view('A27778')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 06:33:34 --> Attempt to read property "appointment_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 100)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->view('A27778')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 06:33:56 --> Attempt to read property "appointment_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 101)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->view('A27778')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 06:34:45 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 102)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->view('A27778')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 06:35:10 --> Attempt to read property "appointment_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Views\doctor\diagnosis\view.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 48)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('doctor/diagnosi...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(105): view('doctor/diagnosi...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->view('A27778')
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-06-28 06:36:52 --> Attempt to read property "complain" on array
+#0 C:\wamp64\www\hospital-information-system\app\Views\doctor\diagnosis\view.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 56)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('doctor/diagnosi...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(108): view('doctor/diagnosi...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->view('A27778')
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-06-28 06:38:47 --> Attempt to read property "appointment_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 119)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->edit('A27778')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 06:40:14 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 158)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(103): App\Controllers\Doctor\Diagnosis->getVitalsOr404('12')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->view('12')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-06-28 06:40:22 --> Attempt to read property "appointment_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 122)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->edit('A27778')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 06:40:28 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 158)
+#1 C:\wamp64\www\hospital-information-system\app\Controllers\Doctor\Diagnosis.php(122): App\Controllers\Doctor\Diagnosis->getVitalsOr404('0')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->edit('0')
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#4 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#7 {main}
+CRITICAL - 2022-06-28 06:42:25 --> Call to a member function fill() on array
+#0 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->update('12')
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#5 {main}
+CRITICAL - 2022-06-28 06:45:03 --> Call to a member function fill() on array
+#0 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Doctor\Diagnosis->update('A27778')
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor\Diagnosis))
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#5 {main}
+CRITICAL - 2022-06-28 07:08:21 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Auth.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 34)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->confirm_login()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 07:08:41 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Auth.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 34)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Auth->confirm_login()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:22:58 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Billing.php(202): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 202)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:23:17 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Billing.php(202): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 202)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:24:10 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Billing.php(200): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 200)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:24:20 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Billing.php(200): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 200)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:25:12 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Billing.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 191)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:25:31 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Billing.php(200): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 200)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:27:02 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Billing.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 203)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:28:02 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Billing.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 203)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Billing->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Billing))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:34:35 --> Call to undefined method App\Controllers\Pharmacist\Inventory::getPatientOr404()
+#0 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Inventory->appointmentNow()
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Inventory))
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#5 {main}
+CRITICAL - 2022-06-28 08:35:35 --> Call to undefined method App\Controllers\Pharmacist\Inventory::getDiagnosisOr404()
+#0 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Inventory->appointmentNow()
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Inventory))
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#5 {main}
+CRITICAL - 2022-06-28 08:35:58 --> Undefined variable $diagnosis
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Inventory.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\wamp64\\www\\h...', 185)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Inventory->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:36:33 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Inventory.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 185)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Inventory->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:37:27 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Inventory.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 185)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Inventory->appointmentNow()
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:47:09 --> Attempt to read property "appointment_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Inventory.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 106)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Inventory->view('A95747')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:50:12 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Inventory.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 108)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Inventory->view('A95747')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:50:57 --> Attempt to read property "patient_id" on array
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Inventory.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 108)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Inventory->view('A95747')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:51:26 --> Attempt to read property "total" on array
+#0 C:\wamp64\www\hospital-information-system\app\Views\pharmacist\inventory\view.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 67)
+#1 C:\wamp64\www\hospital-information-system\system\View\View.php(214): include('C:\\wamp64\\www\\h...')
+#2 C:\wamp64\www\hospital-information-system\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\hospital-information-system\system\Common.php(1097): CodeIgniter\View\View->render('pharmacist/inve...', Array, true)
+#4 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Inventory.php(110): view('pharmacist/inve...', Array)
+#5 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Inventory->view('A95747')
+#6 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Inventory))
+#7 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#10 {main}
+CRITICAL - 2022-06-28 08:52:04 --> Undefined array key 0
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Inventory.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\wamp64\\www\\h...', 105)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Inventory->view('14')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:53:05 --> Attempt to read property "appointment_id" on null
+#0 C:\wamp64\www\hospital-information-system\app\Controllers\Pharmacist\Inventory.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\wamp64\\www\\h...', 118)
+#1 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(824): App\Controllers\Pharmacist\Inventory->edit('A95747')
+#2 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacist\Inventory))
+#3 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#6 {main}
+CRITICAL - 2022-06-28 08:15:54 --> session_start(): Failed to decode session object. Session has been destroyed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_start()...', 'C:\\wamp64\\www\\h...', 894)
+#1 C:\wamp64\www\hospital-information-system\system\Session\Session.php(894): session_start()
+#2 C:\wamp64\www\hospital-information-system\system\Session\Session.php(238): CodeIgniter\Session\Session->startSession()
+#3 C:\wamp64\www\hospital-information-system\system\Config\Services.php(577): CodeIgniter\Session\Session->start()
+#4 C:\wamp64\www\hospital-information-system\system\Config\BaseService.php(248): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#5 C:\wamp64\www\hospital-information-system\system\Config\BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#6 C:\wamp64\www\hospital-information-system\system\Config\Services.php(563): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#7 C:\wamp64\www\hospital-information-system\system\Config\BaseService.php(248): CodeIgniter\Config\Services::session()
+#8 C:\wamp64\www\hospital-information-system\app\Controllers\BaseController.php(55): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(802): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#10 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#11 C:\wamp64\www\hospital-information-system\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\hospital-information-system\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\wamp64\www\hospital-information-system\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\h...')
+#14 {main}

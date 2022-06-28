@@ -101,9 +101,10 @@ class Inventory extends BaseController
     }
 
     public function view($id = null) {
-        $data['prescription_sale'] = $this->pharmacy_billing_model->find($id);
-        $data['prescription_sale_details'] = $this->pharmacy_billing_details_model->where('billing_id', $id)->select('*')->find();
-        $data['appointment'] = $this->appointment_model->where('id',  $data['prescription_sale']->appointment_id)->find();
+        $data['prescription_sale'] = $this->pharmacy_billing_model->where('appointment_id', $id)->find();
+        $data['prescription_sale'] = $data['prescription_sale'][0];
+        $data['prescription_sale_details'] = $this->pharmacy_billing_details_model->where('billing_id', $data['prescription_sale']->id)->select('*')->find();
+        $data['appointment'] = $this->appointment_model->where('appointment_id',  $id)->find();
         $data['patient'] = $this->patient_model->where('registration_code', $data['appointment'][0]->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
         $data['heading'] = $this->heading;
         $data['title'] = 'View';
@@ -112,9 +113,10 @@ class Inventory extends BaseController
     }
 
     public function edit($id = null) {
-        $data['prescription_sale'] = $this->pharmacy_billing_model->find($id);
-        $data['prescription_sale_details'] = $this->pharmacy_billing_details_model->where('billing_id', $id)->select('*')->find();
-        $data['appointment'] = $this->appointment_model->where('id',  $data['prescription_sale']->appointment_id)->find();
+        $data['prescription_sale'] = $this->pharmacy_billing_model->where('appointment_id', $id)->find();
+        $data['prescription_sale'] = $data['prescription_sale'][0];
+        $data['prescription_sale_details'] = $this->pharmacy_billing_details_model->where('billing_id', $data['prescription_sale']->id)->select('*')->find();
+        $data['appointment'] = $this->appointment_model->where('appointment_id',  $id)->find();
         $data['patient'] = $this->patient_model->where('registration_code', $data['appointment'][0]->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
         $data['heading'] = $this->heading;
         $data['title'] = 'Edit';
@@ -169,6 +171,39 @@ class Inventory extends BaseController
         }
     }
 
+    // Appointment for json
+    public function appointmentNow() {
+        $appointment_code = $this->request->getPost('appointment_code');
+        $appointment = $this->appointment_model->where('appointment_id', $appointment_code)->find();
+        if($appointment) {
+            $appointment = $appointment[0];
+            $patient =$this->getPatientOr404($appointment->patient_id);
+            $pharmacy_billing = $this->getPharmacyBillingOr404($appointment_code);
+
+            if($patient) {
+                $data = [
+                    'status' => 'true',
+                    'message' => 'Patient found',
+                    'patient' => $patient,
+                ];
+                return json_encode($data); 
+            } else {
+                $data = [
+                    'status' => 'false',
+                    'message' => 'Patient not found'
+                ];
+                return json_encode($data);
+            }
+        } else {
+            $data = [
+                'status' => 'false',
+                'message' => 'Appointment code invalid'
+            ];
+            return json_encode($data);
+        }
+    }
+
+
     public function delete($id = null)  {
         $this->pharmacy_billing_model->where('id', $id)->delete();
         $details = $this->pharmacy_billing_details_model->where('billing_id', $id)->select('*');
@@ -177,5 +212,24 @@ class Inventory extends BaseController
             $this->pharmacy_billing_details_model->where('billing_id', $id)->select('*')->delete();
         }
         return redirect()->to(base_url('/pharmacist/inventory/index'))->with('info', 'Prescription Sale Deleted successfully');
+    }
+
+    // Get Laboratory by ID
+    public function getPharmacyBillingOr404($appointment_code) {
+        $pharmacy_billing = $this->pharmacy_billing_model->where('appointment_id', $appointment_code)->select('*')->find();
+        if($pharmacy_billing === null) {
+        throw new \CodeIgniter\Exceptions\PageNotFoundException("Pharmacy Billing with Appointment code $appointment_code not found");
+        }
+        return $pharmacy_billing;
+    }
+
+    // Get patient by registration_code
+    public function getPatientOr404($registration_code) {
+        $patient = $this->patient_model->where('registration_code', $registration_code)->select('firstname, lastname, gender, registration_code, phone, mobile, address, age, status')->find();
+        $patient = $patient;
+        if($patient === null) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Registration code $registration_code not found");
+        }
+        return $patient;
     }
 }

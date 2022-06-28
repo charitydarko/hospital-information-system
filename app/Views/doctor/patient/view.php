@@ -118,8 +118,6 @@
                                                         <a href="<?php echo base_url("doctor/patient/add_document/$document->patient_id") ?>" class="btn btn-xs btn-warning" title="Add Patient Document"><i class="fa fa-plus"></i></a>
 
                                                         <a download target="_blank" href="<?= base_url('./uploads/patient/documents/'.$document->hidden_attach_file) ?>" class="btn btn-xs btn-success" title="Download Patient Document"><i class="fa fa-download"></i></a>
-
-                                                        <a href="<?php echo base_url("doctor/patient/document_delete/$document->id?file=$document->hidden_attach_file") ?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?') " title="Delete Patient Document"><i class="fa fa-trash"></i></a> 
                                                     </td>
                                                 </tr>
                                                 <?php $sl++; ?>

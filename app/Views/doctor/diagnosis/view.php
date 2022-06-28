@@ -46,6 +46,7 @@
                                         ?>
                                     </dd>
                                     <dt>Appointment Code</dt><dd><?= esc($appointment->appointment_id) ?></dd>
+                                    <dt>Appointment Note</dt><dd><?= strip_tags($appointment->note)?></dd>
                                     <dt>Patient Code</dt><dd><?php echo esc($appointment->patient_id) ?></dd>
                                     <dt>Blood Pressure</dt><dd><?= esc($vital->blood_pressure)?>mmHg</dd> 
                                     <dt>Pulse</dt><dd><?= esc($vital->pulse)?>bpm</dd>

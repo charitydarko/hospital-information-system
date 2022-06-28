@@ -9,7 +9,7 @@ class Appointment extends BaseController
     private $heading = "Appointment";
 
     public function index() {
-        $data['appointments'] = $this->appointment_model->findAll();
+        $data['appointments'] = $this->appointment_model->orderBy('created_at','DESC')->findAll();
         $data['staff'] = $this->user_model;
         $data['heading'] = $this->heading;
         $data['title'] = 'List';
@@ -35,41 +35,38 @@ class Appointment extends BaseController
     }
 
     public function create() {
-        //validation rules
-        $rules = [
+         //validation rules
+         $rules = [
             'patient_id' => [
-            'rules' => 'required',
-            'label' => 'Patient Id'
+                'rules' => 'required',
+                'label' => 'Patient Code'
+            ],
+            'appointment_id'    => [
+                'label' => 'Appointment Code',
+                'rules' => 'required|is_unique[appointment.appointment_id]'
             ]
         ];
 
         if ($this->validate($rules)) {
             $patient_id = $this->request->getPost('patient_id');
+            $appointment_id = $this->request->getPost('appointment_id');
             $note = $this->request->getPost('note');
-
-            $randomId = 'A'.rand(10000,99999);
-            $appointmentFind = $this->appointment_model->find(['appointment_id', $randomId]);
-
-            while ($appointmentFind !== []) {
-                $randomId = 'A'.rand(10000,99999);
-                $appointmentFind = $this->appointment_model->find(['appointment_id', $randomId]);
-            }
 
             $data = [
                 'patient_id' => $patient_id,
-                'appointment_id' => $randomId,
+                'appointment_id' => $appointment_id,
                 'note' => $note,
                 'created_by' => $this->session->get('id')
             ];
             
             $this->getPatientOr404($patient_id);
-            
+
             if ($this->appointment_model->save($data)) {
                 return redirect()->back()->with('info', 'Appointment added successfully');
             } else {
                 return redirect()->back()->with('error', $appointment_model->errors)->with('error', 'Invalid data');
             }
-    
+
         } else {
             $data['validation'] = $this->validator->listErrors();
             return redirect()->back()->withInput()->with('error', $data['validation']);

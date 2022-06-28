@@ -50,8 +50,8 @@
                                     </td>
                                     <td><?= ((esc($billing->status)==1)?'Paid':'Unpaid'); ?></td>
                                     <td class="center">
-                                        <a href="<?=site_url("pharmacist/inventory/view/".$billing->id)?>" class="btn btn-xs btn-success" title="View Pharmacy Sale"><i class="fa fa-eye"></i></a>
-                                        <a href="<?=site_url("pharmacist/inventory/edit/".$billing->id)?>" class="btn btn-xs btn-primary" title="Edit Pharmacy Sale"><i class="fa fa-edit"></i></a> 
+                                        <a href="<?=site_url("pharmacist/inventory/view/".$billing->appointment_id)?>" class="btn btn-xs btn-success" title="View Pharmacy Sale"><i class="fa fa-eye"></i></a>
+                                        <a href="<?=site_url("pharmacist/inventory/edit/".$billing->appointment_id)?>" class="btn btn-xs btn-primary" title="Edit Pharmacy Sale"><i class="fa fa-edit"></i></a> 
                                     </td>
                                 </tr>
                                 <?php $sl++; ?>

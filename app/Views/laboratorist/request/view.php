@@ -79,7 +79,15 @@
                                         ?>
                                        
                                     </dd>
-                                    <dt>laboratory Note</dt><dd><?php echo esc($laboratory[0]->note) ?></dd>
+                                    <dt>laboratory Note</dt><dd>
+                                        <?php
+                                            if(!$laboratory[0]->note) {
+                                                echo 'N/A';
+                                            } else {
+                                                echo esc($laboratory[0]->note);
+                                            }
+                                        ?>
+                                    </dd>
                                 </dl> 
                             </div>
                         </div>

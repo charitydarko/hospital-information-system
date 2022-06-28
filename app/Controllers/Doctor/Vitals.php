@@ -11,7 +11,7 @@ class Vitals extends BaseController
     // List Vitals
     public function index()
     {
-        $data['vitals'] = $this->vitals_model->findAll();
+        $data['vitals'] = $this->vitals_model->orderBy('created_at','DESC')->findAll();
         $data['staff'] = $this->user_model;
         $data['appointments'] = $this->appointment_model;
         $data['patients'] = $this->patient_model;

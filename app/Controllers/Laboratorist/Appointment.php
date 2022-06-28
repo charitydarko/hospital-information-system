@@ -9,7 +9,7 @@ class Appointment extends BaseController
     private $heading = "Appointment";
 
     public function index() {
-        $data['appointments'] = $this->appointment_model->findAll();
+        $data['appointments'] = $this->appointment_model->orderBy('created_at','DESC')->findAll();
         $data['staff'] = $this->user_model;
         $data['heading'] = $this->heading;
         $data['title'] = 'List';

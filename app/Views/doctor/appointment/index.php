@@ -47,7 +47,6 @@
                                         <a href="<?=site_url("/doctor/appointment/view/".$appointment->appointment_id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye" title="View Appointment"></i></a>
                                         <a href="<?=site_url("/doctor/vitals/add/".$appointment->appointment_id)?>" class="btn btn-xs btn-warning" title="Add Vitals"><i class="fa fa-heart-pulse"></i></a> 
                                         <a href="<?=site_url("/doctor/appointment/edit/".$appointment->appointment_id)?>" class="btn btn-xs btn-primary" title="Edit Appointment"><i class="fa fa-edit"></i></a> 
-                                        <a href="<?=site_url("/doctor/appointment/delete/".$appointment->appointment_id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Appointment"><i class="fa fa-trash"></i></a> 
                                     </td>
                                 </tr>
                                 <?php $sl++; ?>

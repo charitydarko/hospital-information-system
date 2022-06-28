@@ -9,7 +9,7 @@ class Patient extends BaseController
     private $heading = "Patient";
 
     public function index(){
-      $data['patients'] = $this->patient_model->findAll();
+      $data['patients'] = $this->patient_model->orderBy('created_at','DESC')->findAll();
       $data['heading'] = $this->heading;
       $data['title'] = 'List';
       $data['content']  = view('doctor/patient/index',$data);

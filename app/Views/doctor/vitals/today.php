@@ -26,22 +26,22 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php if (!empty($vitals)) { ?>
+                    <?php if (!empty($vitals)) { ?>
                             <?php $sl = 1; ?>
                             <?php foreach ($vitals as $vital) { ?>
                                 <tr class="<?= ($sl & 1)?"odd gradeX":"even gradeC" ?>">
                                     <td><?= $sl; ?></td>
                                     <td><?= esc($vital->appointment_id); ?></td>
                                     <td>
-                                        <?php 
-                                            $appointment = $appointments->find($vital->appointment_id);
-                                            echo esc($appointment->patient_id);
-                                        ?>
+                                    <?php 
+                                            $appointment = $appointments->where("appointment_id", $vital->appointment_id)->find();
+                                            echo esc($appointment[0]->patient_id);
+                                    ?>
                                     </td>
                                     <td>
                                         <input type="hidden" name="patient_registration_code" value="<?php #$appointment->patient_id ?>">
-                                        <?php 
-                                            $patient = $patients->where('registration_code', $appointment->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
+                                        <?php
+                                            $patient = $patients->where('registration_code', $appointment[0]->patient_id)->select('firstname, lastname, gender, phone, mobile, address, age, status')->find();
                                             echo esc($patient[0]->firstname) . ' ' . esc($patient[0]->lastname);
                                         ?>
                                     </td>
@@ -54,7 +54,7 @@
                                         <?= $staff->find($vital->created_by)->lastname; ?>
                                     </td>
                                     <td>
-                                        <?php 
+                                        <?php
                                             $date = new DateTime($vital->updated_at);
                                             $strip = $date->format('Y-m-d');
                                             echo $strip;
@@ -62,8 +62,8 @@
                                     </td>
                                     <td class="center">
                                         <a href="<?=site_url("/doctor/vitals/view/".$vital->id)?>" class="btn btn-xs btn-success" title="View Vitals"><i class="fa fa-eye"></i></a>
-                                        <a href="<?=site_url("/doctor/diagnosis/add/".$vital->id)?>" class="btn btn-xs btn-warning" title="Add Diagnosis"><i class="fa ti-book"></i></a> 
-                                        <a href="<?=site_url("/doctor/vitals/edit/".$vital->id)?>" class="btn btn-xs btn-primary" title="Edit Vitals"><i class="fa fa-edit"></i></a> 
+                                        <a href="<?=site_url("/doctor/vitals/edit/".$vital->id)?>" class="btn btn-xs btn-primary" title="Edit Vitals"><i class="fa fa-edit"></i></a>
+                                        <a href="<?=site_url("/doctor/diagnosis/add/".$vital->appointment_id)?>" class="btn btn-xs btn-warning" title="Add Diagnosis"><i class="fa ti-book"></i></a> 
                                     </td>
                                 </tr>
                                 <?php $sl++; ?>

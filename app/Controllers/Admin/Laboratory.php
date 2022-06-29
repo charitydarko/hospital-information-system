@@ -96,7 +96,7 @@ class Laboratory extends BaseController
                     return redirect()->back()->withInput()->with('warning', 'Nothing to update');
                 }
                 if ($this->laboratory_model->save($laboratory)) {
-                    return redirect()->to("/admin/laboratory/request")->with('info', 'Laboratory updated successfully');
+                    return redirect()->to("/admin/laboratory")->with('info', 'Laboratory updated successfully');
                 } else {
                     return redirect()->back()->with('error', $laboratory_model->errors)->with('error', 'Invalid data');
                 }
@@ -110,7 +110,7 @@ class Laboratory extends BaseController
 
     public function delete($id = null)  {
         $this->laboratory_model->where('diagnosis_id', $id)->delete();
-        return redirect()->to( base_url('/admin/laboratory/request'))->with('info', 'Laboratory deleted successfully');
+        return redirect()->to( base_url('/admin/laboratory'))->with('info', 'Laboratory deleted successfully');
     }
 
     // Get patient by registration_code

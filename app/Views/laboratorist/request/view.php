@@ -5,7 +5,6 @@
  
             <div class="panel-heading no-print">
                 <div class="btn-group"> 
-                    <a class="btn btn-success" href="#"> <i class="fa fa-plus"></i> Add laboratory Sale</a>  
                     <a class="btn btn-primary" href="<?php echo base_url("/laboratorist/request") ?>"> <i class="fa fa-list"></i> laboratory List</a>  
                     <button type="button" onclick="printContent('PrintMe')" class="btn btn-danger" ><i class="fa fa-print"></i></button> 
                 </div>

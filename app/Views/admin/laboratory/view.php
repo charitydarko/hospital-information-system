@@ -5,8 +5,7 @@
  
             <div class="panel-heading no-print">
                 <div class="btn-group"> 
-                    <a class="btn btn-success" href="#"> <i class="fa fa-plus"></i> Add laboratory Sale</a>  
-                    <a class="btn btn-primary" href="<?php echo base_url("/admin/laboratory/request") ?>"> <i class="fa fa-list"></i> laboratory List</a>  
+                    <a class="btn btn-primary" href="<?php echo base_url("/admin/laboratory") ?>"> <i class="fa fa-list"></i> laboratory List</a>  
                     <button type="button" onclick="printContent('PrintMe')" class="btn btn-danger" ><i class="fa fa-print"></i></button> 
                 </div>
             </div> 
@@ -79,7 +78,13 @@
                                         ?>
                                        
                                     </dd>
-                                    <dt>laboratory Note</dt><dd><?php echo esc($laboratory[0]->note) ?></dd>
+                                    <dt>laboratory Note</dt><dd>
+                                        <?php if($laboratory[0]->note !== "") 
+                                            {
+                                                echo esc($laboratory[0]->note);
+                                            } else echo "N/A "
+                                        ?>
+                                    </dd>
                                 </dl> 
                             </div>
                         </div>

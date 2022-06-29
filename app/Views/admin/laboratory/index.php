@@ -55,9 +55,9 @@
                                         ?>
                                     </td>
                                     <td class="center">
-                                        <a href="<?=site_url("/admin/laboratory/request/view/".$diag->id)?>" class="btn btn-xs btn-success" title="View Laboratory Request"><i class="fa fa-eye"></i></a>
-                                        <a href="<?=site_url("/admin/laboratory/request/edit/".$diag->id)?>" class="btn btn-xs btn-primary" title="Edit Laboratory Request"><i class="fa fa-edit"></i></a> 
-                                        <a href="<?=site_url("/admin/laboratory/request/delete/".$diag->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Laboratory Request"><i class="fa fa-trash"></i></a> 
+                                        <a href="<?=site_url("/admin/laboratory/view/".$diag->id)?>" class="btn btn-xs btn-success" title="View Laboratory Request"><i class="fa fa-eye"></i></a>
+                                        <a href="<?=site_url("/admin/laboratory/edit/".$diag->id)?>" class="btn btn-xs btn-primary" title="Edit Laboratory Request"><i class="fa fa-edit"></i></a> 
+                                        <a href="<?=site_url("/admin/laboratory/delete/".$diag->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Laboratory Request"><i class="fa fa-trash"></i></a> 
                                     </td>
                                 </tr>
                                 <?php $sl++; ?>

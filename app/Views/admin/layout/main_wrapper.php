@@ -198,7 +198,7 @@
             </a>
             <ul class="treeview-menu">
               <!-- <li><a href="">Served Today</a></li> -->
-              <li><a href="<?= base_url("admin/laboratory/request") ?>">Requests from Diagnosis</a></li>
+              <li><a href="<?= base_url("admin/laboratory") ?>">Requests from Diagnosis</a></li>
             </ul>
           </li>
           <li class="treeview">

@@ -5,7 +5,7 @@
       <!-- Heading -->
       <div class="panel-heading">
         <div class="btn-group">
-          <a class="btn btn-primary" href="<?php echo base_url("/admin/laboratory/request") ?>"> <i class="fa fa-list"></i> laboratory List</a>
+          <a class="btn btn-primary" href="<?php echo base_url("/admin/laboratory") ?>"> <i class="fa fa-list"></i> laboratory List</a>
         </div>
       </div>
 
@@ -49,7 +49,7 @@
                 $laboratory = $laboratory->where('diagnosis_id', $diagnosis->id)->select('*')->find();
                 $laboratory_id = $laboratory[0]->id;
               ?>
-              <form action=<?="/admin/laboratory/request/update/$laboratory_id"?> method="post" enctype="multipart/form-data">
+              <form action=<?="/admin/laboratory/update/$laboratory_id"?> method="post" enctype="multipart/form-data">
                   <?= csrf_field() ?>
                   <br/><br/><br/>
                   <div class="col-sm-12 form-group">
@@ -104,9 +104,7 @@
                   <div class="col-sm-12 form-group">
                       <label for="laboratory_fees_reason" class="col-sm-2 col-form-label">Reason for Laboratory Fees:</label>
                       <div class="col-sm-10">
-                          <textarea name="laboratory_fees_reason" class="form-control"  placeholder="List reason for charges here"  rows="5">
-                            <?= trim(strip_tags($laboratory[0]->fees_reason)); ?>
-                          </textarea>
+                          <textarea name="laboratory_fees_reason" class="form-control"  placeholder="List reason for charges here"  rows="5"> <?= trim(strip_tags($laboratory[0]->fees_reason)); ?></textarea>
                         </div>
                   </div>
 

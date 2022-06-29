@@ -10,7 +10,7 @@ class Diagnosis extends BaseController
 
     public function index()
     {
-        $data['diagnosis'] = $this->diagnosis_model->findAll();
+        $data['diagnosis'] = $this->diagnosis_model->orderBy('created_at','DESC')->findAll();
         $data['staff'] = $this->user_model;
         $data['appointments'] = $this->appointment_model;
         $data['heading'] = $this->heading;

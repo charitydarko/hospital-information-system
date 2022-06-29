@@ -176,10 +176,10 @@
                                         <td>
                                             <div class="input-group">
                                             <div class="input-group-addon">%</div>
-                                            <input type="number" id="vatParcent" required autocomplete="off"  class="form-control" value="0" min="0">
+                                            <input type="number" id="vatParcent" required autocomplete="off"  class="form-control" value="0" min="0" step=0.01>
                                             </div>
                                         </td> 
-                                        <td><input type="number" name="vat" id="vat" required autocomplete="off"  class="vatDiscount paidDue form-control" placeholder="Vat" value="0.00" min="0"></td>  
+                                        <td><input type="number" name="vat" id="vat" required autocomplete="off"  class="vatDiscount paidDue form-control" placeholder="Vat" value="0.00" min="0" step=0.01></td>  
                                         <td></td> 
                                     </tr>
                                     <tr>  
@@ -187,12 +187,12 @@
                                         <td>
                                             <div class="input-group">
                                             <div class="input-group-addon">%</div>
-                                            <input type="number" id="discountParcent" required autocomplete="off" class=" form-control" value="0" min="0">
+                                            <input type="number" id="discountParcent" required autocomplete="off" class=" form-control" value="0" min="0" step=0.01>
                                             </div>
                                         </td> 
 
                                         <td>
-                                            <input type="number" name="discount" required autocomplete="off" id="discount" class="vatDiscount paidDue form-control" placeholder="Discount"  value="0.00" min="0">
+                                            <input type="number" name="discount" required autocomplete="off" id="discount" class="vatDiscount paidDue form-control" placeholder="Discount"  value="0.00" min="0" step=0.01>
                                         </td> 
                                         <td></td>  
                                     </tr> 
@@ -200,7 +200,7 @@
                                         <td colspan="3"></td>  
                                         <th class="text-right">Grand Total</th>  
                                         <th>
-                                            <input type="number" name="Grand Total" readonly required autocomplete="off"  id="grand_total" class="paidDue form-control" placeholder="Grand Total" value="0.00" min="0">
+                                            <input type="number" name="Grand Total" readonly required autocomplete="off"  id="grand_total" class="paidDue form-control" placeholder="Grand Total" value="0.00" min="0" step=0.01>
                                         </th> 
                                         <td></td>  
                                     </tr>

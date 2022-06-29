@@ -223,7 +223,7 @@
             </a>
             <ul class="treeview-menu">
               <li><a href="<?= base_url("admin/user/add") ?>">Add User</a></li>
-              <li><a href="<?= base_url("admin/user/index")?>">Users List</a></li>
+              <li><a href="<?= base_url("admin/user")?>">Users List</a></li>
             </ul>
           </li>
           <li class="treeview">

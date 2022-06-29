@@ -10,7 +10,7 @@ class Billing extends BaseController
 
     public function index()
     {
-        $data['diagnosis'] = $this->diagnosis_model->findAll();
+        $data['diagnosis'] = $this->diagnosis_model->orderBy('created_at','DESC')->findAll();
         $data['loadLaboratory'] = $this->laboratory_model->findAll();
         $data['laboratory'] = $this->laboratory_model;
         $data['staff'] = $this->user_model;
@@ -32,7 +32,7 @@ class Billing extends BaseController
         $data['staff'] = $this->user_model;
         $data['appointments'] = $this->appointment_model;
         $data['patients'] = $this->patient_model;
-        $data['billings_today'] = $this->billing_model->where("created_at", $date)->findAll();
+        $data['billings'] = $this->billing_model->where("created_at", $date)->findAll();
         $data['heading'] = $this->heading;
         $data['title'] = 'List';
         $data['content']  = view('admin/billing/index',$data);
@@ -42,8 +42,6 @@ class Billing extends BaseController
     public function add($id=null) {
         $data['heading'] = $this->heading;
         $data['title'] = 'Add';
-        $data['appointment'] = $this->getAppointmentOr404($id);
-        $data['patient'] = $this->getPatientOr404($id);
         $data['content']  = view('admin/billing/add',$data);
         return view('admin/layout/main_wrapper',$data);
     }

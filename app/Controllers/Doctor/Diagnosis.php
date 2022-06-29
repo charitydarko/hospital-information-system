@@ -34,7 +34,7 @@ class Diagnosis extends BaseController
 
     public function add($id=null) {
         $data['heading'] = $this->heading;
-        $data['title'] = 'Add';
+        $data['title'] = 'Add'; 
         $data['appointment'] = $this->getAppointmentOr404($id);
         $data['vitals'] = $this->getVitalsOr404($id);
         $data['patient'] = $this->getPatientOr404($data['appointment']->patient_id);

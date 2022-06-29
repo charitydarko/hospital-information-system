@@ -44,7 +44,7 @@ class Inventory extends BaseController
     public function createSale() {
         $validate = $this->validate([
             'appointment_code' => [
-                'rules' => 'required|is_unique[prescription.appointment_id]',
+                'rules' => 'required|is_unique[pharmacy_billing.appointment_id]',
                 'label' => 'Appointment Code'
             ]
         ]);
@@ -178,7 +178,6 @@ class Inventory extends BaseController
         if($appointment) {
             $appointment = $appointment[0];
             $patient =$this->getPatientOr404($appointment->patient_id);
-            $pharmacy_billing = $this->getPharmacyBillingOr404($appointment_code);
 
             if($patient) {
                 $data = [

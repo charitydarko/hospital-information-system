@@ -54,9 +54,9 @@
           </div>
           <br/><br/>
           <div class="row">
-              <form action=<?= "/admin/diagnosis/update/$diagnosis->id"?> method="post" >
+              <form action=<?= "/admin/diagnosis/update/$diagnosis->appointment_id"?> method="post" >
                   <?= csrf_field() ?>
-                  <input type="hidden" name="appointment_id" id="appointment_id" value="<?= $appointment->id ?>">
+                  <input type="hidden" name="appointment_id" id="appointment_id" value="<?= $appointment->appointment_id ?>">
                   <div class="col-sm-12 bg-success">
                       <div class="col-sm-4"><h3>Diagnosis</h3></div>
                       <div class="col-sm-4"><h3>Prescription</h3></div>

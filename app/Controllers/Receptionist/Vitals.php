@@ -37,7 +37,7 @@ class Vitals extends BaseController
 
     // Add Vitals
     public function add($id=null)
-    {
+    { 
         $data['uri'] = $this->request->uri->getSegment(3);
         $data['heading'] = $this->heading;
         $data['title'] = 'Add';

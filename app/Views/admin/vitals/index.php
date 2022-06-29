@@ -62,7 +62,7 @@
                                     </td>
                                     <td class="center">
                                         <a href="<?=site_url("/admin/vitals/view/".$vital->id)?>" class="btn btn-xs btn-success" title="View Vitals"><i class="fa fa-eye"></i></a>
-                                        <a href="<?=site_url("/admin/diagnosis/add/".$vital->id)?>" class="btn btn-xs btn-warning" title="Add Diagnosis"><i class="fa ti-book"></i></a>
+                                        <a href="<?=site_url("/admin/diagnosis/add/".$vital->appointment_id)?>" class="btn btn-xs btn-warning" title="Add Diagnosis"><i class="fa ti-book"></i></a>
                                         <a href="<?=site_url("/admin/vitals/edit/".$vital->id)?>" class="btn btn-xs btn-primary" title="Edit Vitals"><i class="fa fa-edit"></i></a>
                                         <a href="<?=site_url("/admin/vitals/delete/".$vital->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Vitals"><i class="fa fa-trash"></i></a>
                                     </td>

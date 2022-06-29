@@ -39,11 +39,9 @@ class Billing extends BaseController
         return view('accountant/layout/main_wrapper',$data);
     }
 
-    public function add($id=null) {
+    public function add() {
         $data['heading'] = $this->heading;
         $data['title'] = 'Add';
-        $data['appointment'] = $this->getAppointmentOr404($id);
-        $data['patient'] = $this->getPatientOr404($id);
         $data['content']  = view('accountant/billing/add',$data);
         return view('accountant/layout/main_wrapper',$data);
     }

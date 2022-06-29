@@ -11,7 +11,7 @@ class Vitals extends BaseController
     // List Vitals
     public function index()
     {
-        $data['vitals'] = $this->vitals_model->findAll();
+        $data['vitals'] = $this->vitals_model->orderBy('created_at','DESC')->findAll();
         $data['staff'] = $this->user_model;
         $data['appointments'] = $this->appointment_model;
         $data['patients'] = $this->patient_model;
@@ -32,18 +32,6 @@ class Vitals extends BaseController
         $data['heading'] = $this->heading;
         $data['title'] = 'List';
         $data['content']  = view('admin/vitals/today',$data);
-        return view('admin/layout/main_wrapper',$data);
-    }
-
-    public function month()
-    {
-        $data['vitals_month'] = $this->vitals_model->findAll();
-        $data['staff'] = $this->user_model;
-        $data['appointments'] = $this->appointment_model;
-        $data['patients'] = $this->patient_model;
-        $data['heading'] = $this->heading;
-        $data['title'] = 'List';
-        $data['content']  = view('admin/vitals/month',$data);
         return view('admin/layout/main_wrapper',$data);
     }
 
@@ -149,15 +137,6 @@ class Vitals extends BaseController
         return redirect()->to( base_url('admin/vitals'))->with('info', 'Appointment deleted successfully');
     }
 
-
-    // Get Appointment by ID
-    public function getAppointment($id) {
-        $appointment = $this->appointment_model->where("appointment_id", $id)->find();
-        if($appointment === null) {
-        throw new \CodeIgniter\Exceptions\PageNotFoundException("Patient with Appointment code $id not found");
-        }
-        return $appointment;
-    }
 
     // Get Appointment by ID
     public function getAppointmentOr404($id) {

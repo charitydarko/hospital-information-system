@@ -49,9 +49,9 @@
                                         ?>
                                     </td>
                                     <td class="center">
-                                        <a href="<?=site_url("/admin/diagnosis/view/".$diag->id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye" title="View Diagnosis"></i></a>
-                                        <a href="<?=site_url("/admin/diagnosis/edit/".$diag->id)?>" class="btn btn-xs btn-primary" title="Edit Diagnosis"><i class="fa fa-edit"></i></a> 
-                                        <a href="<?=site_url("/admin/diagnosis/delete/".$diag->id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Diagnosis"><i class="fa fa-trash"></i></a> 
+                                        <a href="<?=site_url("/admin/diagnosis/view/".$diag->appointment_id)?>" class="btn btn-xs btn-success"><i class="fa fa-eye" title="View Diagnosis"></i></a>
+                                        <a href="<?=site_url("/admin/diagnosis/edit/".$diag->appointment_id)?>" class="btn btn-xs btn-primary" title="Edit Diagnosis"><i class="fa fa-edit"></i></a> 
+                                        <a href="<?=site_url("/admin/diagnosis/delete/".$diag->appointment_id)?>" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure?')" title="Delete Diagnosis"><i class="fa fa-trash"></i></a> 
                                     </td>
                                 </tr>
                                 <?php $sl++; ?>
